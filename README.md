@@ -1,4 +1,3 @@
-cat > README.md << 'EOF'
 # Sistema MonGe - UFPR
 
 Sistema de exemplo desenvolvido para a disciplina de **Engenharia de Software** da Universidade Federal do Paraná (UFPR).
