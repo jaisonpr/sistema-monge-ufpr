@@ -1,0 +1,22 @@
+# Arquivos Maven
+monge-api/target/
+monge-api/.mvn/
+monge-api/mvnw
+monge-api/mvnw.cmd
+
+# Arquivos IDE
+.idea/
+.vscode/
+*.iml
+.project
+.classpath
+
+# Arquivos Sistema
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Dependências Node (se usar)
+node_modules/

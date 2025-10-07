@@ -1,0 +1,14 @@
+# Ignorar arquivos de build do Maven
+target/
+
+.idea/
+.sonar/
+.mvn/
+.vscode/
+
+
+.surefire-*
+
+/out/
+
+*.pem
