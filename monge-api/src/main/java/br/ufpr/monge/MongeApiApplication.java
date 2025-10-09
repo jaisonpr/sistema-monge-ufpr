@@ -16,13 +16,8 @@ public class MongeApiApplication {
     public static class HelloController {
         
         @GetMapping("/")
-        public String hello() {
-            return "Sistema MONGE - API funcionando!";
-        }
-        
-        @GetMapping("/status")
         public String status() {
-            return "OK - MONGE API ativa";
-        }
+            return "Sistema MonGe - API funcionando!";
+        }        
     }
 }
