@@ -1,0 +1,112 @@
+@startuml MonGe_DER
+
+' === ENTIDADES PRINCIPAIS ===
+
+entity USUARIO {
+  * id : BIGINT <<PK>>
+  --
+  * nome : VARCHAR(100)
+  * email : VARCHAR(150)
+  * login : VARCHAR(50)
+  * perfil : VARCHAR(50)
+  * ativo : BOOLEAN
+  * data_criacao : DATETIME
+  data_ultimo_acesso : DATETIME
+}
+
+entity BOLSISTA {
+  * id : BIGINT <<PK>>
+  --
+  * usuario_id : BIGINT <<FK>>
+  * matricula : VARCHAR(20)
+  * cpf : VARCHAR(14)
+  telefone : VARCHAR(15)
+  endereco : TEXT
+  * carga_horaria_semanal : INT
+  * data_inicio_vinculo : DATE
+  data_fim_vinculo : DATE
+  * status_bolsa : VARCHAR(20)
+}
+
+entity ORIENTADOR {
+  * id : BIGINT <<PK>>
+  --
+  * usuario_id : BIGINT <<FK>>
+  * siape : VARCHAR(10)
+  * departamento : VARCHAR(100)
+  * titulacao : VARCHAR(50)
+  telefone_contato : VARCHAR(15)
+}
+
+entity PROJETO_ACADEMICO {
+  * id : BIGINT <<PK>>
+  --
+  * codigo : VARCHAR(20)
+  * titulo : VARCHAR(200)
+  descricao : TEXT
+  * data_inicio : DATE
+  data_fim : DATE
+  orcamento : DECIMAL(12,2)
+  * status_projeto : VARCHAR(20)
+  * unidade_vinculada : VARCHAR(100)
+  programa_fomento : VARCHAR(100)
+}
+
+entity LANCAMENTO_SEMANAL {
+  * id : BIGINT <<PK>>
+  --
+  * bolsista_id : BIGINT <<FK>>
+  * projeto_id : BIGINT <<FK>>
+  * semana_referencia : DATE
+  * data_lancamento : DATETIME
+  * atividades_realizadas : TEXT
+  * horas_realizadas : INT
+  observacoes : TEXT
+  justificativa_falta : TEXT
+  * status_lancamento : VARCHAR(20)
+  data_aprovacao : DATETIME
+  feedback_orientador : TEXT
+  orientador_avaliador_id : BIGINT <<FK>>
+}
+
+entity NOTIFICACAO {
+  * id : BIGINT <<PK>>
+  --
+  * destinatario_id : BIGINT <<FK>>
+  lancamento_id : BIGINT <<FK>>
+  * tipo_notificacao : VARCHAR(30)
+  * titulo : VARCHAR(150)
+  * mensagem : TEXT
+  * data_envio : DATETIME
+  * lida : BOOLEAN
+  url : VARCHAR(200)
+}
+
+entity BOLSISTA_PROJETO {
+  * id : BIGINT <<PK>>
+  --
+  * bolsista_id : BIGINT <<FK>>
+  * projeto_id : BIGINT <<FK>>
+  * orientador_id : BIGINT <<FK>>
+  * data_vinculacao : DATE
+  data_desvinculacao : DATE
+  * status_vinculo : VARCHAR(20)
+}
+
+' === RELACIONAMENTOS ===
+
+USUARIO ||--|| BOLSISTA : "herda"
+USUARIO ||--|| ORIENTADOR : "herda"
+
+BOLSISTA ||--o{ BOLSISTA_PROJETO : "participa"
+PROJETO_ACADEMICO ||--o{ BOLSISTA_PROJETO : "possui"
+ORIENTADOR ||--o{ BOLSISTA_PROJETO : "supervisiona"
+
+BOLSISTA ||--o{ LANCAMENTO_SEMANAL : "cria"
+PROJETO_ACADEMICO ||--o{ LANCAMENTO_SEMANAL : "contexto"
+ORIENTADOR ||--o{ LANCAMENTO_SEMANAL : "avalia"
+
+USUARIO ||--o{ NOTIFICACAO : "recebe"
+LANCAMENTO_SEMANAL ||--o{ NOTIFICACAO : "gera"
+
+@enduml
