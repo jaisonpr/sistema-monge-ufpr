@@ -51,6 +51,12 @@
         </a>
       </div>
     </div>
+
+    <a href="#" class="menu-item active" onclick="navegarPara('vincular-bolsista-projeto')">
+      <span class="menu-item-icon">🔗</span>
+      <span>Vincular BP</span>
+    </a>
+
   </nav>
 
   <!-- Conteúdo Principal -->
@@ -208,6 +214,35 @@
         </div>
       </div>
     </div>
+    
+    <div class="page-vincular-bolsista-projeto" id="pageVincularBolsistaProjeto">
+        <div class="container">
+            <h1>🔗 Vincular Bolsista a Projeto</h1>
+            
+            <div class="section">
+                <h3>Novo Vínculo</h3>
+                
+                <label for="selectBolsista">Selecione o Bolsista:</label>
+                <select id="selectBolsista">
+                    <option value="">Carregando bolsistas...</option>
+                </select>
+
+                <label for="selectProjeto">Selecione o Projeto:</label>
+                <select id="selectProjeto">
+                    <option value="">Carregando projetos...</option>
+                </select>
+                
+                <label for="selectOrientador">Selecione o Orientador (Supervisor):</label>
+                <select id="selectOrientador">
+                    <option value="">Carregando orientadores...</option>
+                </select>
+
+                <button onclick="vincularBolsistaProjeto()">Vincular</button>
+                <div id="resultadoVincular" class="resultado"></div>
+            </div>
+        </div>
+    </div>
+
   </div>
 
   <!-- Script externo -->

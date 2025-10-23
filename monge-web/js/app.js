@@ -37,7 +37,7 @@ function toggleMenu() {
    ------------------------- */
 function navegarPara(pagina) {
   // esconder todas as páginas
-  document.querySelectorAll('.page-principal, .page-cadastro-bolsista, .page-cadastro-orientador, .page-cadastro-projeto-academico')
+  document.querySelectorAll('.page-principal, .page-cadastro-bolsista, .page-cadastro-orientador, .page-cadastro-projeto-academico, .page-vincular-bolsista-projeto')
     .forEach(page => page.style.display = 'none');
 
   // remover classe active de itens do menu e submenu
@@ -73,8 +73,20 @@ function navegarPara(pagina) {
     if (thirdSub) thirdSub.classList.add('active');
     window.history.pushState({}, '', `${window.location.origin}/cadastro/projetoAcademico/`);
     abrirSubmenu();
-  }
+  } else if (pagina === 'vincular-bolsista-projeto') {
+    const page = document.getElementById('pageVincularBolsistaProjeto');
+    if (page) page.style.display = 'block';
+    // CORREÇÃO: O item "Vincular BP" é o 3º item do menu, ou seja, índice 2
+    const thirdMenu = document.querySelectorAll('.menu-item')[2]; 
+    if (thirdMenu) thirdMenu.classList.add('active');
+    window.history.pushState({}, '', `${window.location.origin}/vincularBolsistaProjeto/`);
+    fecharSubmenu();
 
+    // ADICIONADO: Carrega os dados dos dropdowns
+    loadBolsistas();
+    loadProjetos();
+    loadOrientadores();
+  }
 
   // fechar sidebar no mobile
   if (window.innerWidth <= 768) {
@@ -84,7 +96,7 @@ function navegarPara(pagina) {
 }
 
 /* -------------------------
-   Chamadas à API
+   Chamadas à API (Página Principal)
    ------------------------- */
 async function chamarHello() {
   const nome = document.getElementById('nomeInput').value.trim();
@@ -99,7 +111,6 @@ async function chamarHello() {
   try {
     resultadoDiv.textContent = 'Carregando...';
     const response = await axios.get(`${API_URL}/hello/${encodeURIComponent(nome)}`);
-    // se response.data for string ou objeto, normalizamos para exibição
     resultadoDiv.textContent = typeof response.data === 'string'
       ? response.data
       : JSON.stringify(response.data, null, 2);
@@ -121,8 +132,100 @@ async function chamarStatus() {
   }
 }
 
+/* -------------------------------------------
+   LÓGICA PÁGINA VINCULAR (ADICIONADA)
+   ------------------------------------------- */
+
+// 1. Carrega Bolsistas
+async function loadBolsistas() {
+  const select = document.getElementById('selectBolsista');
+  if (!select) return;
+  try {
+    const response = await axios.get(`${API_URL}/bolsistas`);
+    select.innerHTML = '<option value="">Selecione um bolsista</option>';
+    response.data.forEach(bolsista => {
+      const option = document.createElement('option');
+      option.value = bolsista.id;
+      option.textContent = `${bolsista.nome} (Matr: ${bolsista.matricula})`;
+      select.appendChild(option);
+    });
+  } catch (error) {
+    select.innerHTML = '<option value="">Erro ao carregar bolsistas</option>';
+  }
+}
+
+// 2. Carrega Projetos
+async function loadProjetos() {
+  const select = document.getElementById('selectProjeto');
+  if (!select) return;
+  try {
+    const response = await axios.get(`${API_URL}/projetos`);
+    select.innerHTML = '<option value="">Selecione um projeto</option>';
+    response.data.forEach(projeto => {
+      const option = document.createElement('option');
+      option.value = projeto.id;
+      option.textContent = `${projeto.titulo} (Cód: ${projeto.codigo})`;
+      select.appendChild(option);
+    });
+  } catch (error) {
+    select.innerHTML = '<option value="">Erro ao carregar projetos</option>';
+  }
+}
+
+// 3. Carrega Orientadores
+async function loadOrientadores() {
+  const select = document.getElementById('selectOrientador');
+  if (!select) return;
+  try {
+    const response = await axios.get(`${API_URL}/orientadores`);
+    select.innerHTML = '<option value="">Selecione um orientador</option>';
+    response.data.forEach(orientador => {
+      const option = document.createElement('option');
+      option.value = orientador.id;
+      option.textContent = `${orientador.nome} (SIAPE: ${orientador.siape})`;
+      select.appendChild(option);
+    });
+  } catch (error) {
+    select.innerHTML = '<option value="">Erro ao carregar orientadores</option>';
+  }
+}
+
+// 4. Função para Vincular
+async function vincularBolsistaProjeto() {
+  const bolsistaId = document.getElementById('selectBolsista').value;
+  const projetoId = document.getElementById('selectProjeto').value;
+  const orientadorId = document.getElementById('selectOrientador').value;
+  const resultadoDiv = document.getElementById('resultadoVincular');
+  if (!resultadoDiv) return;
+
+  if (!bolsistaId || !projetoId || !orientadorId) {
+    resultadoDiv.textContent = 'Erro: Todos os campos são obrigatórios!';
+    resultadoDiv.style.color = 'red';
+    return;
+  }
+
+  const vinculoData = {
+    bolsistaId: parseInt(bolsistaId),
+    projetoId: parseInt(projetoId),
+    orientadorId: parseInt(orientadorId)
+  };
+
+  try {
+    resultadoDiv.textContent = 'Vinculando...';
+    resultadoDiv.style.color = 'black';
+    // Assumindo que seu endpoint de POST é /bolsista-projeto
+    const response = await axios.post(`${API_URL}/bolsista-projeto`, vinculoData);
+    resultadoDiv.textContent = 'Bolsista vinculado com sucesso!';
+    resultadoDiv.style.color = 'green';
+  } catch (error) {
+    resultadoDiv.textContent = `Erro ao vincular: ${getErrorMessage(error)}`;
+    resultadoDiv.style.color = 'red';
+  }
+}
+
+
 /* -------------------------
-   Envio de formulários
+   Envio de formulários (Cadastros)
    ------------------------- */
 async function enviarCadastroBolsista(event) {
   event.preventDefault();
@@ -130,7 +233,7 @@ async function enviarCadastroBolsista(event) {
   if (!resultadoDiv) return;
 
   resultadoDiv.style.display = 'block';
-  resultadoDiv.textContent = `Enviando cadastro de bolsista... ${resultadoDiv}`;
+  resultadoDiv.textContent = 'Enviando cadastro de bolsista...';
 
   const dados = {
     nome: document.getElementById('nomeBolsista').value,
@@ -259,6 +362,9 @@ document.addEventListener('DOMContentLoaded', function () {
       navegarPara('cadastro-orientador');
     } else if (path === '/cadastro/projetoAcademico/' || path === '/cadastro/projetoAcademico') {
       navegarPara('cadastro-projeto-academico');
+    } else if (path === '/vincularBolsistaProjeto/' || path === '/vincularBolsistaProjeto/') {
+      // CORREÇÃO DO ERRO DE DIGITAÇÃO
+      navegarPara('vincular-bolsista-projeto');
     } else {
       navegarPara('principal');
     }
@@ -272,7 +378,12 @@ document.addEventListener('DOMContentLoaded', function () {
     navegarPara('cadastro-orientador');
   } else if (path === '/cadastro/projetoAcademico/' || path === '/cadastro/projetoAcademico') {
     navegarPara('cadastro-projeto-academico');
+  } else if (path === '/vincularBolsistaProjeto/' || path === '/vincularBolsistaProjeto/') {
+    // CORREÇÃO DO ERRO DE DIGITAÇÃO
+    navegarPara('vincular-bolsista-projeto');
   } else {
     navegarPara('principal');
   }
 });
+
+// REMOVIDO: A chave '}' extra que estava aqui
