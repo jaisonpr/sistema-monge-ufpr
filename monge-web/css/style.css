@@ -120,5 +120,5 @@ button:hover { background: #0056b3; }
 }
 
 /* === Páginas === */
-.page-cadastro-bolsista, .page-cadastro-orientador { display: none; }
+.page-cadastro-bolsista, .page-cadastro-orientador, .page-cadastro-projeto-academico { display: none; }
 .page-principal { display: block; }

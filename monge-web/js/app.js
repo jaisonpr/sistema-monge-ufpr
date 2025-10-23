@@ -69,8 +69,8 @@ function navegarPara(pagina) {
   } else if (pagina === 'cadastro-projeto-academico') {
     const page = document.getElementById('pageCadastroProjetoAcademico');
     if (page) page.style.display = 'block';
-    const secondSub = document.querySelectorAll('.submenu-item')[1];
-    if (secondSub) secondSub.classList.add('active');
+    const thirdSub = document.querySelectorAll('.submenu-item')[2];
+    if (thirdSub) thirdSub.classList.add('active');
     window.history.pushState({}, '', `${window.location.origin}/cadastro/projetoAcademico/`);
     abrirSubmenu();
   }
@@ -130,14 +130,16 @@ async function enviarCadastroBolsista(event) {
   if (!resultadoDiv) return;
 
   resultadoDiv.style.display = 'block';
-  resultadoDiv.textContent = 'Enviando cadastro de bolsista...';
+  resultadoDiv.textContent = `Enviando cadastro de bolsista... ${resultadoDiv}`;
 
   const dados = {
     nome: document.getElementById('nomeBolsista').value,
     email: document.getElementById('emailBolsista').value,
     matricula: document.getElementById('matriculaBolsista').value,
+    cpf: document.getElementById('cpfBolsista').value,
+    endereco: document.getElementById('enderecoBolsista').value,
     telefone: document.getElementById('telefoneBolsista').value,
-    observacoes: document.getElementById('observacoesBolsista').value
+    cargaHorariaSemanal: document.getElementById('cargaHorariaBolsista').value
   };
 
   try {
@@ -160,11 +162,10 @@ async function enviarCadastroOrientador(event) {
   const dados = {
     nome: document.getElementById('nomeOrientador').value,
     email: document.getElementById('emailOrientador').value,
-    telefone: document.getElementById('telefoneOrientador').value,
+    telefoneContato: document.getElementById('telefoneOrientador').value,
     departamento: document.getElementById('departamentoOrientador').value,
     titulacao: document.getElementById('titulacao').value,
-    areaAtuacao: document.getElementById('areaAtuacao').value,
-    observacoes: document.getElementById('observacoesOrientador').value
+    siape: document.getElementById('siape').value
   };
 
   try {
@@ -185,7 +186,7 @@ async function enviarCadastroProjetoAcademico(event) {
   resultadoDiv.textContent = 'Enviando cadastro de projeto academico...';
 
   const dados = {
-    nome: document.getElementById('nomeProjetoAcademico').value,
+    titulo: document.getElementById('nomeProjetoAcademico').value,
     descricao: document.getElementById('decricaoProjetoAcademico').value,
     unidadeVinculada: document.getElementById('unidadeVinculadaProjetoAcademico').value,
     programaFomento: document.getElementById('programaFomentoProjetoAcademico').value,
@@ -196,7 +197,7 @@ async function enviarCadastroProjetoAcademico(event) {
   try {
     const response = await axios.post(`${API_URL}/cadastro/projetoAcademico`, dados);
     resultadoDiv.textContent = 'Projeto Academico cadastrado com sucesso!\n\n' + JSON.stringify(response.data, null, 2);
-    limparFormularioOrientador();
+    limparFormularioProjetoAcademico();
   } catch (error) {
     resultadoDiv.textContent = `Erro ao cadastrar Projeto Academico: ${getErrorMessage(error)}`;
   }

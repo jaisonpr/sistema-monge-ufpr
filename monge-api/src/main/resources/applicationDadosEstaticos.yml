@@ -7,16 +7,14 @@ spring:
   application:
     name: monge-api
   datasource:
-    url: jdbc:h2:file:./monge-db
+    url: jdbc:h2:mem:intercampiDB
     driverClassName: org.h2.Driver
     username: sa
     password: ""
   jpa:
     database-platform: org.hibernate.dialect.H2Dialect
     hibernate:
-      # Alterado de "create" para "update"
-      # "update" verifica as tabelas e as atualiza se necessário, mas NÃO apaga dados.
-      ddl-auto: update
+      ddl-auto: create
     defer-datasource-initialization: true
   h2:
     console:
@@ -24,7 +22,7 @@ spring:
       path: /h2-console
   sql:
     init:
-      mode: embedded
+      mode: always
       data-locations: classpath:data.sql
   
 logging:

@@ -18,6 +18,14 @@ public class MongeApiApplication {
         @GetMapping("/")
         public String status() {
             return "Sistema MonGe - API funcionando!";
-        }        
+        }   
+    }
+
+    @RestController
+    public static class CadastroController {
+        @GetMapping("/cadastro/")
+        public String status() {
+            return "Sistema MonGe - Cadastro!";
+        }
     }
 }
