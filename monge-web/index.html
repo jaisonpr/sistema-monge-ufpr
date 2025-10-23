@@ -1,33 +1,169 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MONGE API - Simples</title>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="js/app.js"></script>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MONGE API - Sistema</title>
+
+  <!-- Axios -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container">
+  <!-- Botão de Menu Mobile -->
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+  <!-- Menu Lateral -->
+  <nav class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <h2>🎓 MONGE</h2>
+      <p>Sistema UFPR</p>
+    </div>
+    
+    <a href="#" class="menu-item active" onclick="navegarPara('principal')">
+      <span class="menu-item-icon">🏠</span>
+      <span>Página Principal</span>
+    </a>
+    
+    <div>
+      <a href="#" class="menu-item" onclick="toggleSubmenu(event)">
+        <span class="menu-item-icon">📝</span>
+        <div class="menu-item-content">
+          <span>Cadastros</span>
+          <span class="menu-arrow">▶</span>
+        </div>
+      </a>
+      
+      <div class="submenu" id="submenuCadastros">
+        <a href="#" class="submenu-item" onclick="navegarPara('cadastro-bolsista')">
+          <span class="submenu-icon">👤</span>
+          <span>Bolsista</span>
+        </a>
+        <a href="#" class="submenu-item" onclick="navegarPara('cadastro-orientador')">
+          <span class="submenu-icon">👨‍🏫</span>
+          <span>Orientador</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Conteúdo Principal -->
+  <div class="main-content">
+    <!-- Página Principal -->
+    <div class="page-principal" id="pagePrincipal">
+      <div class="container">
         <h1>🎓 Sistema MONGE - UFPR</h1>
         
-        <!-- Endpoint Hello com Nome -->
         <div class="section">
-            <h3>👋 Saudação Personalizada</h3>
-            <input type="text" id="nomeInput" placeholder="Digite seu nome" value="">
-            <button onclick="chamarHello()">Chamar /hello/{nome}</button>
-            <div id="resultadoHello" class="resultado"></div>
+          <h3>👋 Saudação Personalizada</h3>
+          <input type="text" id="nomeInput" placeholder="Digite seu nome">
+          <button onclick="chamarHello()">Chamar /hello/{nome}</button>
+          <div id="resultadoHello" class="resultado"></div>
         </div>
         
-        <!-- Endpoint Status -->
         <div class="section">
-            <h3>✅ Status do Sistema</h3>
-            <button onclick="chamarStatus()">Chamar /status</button>
-            <div id="resultadoStatus" class="resultado"></div>
+          <h3>✅ Status do Sistema</h3>
+          <button onclick="chamarStatus()">Chamar /status</button>
+          <div id="resultadoStatus" class="resultado"></div>
         </div>
-        
+      </div>
     </div>
 
+    <!-- Cadastro Bolsista -->
+    <div class="page-cadastro-bolsista" id="pageCadastroBolsista">
+      <div class="container">
+        <h1>👤 Cadastro de Bolsista</h1>
+        <div class="section">
+          <h3>Novo Bolsista</h3>
+          <form id="formCadastroBolsista" onsubmit="enviarCadastroBolsista(event)">
+            <div class="form-group">
+              <label for="nomeBolsista">Nome Completo:</label>
+              <input type="text" id="nomeBolsista" required>
+            </div>
+            <div class="form-group">
+              <label for="matriculaBolsista">Matrícula:</label>
+              <input type="text" id="matriculaBolsista" required>
+            </div>
+            <div class="form-group">
+              <label for="cpfBolsista">CPF:</label>
+              <input type="text" id="cpfBolsista" required>
+            </div>
+            <div class="form-group">
+              <label for="enderecoBolsista">Endereço:</label>
+              <input type="text" id="enderecoBolsista" required>
+            </div>
+            <div class="form-group">
+              <label for="telefoneBolsista">Telefone:</label>
+              <input type="tel" id="telefoneBolsista" placeholder="(00) 00000-0000">
+            </div>
+            <div class="form-group">
+              <label for="cargaHorariaBolsista">Carga Horaria:</label>
+              <input type="text" id="cargaHorariaBolsista" placeholder="20" required>
+            </div>
+            <button type="submit" class="btn-success">Cadastrar Bolsista</button>
+            <button type="button" onclick="limparFormularioBolsista()">Limpar</button>
+          </form>
+          <div id="resultadoCadastroBolsista" class="resultado" style="display: none;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cadastro Orientador -->
+    <div class="page-cadastro-orientador" id="pageCadastroOrientador">
+      <div class="container">
+        <h1>👨‍🏫 Cadastro de Orientador</h1>
+        <div class="section">
+          <h3>Novo Orientador</h3>
+          <form id="formCadastroOrientador" onsubmit="enviarCadastroOrientador(event)">
+            <div class="form-group">
+              <label for="nomeOrientador">Nome Completo:</label>
+              <input type="text" id="nomeOrientador" required>
+            </div>
+            <div class="form-group">
+              <label for="emailOrientador">E-mail:</label>
+              <input type="email" id="emailOrientador" required>
+            </div>
+            <div class="form-group">
+              <label for="telefoneOrientador">Telefone:</label>
+              <input type="tel" id="telefoneOrientador" placeholder="(00) 00000-0000">
+            </div>
+            <div class="form-group">
+              <label for="departamentoOrientador">Departamento:</label>
+              <select id="departamentoOrientador" required>
+                <option value="">Selecione...</option>
+                <option value="informatica">DEINF - Departamento de Informática</option>
+                <option value="engenharia">Engenharia</option>
+                <option value="matematica">Matemática</option>
+                <option value="fisica">Física</option>
+                <option value="quimica">Química</option>
+                <option value="biologia">Biologia</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="titulacao">Titulação:</label>
+              <select id="titulacao" required>
+                <option value="">Selecione...</option>
+                <option value="mestre">Mestre</option>
+                <option value="doutor">Doutor</option>
+                <option value="pos-doutor">Pós-Doutor</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="siape">SIAPE:</label>
+              <input type="text" id="siape" required>
+            </div>
+            <button type="submit" class="btn-success">Cadastrar Orientador</button>
+            <button type="button" onclick="limparFormularioOrientador()">Limpar</button>
+          </form>
+          <div id="resultadoCadastroOrientador" class="resultado" style="display: none;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script externo -->
+  <script src="js/app.js"></script>
 </body>
 </html>
