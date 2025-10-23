@@ -37,7 +37,7 @@ function toggleMenu() {
    ------------------------- */
 function navegarPara(pagina) {
   // esconder todas as páginas
-  document.querySelectorAll('.page-principal, .page-cadastro-bolsista, .page-cadastro-orientador')
+  document.querySelectorAll('.page-principal, .page-cadastro-bolsista, .page-cadastro-orientador, .page-cadastro-projeto-academico')
     .forEach(page => page.style.display = 'none');
 
   // remover classe active de itens do menu e submenu
@@ -66,7 +66,15 @@ function navegarPara(pagina) {
     if (secondSub) secondSub.classList.add('active');
     window.history.pushState({}, '', `${window.location.origin}/cadastro/orientador/`);
     abrirSubmenu();
+  } else if (pagina === 'cadastro-projeto-academico') {
+    const page = document.getElementById('pageCadastroProjetoAcademico');
+    if (page) page.style.display = 'block';
+    const secondSub = document.querySelectorAll('.submenu-item')[1];
+    if (secondSub) secondSub.classList.add('active');
+    window.history.pushState({}, '', `${window.location.origin}/cadastro/projetoAcademico/`);
+    abrirSubmenu();
   }
+
 
   // fechar sidebar no mobile
   if (window.innerWidth <= 768) {
@@ -128,9 +136,7 @@ async function enviarCadastroBolsista(event) {
     nome: document.getElementById('nomeBolsista').value,
     email: document.getElementById('emailBolsista').value,
     matricula: document.getElementById('matriculaBolsista').value,
-    curso: document.getElementById('cursoBolsista').value,
     telefone: document.getElementById('telefoneBolsista').value,
-    tipoBolsa: document.getElementById('tipoBolsa').value,
     observacoes: document.getElementById('observacoesBolsista').value
   };
 
@@ -170,6 +176,32 @@ async function enviarCadastroOrientador(event) {
   }
 }
 
+async function enviarCadastroProjetoAcademico(event) {
+  event.preventDefault();
+  const resultadoDiv = document.getElementById('resultadoCadastroProjetoAcademico');
+  if (!resultadoDiv) return;
+
+  resultadoDiv.style.display = 'block';
+  resultadoDiv.textContent = 'Enviando cadastro de projeto academico...';
+
+  const dados = {
+    nome: document.getElementById('nomeProjetoAcademico').value,
+    descricao: document.getElementById('decricaoProjetoAcademico').value,
+    unidadeVinculada: document.getElementById('unidadeVinculadaProjetoAcademico').value,
+    programaFomento: document.getElementById('programaFomentoProjetoAcademico').value,
+    orcamento: document.getElementById('orcamentoProjetoAcademico').value,
+    dataInicio: document.getElementById('dataInicioProjetoAcademico').value,
+  };
+
+  try {
+    const response = await axios.post(`${API_URL}/cadastro/projetoAcademico`, dados);
+    resultadoDiv.textContent = 'Projeto Academico cadastrado com sucesso!\n\n' + JSON.stringify(response.data, null, 2);
+    limparFormularioOrientador();
+  } catch (error) {
+    resultadoDiv.textContent = `Erro ao cadastrar Projeto Academico: ${getErrorMessage(error)}`;
+  }
+}
+
 /* -------------------------
    Limpar formulários
    ------------------------- */
@@ -180,6 +212,11 @@ function limparFormularioBolsista() {
 
 function limparFormularioOrientador() {
   const form = document.getElementById('formCadastroOrientador');
+  if (form) form.reset();
+}
+
+function limparFormularioProjetoAcademico() {
+  const form = document.getElementById('formCadastroProjetoAcademico');
   if (form) form.reset();
 }
 
@@ -219,6 +256,8 @@ document.addEventListener('DOMContentLoaded', function () {
       navegarPara('cadastro-bolsista');
     } else if (path === '/cadastro/orientador/' || path === '/cadastro/orientador') {
       navegarPara('cadastro-orientador');
+    } else if (path === '/cadastro/projetoAcademico/' || path === '/cadastro/projetoAcademico') {
+      navegarPara('cadastro-projeto-academico');
     } else {
       navegarPara('principal');
     }
@@ -230,6 +269,8 @@ document.addEventListener('DOMContentLoaded', function () {
     navegarPara('cadastro-bolsista');
   } else if (path === '/cadastro/orientador/' || path === '/cadastro/orientador') {
     navegarPara('cadastro-orientador');
+  } else if (path === '/cadastro/projetoAcademico/' || path === '/cadastro/projetoAcademico') {
+    navegarPara('cadastro-projeto-academico');
   } else {
     navegarPara('principal');
   }

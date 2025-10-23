@@ -45,6 +45,10 @@
           <span class="submenu-icon">👨‍🏫</span>
           <span>Orientador</span>
         </a>
+        <a href="#" class="submenu-item" onclick="navegarPara('cadastro-projeto-academico')">
+          <span class="submenu-icon">📖</span>
+          <span>Projeto Academico</span>
+        </a>
       </div>
     </div>
   </nav>
@@ -158,6 +162,45 @@
             <button type="button" onclick="limparFormularioOrientador()">Limpar</button>
           </form>
           <div id="resultadoCadastroOrientador" class="resultado" style="display: none;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cadastro Projeto Academico -->
+    <div class="page-cadastro-projeto-academico" id="pageCadastroProjetoAcademico">
+      <div class="container">
+        <h1>📖 Cadastro de Projeto Academico</h1>
+        <div class="section">
+          <h3>Novo Projeto Academico</h3>
+          <form id="formCadastroProjetoAcademico" onsubmit="enviarCadastroProjetoAcademico(event)">
+            <div class="form-group">
+              <label for="nomeProjetoAcademico">Nome Projeto:</label>
+              <input type="text" id="nomeProjetoAcademico" required>
+            </div>
+            <div class="form-group">
+              <label for="decricaoProjetoAcademico">Descrição:</label>
+              <input type="text" id="decricaoProjetoAcademico" required>
+            </div>
+            <div class="form-group">
+              <label for="unidadeVinculadaProjetoAcademico">Unidade Vinculada:</label>
+              <input type="text" id="unidadeVinculadaProjetoAcademico" placeholder="DEINF" required>
+            </div>
+            <div class="form-group">
+              <label for="programaFomentoProjetoAcademico">Codigo:</label>
+              <input type="text" id="programaFomentoProjetoAcademico" placeholder="PROGRAD" required>
+            </div>
+            <div class="form-group">
+              <label for="orcamentoProjetoAcademico">Orçamento:</label>
+              <input type="text" id="orcamentoProjetoAcademico" placeholder="60000" required>
+            </div>
+            <div class="form-group">
+              <label for="dataInicioProjetoAcademico">Data Início:</label>
+              <input type="date" id="dataInicioProjetoAcademico" required>
+            </div>
+            <button type="submit" class="btn-success">Cadastrar Projeto Academico</button>
+            <button type="button" onclick="limparFormularioProjetoAcademico()">Limpar</button>
+          </form>
+          <div id="resultadoCadastroProjetoAcademico" class="resultado" style="display: none;"></div>
         </div>
       </div>
     </div>
