@@ -63,21 +63,49 @@
   <div class="main-content">
     <!-- Página Principal -->
     <div class="page-principal" id="pagePrincipal">
-      <div class="container">
-        <h1>🎓 Sistema MONGE - UFPR</h1>
-        
-        <div class="section">
-          <h3>👋 Saudação Personalizada</h3>
-          <input type="text" id="nomeInput" placeholder="Digite seu nome">
-          <button onclick="chamarHello()">Chamar /hello/{nome}</button>
-          <div id="resultadoHello" class="resultado"></div>
+      <div class="container institucional">
+        <div class="header-ufpr">
+          <div>
+            <h1>🎓 Sistema MONGE - UFPR</h1>
+            <p class="descricao">
+              Plataforma institucional para Monitoramento e Gestão de Bolsistas em Projetos Acadêmicos.<br>
+              Desenvolvido no âmbito da disciplina <strong>CI1353 – Práticas Em Desenvolvimento De Software</strong>.
+            </p>
+          </div>
         </div>
-        
-        <div class="section">
-          <h3>✅ Status do Sistema</h3>
-          <button onclick="chamarStatus()">Chamar /status</button>
-          <div id="resultadoStatus" class="resultado"></div>
+
+        <hr class="linha-separadora">
+
+        <div class="cards-principais">
+          <div class="card-home" onclick="navegarPara('cadastro-bolsista')">
+            <div class="card-icon">👤</div>
+            <h3>Bolsistas</h3>
+            <p>Cadastre e gerencie os bolsistas vinculados a projetos acadêmicos ativos.</p>
+          </div>
+
+          <div class="card-home" onclick="navegarPara('cadastro-orientador')">
+            <div class="card-icon">👨‍🏫</div>
+            <h3>Orientadores</h3>
+            <p>Gerencie docentes responsáveis por supervisionar as atividades dos bolsistas.</p>
+          </div>
+
+          <div class="card-home" onclick="navegarPara('cadastro-projeto-academico')">
+            <div class="card-icon">📖</div>
+            <h3>Projetos Acadêmicos</h3>
+            <p>Registre projetos de pesquisa e extensão ativos na universidade.</p>
+          </div>
+
+          <div class="card-home" onclick="navegarPara('vincular-bolsista-projeto')">
+            <div class="card-icon">🔗</div>
+            <h3>Vincular Bolsista</h3>
+            <p>Associe bolsistas aos seus respectivos projetos e orientadores.</p>
+          </div>
         </div>
+
+        <footer class="rodape-ufpr">
+          <p>Universidade Federal do Paraná • Pró-Reitoria de Graduação (PROGRAD)</p>
+          <p class="versao">Versão 1.0 — 2025</p>
+        </footer>
       </div>
     </div>
 

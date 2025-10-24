@@ -122,3 +122,88 @@ button:hover { background: #0056b3; }
 /* === Páginas === */
 .page-cadastro-bolsista, .page-cadastro-orientador, .page-cadastro-projeto-academico, .page-vincular-bolsista-projeto { display: none; }
 .page-principal { display: block; }
+
+/* === Página Principal Institucional === */
+.institucional {
+  text-align: center;
+  background: #ffffff;
+  padding: 40px 30px;
+}
+
+.header-ufpr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.logo-ufpr {
+  height: 100px;
+  max-width: 250px;
+}
+
+.descricao {
+  color: #555;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.linha-separadora {
+  margin: 40px auto;
+  width: 80%;
+  border: 0;
+  border-top: 2px solid #ddd;
+}
+
+.cards-principais {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin: 0 auto 40px;
+  max-width: 1000px;
+}
+
+.card-home {
+  background: #f9fafb;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 25px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.card-home:hover {
+  background: #f0f4ff;
+  border-color: #2a5298;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.card-home h3 {
+  color: #1e3c72;
+  margin-bottom: 10px;
+}
+
+.card-home p {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.rodape-ufpr {
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+  color: #777;
+  font-size: 14px;
+}
+.rodape-ufpr .versao {
+  font-size: 13px;
+  margin-top: 5px;
+  color: #999;
+}
