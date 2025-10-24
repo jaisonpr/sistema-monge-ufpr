@@ -76,9 +76,8 @@ function navegarPara(pagina) {
   } else if (pagina === 'vincular-bolsista-projeto') {
     const page = document.getElementById('pageVincularBolsistaProjeto');
     if (page) page.style.display = 'block';
-    // CORREÇÃO: O item "Vincular BP" é o 3º item do menu, ou seja, índice 2
-    const thirdMenu = document.querySelectorAll('.menu-item')[2]; 
-    if (thirdMenu) thirdMenu.classList.add('active');
+    const fourthMenu = document.querySelectorAll('.menu-item')[3]; 
+    if (fourthMenu) fourthMenu.classList.add('active');
     window.history.pushState({}, '', `${window.location.origin}/vincularBolsistaProjeto/`);
     fecharSubmenu();
 
@@ -196,6 +195,7 @@ async function vincularBolsistaProjeto() {
   const projetoId = document.getElementById('selectProjeto').value;
   const orientadorId = document.getElementById('selectOrientador').value;
   const resultadoDiv = document.getElementById('resultadoVincular');
+  
   if (!resultadoDiv) return;
 
   if (!bolsistaId || !projetoId || !orientadorId) {
@@ -207,19 +207,18 @@ async function vincularBolsistaProjeto() {
   const vinculoData = {
     bolsistaId: parseInt(bolsistaId),
     projetoId: parseInt(projetoId),
-    orientadorId: parseInt(orientadorId)
+    orientadorId: parseInt(orientadorId),
+    dataVinculacao: document.getElementById('dataVinculacao').value,
   };
 
   try {
     resultadoDiv.textContent = 'Vinculando...';
-    resultadoDiv.style.color = 'black';
     // Assumindo que seu endpoint de POST é /bolsista-projeto
     const response = await axios.post(`${API_URL}/bolsista-projeto`, vinculoData);
     resultadoDiv.textContent = 'Bolsista vinculado com sucesso!';
-    resultadoDiv.style.color = 'green';
+    limparFormularioVincularBolsistaProjeto();
   } catch (error) {
     resultadoDiv.textContent = `Erro ao vincular: ${getErrorMessage(error)}`;
-    resultadoDiv.style.color = 'red';
   }
 }
 
@@ -324,6 +323,11 @@ function limparFormularioProjetoAcademico() {
   if (form) form.reset();
 }
 
+function limparFormularioVincularBolsistaProjeto() {
+  const form = document.getElementById('formVincularBolsistaProjeto');
+  if (form) form.reset();
+}
+
 /* -------------------------
    Utilidades
    ------------------------- */
@@ -362,8 +366,7 @@ document.addEventListener('DOMContentLoaded', function () {
       navegarPara('cadastro-orientador');
     } else if (path === '/cadastro/projetoAcademico/' || path === '/cadastro/projetoAcademico') {
       navegarPara('cadastro-projeto-academico');
-    } else if (path === '/vincularBolsistaProjeto/' || path === '/vincularBolsistaProjeto/') {
-      // CORREÇÃO DO ERRO DE DIGITAÇÃO
+    } else if (path === '/vincularBolsistaProjeto/' || path === '/vincularBolsistaProjeto') {
       navegarPara('vincular-bolsista-projeto');
     } else {
       navegarPara('principal');
@@ -378,12 +381,9 @@ document.addEventListener('DOMContentLoaded', function () {
     navegarPara('cadastro-orientador');
   } else if (path === '/cadastro/projetoAcademico/' || path === '/cadastro/projetoAcademico') {
     navegarPara('cadastro-projeto-academico');
-  } else if (path === '/vincularBolsistaProjeto/' || path === '/vincularBolsistaProjeto/') {
-    // CORREÇÃO DO ERRO DE DIGITAÇÃO
+  } else if (path === '/vincularBolsistaProjeto/' || path === '/vincularBolsistaProjeto') {
     navegarPara('vincular-bolsista-projeto');
   } else {
     navegarPara('principal');
   }
 });
-
-// REMOVIDO: A chave '}' extra que estava aqui

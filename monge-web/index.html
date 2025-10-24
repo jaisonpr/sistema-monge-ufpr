@@ -31,7 +31,7 @@
       <a href="#" class="menu-item" onclick="toggleSubmenu(event)">
         <span class="menu-item-icon">📝</span>
         <div class="menu-item-content">
-          <span>Cadastros</span>
+          <span>Cadastrar</span>
           <span class="menu-arrow">▶</span>
         </div>
       </a>
@@ -236,6 +236,11 @@
                 <select id="selectOrientador">
                     <option value="">Carregando orientadores...</option>
                 </select>
+
+                <div class="form-group">
+                  <label for="dataVinculacao">Data Vinculação:</label>
+                  <input type="date" id="dataVinculacao" required>
+                </div>
 
                 <button onclick="vincularBolsistaProjeto()">Vincular</button>
                 <div id="resultadoVincular" class="resultado"></div>
