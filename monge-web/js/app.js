@@ -6,92 +6,102 @@ const API_URL = 'http://localhost:8080/api/v1';
    Helpers: submenu / menu
    ------------------------- */
 function toggleSubmenu(event) {
-  event.preventDefault();
-  const submenu = document.getElementById('submenuCadastros');
-  const arrow = event.currentTarget.querySelector('.menu-arrow');
-  submenu.classList.toggle('expanded');
-  arrow.classList.toggle('expanded');
+    event.preventDefault();
+    const submenu = document.getElementById('submenuCadastros');
+    const arrow = event.currentTarget.querySelector('.menu-arrow');
+    submenu.classList.toggle('expanded');
+    arrow.classList.toggle('expanded');
 }
 
 function abrirSubmenu() {
-  const submenu = document.getElementById('submenuCadastros');
-  const arrow = document.querySelector('.menu-arrow');
-  if (submenu) submenu.classList.add('expanded');
-  if (arrow) arrow.classList.add('expanded');
+    const submenu = document.getElementById('submenuCadastros');
+    const arrow = document.querySelector('.menu-arrow');
+    if (submenu) submenu.classList.add('expanded');
+    if (arrow) arrow.classList.add('expanded');
 }
 
 function fecharSubmenu() {
-  const submenu = document.getElementById('submenuCadastros');
-  const arrow = document.querySelector('.menu-arrow');
-  if (submenu) submenu.classList.remove('expanded');
-  if (arrow) arrow.classList.remove('expanded');
+    const submenu = document.getElementById('submenuCadastros');
+    const arrow = document.querySelector('.menu-arrow');
+    if (submenu) submenu.classList.remove('expanded');
+    if (arrow) arrow.classList.remove('expanded');
 }
 
 function toggleMenu() {
-  const sidebar = document.getElementById('sidebar');
-  if (sidebar) sidebar.classList.toggle('active');
+    const sidebar = document.getElementById('sidebar');
+    if (sidebar) sidebar.classList.toggle('active');
 }
 
 /* -------------------------
    Navegação (SPA-like)
    ------------------------- */
 function navegarPara(pagina) {
-  // esconder todas as páginas
-  document.querySelectorAll('.page-principal, .page-cadastro-bolsista, .page-cadastro-orientador, .page-cadastro-projeto-academico, .page-vincular-bolsista-projeto')
-    .forEach(page => page.style.display = 'none');
+    // esconder todas as páginas
+    document.querySelectorAll('.page-principal, .page-cadastro-bolsista, .page-cadastro-orientador, .page-cadastro-projeto-academico, .page-vincular-bolsista-projeto, .page-lancamento-semanal')
+        .forEach(page => page.style.display = 'none');
 
-  // remover classe active de itens do menu e submenu
-  document.querySelectorAll('.menu-item, .submenu-item')
-    .forEach(item => item.classList.remove('active'));
+    // remover classe active de itens do menu e submenu
+    document.querySelectorAll('.menu-item, .submenu-item')
+        .forEach(item => item.classList.remove('active'));
 
-  // mostrar a página correspondente e atualizar URL
-  if (pagina === 'principal') {
-    const page = document.getElementById('pagePrincipal');
-    if (page) page.style.display = 'block';
-    const firstMenu = document.querySelectorAll('.menu-item')[0];
-    if (firstMenu) firstMenu.classList.add('active');
-    window.history.pushState({}, '', `${window.location.origin}/`);
-    fecharSubmenu();
-  } else if (pagina === 'cadastro-bolsista') {
-    const page = document.getElementById('pageCadastroBolsista');
-    if (page) page.style.display = 'block';
-    const firstSub = document.querySelectorAll('.submenu-item')[0];
-    if (firstSub) firstSub.classList.add('active');
-    window.history.pushState({}, '', `${window.location.origin}/cadastro/bolsista/`);
-    abrirSubmenu();
-  } else if (pagina === 'cadastro-orientador') {
-    const page = document.getElementById('pageCadastroOrientador');
-    if (page) page.style.display = 'block';
-    const secondSub = document.querySelectorAll('.submenu-item')[1];
-    if (secondSub) secondSub.classList.add('active');
-    window.history.pushState({}, '', `${window.location.origin}/cadastro/orientador/`);
-    abrirSubmenu();
-  } else if (pagina === 'cadastro-projeto-academico') {
-    const page = document.getElementById('pageCadastroProjetoAcademico');
-    if (page) page.style.display = 'block';
-    const thirdSub = document.querySelectorAll('.submenu-item')[2];
-    if (thirdSub) thirdSub.classList.add('active');
-    window.history.pushState({}, '', `${window.location.origin}/cadastro/projetoAcademico/`);
-    abrirSubmenu();
-  } else if (pagina === 'vincular-bolsista-projeto') {
-    const page = document.getElementById('pageVincularBolsistaProjeto');
-    if (page) page.style.display = 'block';
-    const fourthMenu = document.querySelectorAll('.menu-item')[3]; 
-    if (fourthMenu) fourthMenu.classList.add('active');
-    window.history.pushState({}, '', `${window.location.origin}/vincularBolsistaProjeto/`);
-    fecharSubmenu();
+    // mostrar a página correspondente e atualizar URL
+    if (pagina === 'principal') {
+        const page = document.getElementById('pagePrincipal');
+        if (page) page.style.display = 'block';
+        const firstMenu = document.querySelectorAll('.menu-item')[0];
+        if (firstMenu) firstMenu.classList.add('active');
+        window.history.pushState({}, '', `${window.location.origin}/`);
+        fecharSubmenu();
+    } else if (pagina === 'cadastro-bolsista') {
+        const page = document.getElementById('pageCadastroBolsista');
+        if (page) page.style.display = 'block';
+        const firstSub = document.querySelectorAll('.submenu-item')[0];
+        if (firstSub) firstSub.classList.add('active');
+        window.history.pushState({}, '', `${window.location.origin}/cadastro/bolsista/`);
+        abrirSubmenu();
+    } else if (pagina === 'cadastro-orientador') {
+        const page = document.getElementById('pageCadastroOrientador');
+        if (page) page.style.display = 'block';
+        const secondSub = document.querySelectorAll('.submenu-item')[1];
+        if (secondSub) secondSub.classList.add('active');
+        window.history.pushState({}, '', `${window.location.origin}/cadastro/orientador/`);
+        abrirSubmenu();
+    } else if (pagina === 'cadastro-projeto-academico') {
+        const page = document.getElementById('pageCadastroProjetoAcademico');
+        if (page) page.style.display = 'block';
+        const thirdSub = document.querySelectorAll('.submenu-item')[2];
+        if (thirdSub) thirdSub.classList.add('active');
+        window.history.pushState({}, '', `${window.location.origin}/cadastro/projetoAcademico/`);
+        abrirSubmenu();
+    } else if (pagina === 'vincular-bolsista-projeto') {
+        const page = document.getElementById('pageVincularBolsistaProjeto');
+        if (page) page.style.display = 'block';
+        const fourthMenu = document.querySelectorAll('.menu-item')[3]; 
+        if (fourthMenu) fourthMenu.classList.add('active');
+        window.history.pushState({}, '', `${window.location.origin}/vincularBolsistaProjeto/`);
+        fecharSubmenu();
 
-    // ADICIONADO: Carrega os dados dos dropdowns
-    loadBolsistas();
-    loadProjetos();
-    loadOrientadores();
-  }
+        // ADICIONADO: Carrega os dados dos dropdowns
+        loadBolsistas();
+        loadProjetos();
+        loadOrientadores();
+    } else if (pagina === 'lancamento-semanal') {
+        const page = document.getElementById('pageLancamentoSemanal');
+        if (page) page.style.display = 'block';
+        const fifthMenu = document.querySelectorAll('.menu-item')[4];
+        if (fifthMenu) fifthMenu.classList.add('active')
+        window.history.pushState({}, '', `${window.location.origin}/lancamentoSemanal/`);
+        fecharSubmenu();
 
-  // fechar sidebar no mobile
-  if (window.innerWidth <= 768) {
-    const sidebar = document.getElementById('sidebar');
-    if (sidebar) sidebar.classList.remove('active');
-  }
+        loadBolsistasLancamento();   
+        loadProjetosLancamento();    
+    }
+
+    // fechar sidebar no mobile
+    if (window.innerWidth <= 768) {
+        const sidebar = document.getElementById('sidebar');
+        if (sidebar) sidebar.classList.remove('active');
+    }
 }
 
 /* -------------------------
@@ -349,41 +359,91 @@ function getErrorMessage(error) {
    Inicialização e histórico
    ------------------------- */
 document.addEventListener('DOMContentLoaded', function () {
-  // Atalhos: Enter no campo nome chama o hello
-  const nomeInput = document.getElementById('nomeInput');
-  if (nomeInput) {
-    nomeInput.addEventListener('keypress', function (e) {
-      if (e.key === 'Enter') chamarHello();
-    });
-  }
+    // Atalhos: Enter no campo nome chama o hello
+    const nomeInput = document.getElementById('nomeInput');
+    if (nomeInput) {
+        nomeInput.addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') chamarHello();
+        });
+    }
 
-  // Tratar popstate (botões voltar/avançar)
-  window.addEventListener('popstate', function () {
+    // Tratar popstate (botões voltar/avançar)
+    window.addEventListener('popstate', function () {
+        const path = window.location.pathname;
+        if (path === '/cadastro/bolsista/' || path === '/cadastro/bolsista') {
+            navegarPara('cadastro-bolsista');
+        } else if (path === '/cadastro/orientador/' || path === '/cadastro/orientador') {
+            navegarPara('cadastro-orientador');
+        } else if (path === '/cadastro/projetoAcademico/' || path === '/cadastro/projetoAcademico') {
+            navegarPara('cadastro-projeto-academico');
+        } else if (path === '/vincularBolsistaProjeto/' || path === '/vincularBolsistaProjeto') {
+            navegarPara('vincular-bolsista-projeto');
+        } else if (path === '/lancamentoSemanal/' || path === '/lancamentoSemanal') {
+            navegarPara('lancamento-semanal');
+        } else {
+            navegarPara('principal')
+        }
+    });
+
+    // Detectar URL inicial e navegar para a página correta
     const path = window.location.pathname;
     if (path === '/cadastro/bolsista/' || path === '/cadastro/bolsista') {
-      navegarPara('cadastro-bolsista');
+        navegarPara('cadastro-bolsista');
     } else if (path === '/cadastro/orientador/' || path === '/cadastro/orientador') {
-      navegarPara('cadastro-orientador');
+        navegarPara('cadastro-orientador');
     } else if (path === '/cadastro/projetoAcademico/' || path === '/cadastro/projetoAcademico') {
-      navegarPara('cadastro-projeto-academico');
+        navegarPara('cadastro-projeto-academico');
     } else if (path === '/vincularBolsistaProjeto/' || path === '/vincularBolsistaProjeto') {
-      navegarPara('vincular-bolsista-projeto');
+        navegarPara('vincular-bolsista-projeto');
+    } else if (path === '/lancamentoSemanal/' || path === '/lancamentoSemanal') {
+        navegarPara('lancamento-semanal');
     } else {
-      navegarPara('principal');
+        navegarPara('principal');
     }
-  });
+    });
 
-  // Detectar URL inicial e navegar para a página correta
-  const path = window.location.pathname;
-  if (path === '/cadastro/bolsista/' || path === '/cadastro/bolsista') {
-    navegarPara('cadastro-bolsista');
-  } else if (path === '/cadastro/orientador/' || path === '/cadastro/orientador') {
-    navegarPara('cadastro-orientador');
-  } else if (path === '/cadastro/projetoAcademico/' || path === '/cadastro/projetoAcademico') {
-    navegarPara('cadastro-projeto-academico');
-  } else if (path === '/vincularBolsistaProjeto/' || path === '/vincularBolsistaProjeto') {
-    navegarPara('vincular-bolsista-projeto');
-  } else {
-    navegarPara('principal');
-  }
-});
+async function loadBolsistasLancamento() {
+    const select = document.getElementById('selectBolsistaLancamento');
+    const res = await axios.get(`${API_URL}/bolsistas`);
+    select.innerHTML = '<option value="">Selecione...</option>';
+    res.data.forEach(b => {
+        const opt = document.createElement('option');
+        opt.value = b.id;
+        opt.textContent = `${b.nome} (${b.matricula})`;
+        select.appendChild(opt);
+    });
+}
+
+async function loadProjetosLancamento() {
+    const select = document.getElementById('selectProjetoLancamento');
+    const res = await axios.get(`${API_URL}/projetos`);
+    select.innerHTML = '<option value="">Selecione...</option>';
+    res.data.forEach(p => {
+        const opt = document.createElement('option');
+        opt.value = p.id;
+        opt.textContent = `${p.titulo} (${p.codigo})`;
+        select.appendChild(opt);
+    });
+}
+
+async function enviarLancamentoSemanal() {
+    const resultado = document.getElementById('resultadoLancamento');
+    resultado.textContent = 'Enviando...';
+
+    const bolsistaId = document.getElementById('selectBolsistaLancamento').value;
+    const projetoId = document.getElementById('selectProjetoLancamento').value;
+
+    const dados = {
+        semanaReferencia: document.getElementById('semanaReferencia').value,
+        atividadesRealizadas: document.getElementById('atividadesRealizadas').value,
+        horasRealizadas: parseInt(document.getElementById('horasRealizadas').value),
+        justificativaFalta: document.getElementById('justificativaFalta').value
+    };
+
+    try {
+        await axios.post(`${API_URL}/lancamentos-semanais/bolsista/${bolsistaId}/projeto/${projetoId}`, dados);
+        resultado.textContent = 'Lançamento registrado com sucesso!';
+    } catch (error) {
+        resultado.textContent = `Erro: ${getErrorMessage(error)}`;
+    } 
+}

@@ -120,7 +120,7 @@ button:hover { background: #0056b3; }
 }
 
 /* === Páginas === */
-.page-cadastro-bolsista, .page-cadastro-orientador, .page-cadastro-projeto-academico, .page-vincular-bolsista-projeto { display: none; }
+.page-cadastro-bolsista, .page-cadastro-orientador, .page-cadastro-projeto-academico, .page-vincular-bolsista-projeto, .page-lancamento-semanal { display: none; }
 .page-principal { display: block; }
 
 /* === Página Principal Institucional === */

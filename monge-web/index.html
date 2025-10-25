@@ -57,6 +57,11 @@
       <span>Vincular BP</span>
     </a>
 
+    <a href="#" class="menu-item active" onclick="navegarPara('lancamento-semanal')">
+        <span class="menu-item-icon">📅</span>
+        <span>Lançamentos Semanais</span>
+    </a>
+
   </nav>
 
   <!-- Conteúdo Principal -->
@@ -275,6 +280,34 @@
             </div>
         </div>
     </div>
+
+    <div class="page-lancamento-semanal" id="pageLancamentoSemanal">
+        <div class="container">
+            <h1>📅 Registro Semanal de Atividades</h1>
+
+            <label for="selectBolsistaLancamento">Bolsista:</label>
+            <select id="selectBolsistaLancamento"></select>
+
+            <label for="selectProjetoLancamento">Projeto:</label>
+            <select id="selectProjetoLancamento"></select>
+
+            <label for="semanaReferencia">Semana de Referência:</label>
+            <input type="date" id="semanaReferencia" required>
+
+            <label for="atividadesRealizadas">Atividades:</label>
+            <textarea id="atividadesRealizadas" required></textarea>
+
+            <label for="horasRealizadas">Horas Realizadas:</label>  
+            <input type="number" id="horasRealizadas" min="0" max="168" required>
+
+            <label for="justificativaFalta">Justificativa:</label>
+            <textarea id="justificativaFalta"></textarea>
+
+            <button onclick="enviarLancamentoSemanal()">Registrar</button>
+            <div id="resultadoLancamento" class="resultado"></div>
+        </div>
+    </div>
+
 
   </div>
 
