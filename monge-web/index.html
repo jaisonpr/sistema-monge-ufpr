@@ -1,253 +1,258 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MONGE API - Sistema</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MONGE API - Sistema</title>
 
-  <!-- Axios -->
-  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- Axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
-  <!-- CSS externo -->
-  <link rel="stylesheet" href="css/style.css">
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- Botão de Menu Mobile -->
-  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <!-- Botão de Menu Mobile -->
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
 
-  <!-- Menu Lateral -->
-  <nav class="sidebar" id="sidebar">
-    <div class="sidebar-header">
-      <h2>🎓 MONGE</h2>
-      <p>Sistema UFPR</p>
-    </div>
-    
-    <a href="#" class="menu-item active" onclick="navegarPara('principal')">
-      <span class="menu-item-icon">🏠</span>
-      <span>Página Principal</span>
-    </a>
-    
-    <div>
-      <a href="#" class="menu-item" onclick="toggleSubmenu(event)">
-        <span class="menu-item-icon">📝</span>
-        <div class="menu-item-content">
-          <span>Cadastrar</span>
-          <span class="menu-arrow">▶</span>
+    <!-- Menu Lateral -->
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h2>🎓 MONGE</h2>
+            <p>Sistema UFPR</p>
         </div>
-      </a>
+    
+        <a href="#" class="menu-item" onclick="navegarPara('principal')">
+            <span class="menu-item-icon">🏠</span>
+            <span>Página Principal</span>
+        </a>
+    
+        <div>
+            <a href="#" class="menu-item" onclick="toggleSubmenu(event)">
+                <span class="menu-item-icon">📝</span>
+                <div class="menu-item-content">
+                    <span>Cadastrar</span>
+                    <span class="menu-arrow">▶</span>
+                </div>
+            </a>
       
-      <div class="submenu" id="submenuCadastros">
-        <a href="#" class="submenu-item" onclick="navegarPara('cadastro-bolsista')">
-          <span class="submenu-icon">👤</span>
-          <span>Bolsista</span>
+            <div class="submenu" id="submenuCadastros">
+                <a href="#" class="submenu-item" onclick="navegarPara('cadastro-bolsista')">
+                    <span class="submenu-icon">👤</span>
+                    <span>Bolsista</span>
+                </a>
+                <a href="#" class="submenu-item" onclick="navegarPara('cadastro-orientador')">
+                    <span class="submenu-icon">👨‍🏫</span>
+                    <span>Orientador</span>
+                </a>
+                <a href="#" class="submenu-item" onclick="navegarPara('cadastro-projeto-academico')">
+                    <span class="submenu-icon">📖</span>
+                    <span>Projeto Academico</span>
+                </a>
+            </div>
+        </div>
+
+        <a href="#" class="menu-item" onclick="navegarPara('vincular-bolsista-projeto')">
+            <span class="menu-item-icon">🔗</span>
+            <span>Vincular BP</span>
         </a>
-        <a href="#" class="submenu-item" onclick="navegarPara('cadastro-orientador')">
-          <span class="submenu-icon">👨‍🏫</span>
-          <span>Orientador</span>
+
+        <a href="#" class="menu-item" onclick="navegarPara('lancamento-semanal')">
+            <span class="menu-item-icon">📅</span>
+            <span>Lançamentos Semanais</span>
         </a>
-        <a href="#" class="submenu-item" onclick="navegarPara('cadastro-projeto-academico')">
-          <span class="submenu-icon">📖</span>
-          <span>Projeto Academico</span>
+
+        <a href="#" class="menu-item" onclick="navegarPara('aprovacao-lancamentos')">
+            <span class="menu-item-icon">✅</span>
+            <span>Aprovar Lançamentos</span>
         </a>
-      </div>
-    </div>
+    </nav>
 
-    <a href="#" class="menu-item active" onclick="navegarPara('vincular-bolsista-projeto')">
-      <span class="menu-item-icon">🔗</span>
-      <span>Vincular BP</span>
-    </a>
+    <!-- Conteúdo Principal -->
+    <div class="main-content">
+        <!-- Página Principal -->
+        <div class="page-principal" id="pagePrincipal">
+            <div class="container institucional">
+                <div class="header-ufpr">
+                    <div>
+                        <h1>🎓 Sistema MONGE - UFPR</h1>
+                        <p class="descricao">
+                            Plataforma institucional para Monitoramento e Gestão de Bolsistas em Projetos Acadêmicos.<br>
+                            Desenvolvido no âmbito da disciplina <strong>CI1353 – Práticas Em Desenvolvimento De Software</strong>.
+                        </p>
+                    </div>
+                </div>
 
-    <a href="#" class="menu-item active" onclick="navegarPara('lancamento-semanal')">
-        <span class="menu-item-icon">📅</span>
-        <span>Lançamentos Semanais</span>
-    </a>
+                <hr class="linha-separadora">
 
-  </nav>
+                <div class="cards-principais">
+                    <div class="card-home" onclick="navegarPara('cadastro-bolsista')">
+                        <div class="card-icon">👤</div>
+                        <h3>Bolsistas</h3>
+                        <p>Cadastre e gerencie os bolsistas vinculados a projetos acadêmicos ativos.</p>
+                    </div>
 
-  <!-- Conteúdo Principal -->
-  <div class="main-content">
-    <!-- Página Principal -->
-    <div class="page-principal" id="pagePrincipal">
-      <div class="container institucional">
-        <div class="header-ufpr">
-          <div>
-            <h1>🎓 Sistema MONGE - UFPR</h1>
-            <p class="descricao">
-              Plataforma institucional para Monitoramento e Gestão de Bolsistas em Projetos Acadêmicos.<br>
-              Desenvolvido no âmbito da disciplina <strong>CI1353 – Práticas Em Desenvolvimento De Software</strong>.
-            </p>
-          </div>
+                    <div class="card-home" onclick="navegarPara('cadastro-orientador')">
+                        <div class="card-icon">👨‍🏫</div>
+                        <h3>Orientadores</h3>
+                        <p>Gerencie docentes responsáveis por supervisionar as atividades dos bolsistas.</p>
+                    </div>
+
+                    <div class="card-home" onclick="navegarPara('cadastro-projeto-academico')">
+                        <div class="card-icon">📖</div>
+                        <h3>Projetos Acadêmicos</h3>
+                        <p>Registre projetos de pesquisa e extensão ativos na universidade.</p>
+                    </div>
+
+                    <div class="card-home" onclick="navegarPara('vincular-bolsista-projeto')">
+                        <div class="card-icon">🔗</div>
+                        <h3>Vincular Bolsista</h3>
+                        <p>Associe bolsistas aos seus respectivos projetos e orientadores.</p>
+                    </div>
+                </div>
+
+                <footer class="rodape-ufpr">
+                    <p>Universidade Federal do Paraná • Pró-Reitoria de Graduação (PROGRAD)</p>
+                    <p class="versao">Versão 1.0 — 2025</p>
+                </footer>
+            </div>
         </div>
 
-        <hr class="linha-separadora">
-
-        <div class="cards-principais">
-          <div class="card-home" onclick="navegarPara('cadastro-bolsista')">
-            <div class="card-icon">👤</div>
-            <h3>Bolsistas</h3>
-            <p>Cadastre e gerencie os bolsistas vinculados a projetos acadêmicos ativos.</p>
-          </div>
-
-          <div class="card-home" onclick="navegarPara('cadastro-orientador')">
-            <div class="card-icon">👨‍🏫</div>
-            <h3>Orientadores</h3>
-            <p>Gerencie docentes responsáveis por supervisionar as atividades dos bolsistas.</p>
-          </div>
-
-          <div class="card-home" onclick="navegarPara('cadastro-projeto-academico')">
-            <div class="card-icon">📖</div>
-            <h3>Projetos Acadêmicos</h3>
-            <p>Registre projetos de pesquisa e extensão ativos na universidade.</p>
-          </div>
-
-          <div class="card-home" onclick="navegarPara('vincular-bolsista-projeto')">
-            <div class="card-icon">🔗</div>
-            <h3>Vincular Bolsista</h3>
-            <p>Associe bolsistas aos seus respectivos projetos e orientadores.</p>
-          </div>
+        <!-- Cadastro Bolsista -->
+        <div class="page-cadastro-bolsista" id="pageCadastroBolsista">
+            <div class="container">
+                <h1>👤 Cadastro de Bolsista</h1>
+                <div class="section">
+                    <h3>Novo Bolsista</h3>
+                    <form id="formCadastroBolsista" onsubmit="enviarCadastroBolsista(event)">
+                        <div class="form-group">
+                            <label for="nomeBolsista">Nome Completo:</label>
+                            <input type="text" id="nomeBolsista" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="emailBolsista">E-mail:</label>
+                            <input type="email" id="emailBolsista" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="matriculaBolsista">Matrícula:</label>
+                            <input type="text" id="matriculaBolsista" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="cpfBolsista">CPF:</label>
+                            <input type="text" id="cpfBolsista" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="enderecoBolsista">Endereço:</label>
+                            <input type="text" id="enderecoBolsista" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefoneBolsista">Telefone:</label>
+                            <input type="tel" id="telefoneBolsista" placeholder="(00) 00000-0000">
+                        </div>
+                        <div class="form-group">
+                            <label for="cargaHorariaBolsista">Carga Horaria:</label>
+                            <input type="text" id="cargaHorariaBolsista" placeholder="20" required>
+                        </div>
+                        <button type="submit" class="btn-success">Cadastrar Bolsista</button>
+                        <button type="button" onclick="limparFormularioBolsista()">Limpar</button>
+                    </form>
+                    <div id="resultadoCadastroBolsista" class="resultado" style="display: none;"></div>
+                </div>
+            </div>
         </div>
 
-        <footer class="rodape-ufpr">
-          <p>Universidade Federal do Paraná • Pró-Reitoria de Graduação (PROGRAD)</p>
-          <p class="versao">Versão 1.0 — 2025</p>
-        </footer>
-      </div>
-    </div>
-
-    <!-- Cadastro Bolsista -->
-    <div class="page-cadastro-bolsista" id="pageCadastroBolsista">
-      <div class="container">
-        <h1>👤 Cadastro de Bolsista</h1>
-        <div class="section">
-          <h3>Novo Bolsista</h3>
-          <form id="formCadastroBolsista" onsubmit="enviarCadastroBolsista(event)">
-            <div class="form-group">
-              <label for="nomeBolsista">Nome Completo:</label>
-              <input type="text" id="nomeBolsista" required>
+        <!-- Cadastro Orientador -->
+        <div class="page-cadastro-orientador" id="pageCadastroOrientador">
+            <div class="container">
+                <h1>👨‍🏫 Cadastro de Orientador</h1>
+                <div class="section">
+                    <h3>Novo Orientador</h3>
+                    <form id="formCadastroOrientador" onsubmit="enviarCadastroOrientador(event)">
+                        <div class="form-group">
+                            <label for="nomeOrientador">Nome Completo:</label>
+                            <input type="text" id="nomeOrientador" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="emailOrientador">E-mail:</label>
+                            <input type="email" id="emailOrientador" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefoneOrientador">Telefone:</label>
+                            <input type="tel" id="telefoneOrientador" placeholder="(00) 00000-0000">
+                        </div>
+                        <div class="form-group">
+                            <label for="departamentoOrientador">Departamento:</label>
+                            <select id="departamentoOrientador" required>
+                                <option value="">Selecione...</option>
+                                <option value="informatica">DEINF - Departamento de Informática</option>
+                                <option value="engenharia">Engenharia</option>
+                                <option value="matematica">Matemática</option>
+                                <option value="fisica">Física</option>
+                                <option value="quimica">Química</option>
+                                <option value="biologia">Biologia</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="titulacao">Titulação:</label>
+                            <select id="titulacao" required>
+                                <option value="">Selecione...</option>
+                                <option value="mestre">Mestre</option>
+                                <option value="doutor">Doutor</option>
+                                <option value="pos-doutor">Pós-Doutor</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="siape">SIAPE:</label>
+                            <input type="text" id="siape" required>
+                        </div>
+                        <button type="submit" class="btn-success">Cadastrar Orientador</button>
+                        <button type="button" onclick="limparFormularioOrientador()">Limpar</button>
+                    </form>
+                <div id="resultadoCadastroOrientador" class="resultado" style="display: none;"></div>
             </div>
-            <div class="form-group">
-              <label for="emailBolsista">E-mail:</label>
-              <input type="email" id="emailBolsista" required>
-            </div>
-            <div class="form-group">
-              <label for="matriculaBolsista">Matrícula:</label>
-              <input type="text" id="matriculaBolsista" required>
-            </div>
-            <div class="form-group">
-              <label for="cpfBolsista">CPF:</label>
-              <input type="text" id="cpfBolsista" required>
-            </div>
-            <div class="form-group">
-              <label for="enderecoBolsista">Endereço:</label>
-              <input type="text" id="enderecoBolsista" required>
-            </div>
-            <div class="form-group">
-              <label for="telefoneBolsista">Telefone:</label>
-              <input type="tel" id="telefoneBolsista" placeholder="(00) 00000-0000">
-            </div>
-            <div class="form-group">
-              <label for="cargaHorariaBolsista">Carga Horaria:</label>
-              <input type="text" id="cargaHorariaBolsista" placeholder="20" required>
-            </div>
-            <button type="submit" class="btn-success">Cadastrar Bolsista</button>
-            <button type="button" onclick="limparFormularioBolsista()">Limpar</button>
-          </form>
-          <div id="resultadoCadastroBolsista" class="resultado" style="display: none;"></div>
         </div>
-      </div>
-    </div>
-
-    <!-- Cadastro Orientador -->
-    <div class="page-cadastro-orientador" id="pageCadastroOrientador">
-      <div class="container">
-        <h1>👨‍🏫 Cadastro de Orientador</h1>
-        <div class="section">
-          <h3>Novo Orientador</h3>
-          <form id="formCadastroOrientador" onsubmit="enviarCadastroOrientador(event)">
-            <div class="form-group">
-              <label for="nomeOrientador">Nome Completo:</label>
-              <input type="text" id="nomeOrientador" required>
-            </div>
-            <div class="form-group">
-              <label for="emailOrientador">E-mail:</label>
-              <input type="email" id="emailOrientador" required>
-            </div>
-            <div class="form-group">
-              <label for="telefoneOrientador">Telefone:</label>
-              <input type="tel" id="telefoneOrientador" placeholder="(00) 00000-0000">
-            </div>
-            <div class="form-group">
-              <label for="departamentoOrientador">Departamento:</label>
-              <select id="departamentoOrientador" required>
-                <option value="">Selecione...</option>
-                <option value="informatica">DEINF - Departamento de Informática</option>
-                <option value="engenharia">Engenharia</option>
-                <option value="matematica">Matemática</option>
-                <option value="fisica">Física</option>
-                <option value="quimica">Química</option>
-                <option value="biologia">Biologia</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="titulacao">Titulação:</label>
-              <select id="titulacao" required>
-                <option value="">Selecione...</option>
-                <option value="mestre">Mestre</option>
-                <option value="doutor">Doutor</option>
-                <option value="pos-doutor">Pós-Doutor</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="siape">SIAPE:</label>
-              <input type="text" id="siape" required>
-            </div>
-            <button type="submit" class="btn-success">Cadastrar Orientador</button>
-            <button type="button" onclick="limparFormularioOrientador()">Limpar</button>
-          </form>
-          <div id="resultadoCadastroOrientador" class="resultado" style="display: none;"></div>
-        </div>
-      </div>
     </div>
 
     <!-- Cadastro Projeto Academico -->
     <div class="page-cadastro-projeto-academico" id="pageCadastroProjetoAcademico">
-      <div class="container">
-        <h1>📖 Cadastro de Projeto Academico</h1>
-        <div class="section">
-          <h3>Novo Projeto Academico</h3>
-          <form id="formCadastroProjetoAcademico" onsubmit="enviarCadastroProjetoAcademico(event)">
-            <div class="form-group">
-              <label for="nomeProjetoAcademico">Nome Projeto:</label>
-              <input type="text" id="nomeProjetoAcademico" required>
+        <div class="container">
+            <h1>📖 Cadastro de Projeto Academico</h1>
+            <div class="section">
+                <h3>Novo Projeto Academico</h3>
+                <form id="formCadastroProjetoAcademico" onsubmit="enviarCadastroProjetoAcademico(event)">
+                    <div class="form-group">
+                        <label for="nomeProjetoAcademico">Nome Projeto:</label>
+                        <input type="text" id="nomeProjetoAcademico" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="decricaoProjetoAcademico">Descrição:</label>
+                        <input type="text" id="decricaoProjetoAcademico" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="unidadeVinculadaProjetoAcademico">Unidade Vinculada:</label>
+                        <input type="text" id="unidadeVinculadaProjetoAcademico" placeholder="DEINF" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="programaFomentoProjetoAcademico">Codigo:</label>
+                        <input type="text" id="programaFomentoProjetoAcademico" placeholder="PROGRAD" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="orcamentoProjetoAcademico">Orçamento:</label>
+                        <input type="text" id="orcamentoProjetoAcademico" placeholder="60000" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="dataInicioProjetoAcademico">Data Início:</label>
+                        <input type="date" id="dataInicioProjetoAcademico" required>
+                    </div>
+                    <button type="submit" class="btn-success">Cadastrar Projeto Academico</button>
+                    <button type="button" onclick="limparFormularioProjetoAcademico()">Limpar</button>
+                </form>
+                <div id="resultadoCadastroProjetoAcademico" class="resultado" style="display: none;"></div>
             </div>
-            <div class="form-group">
-              <label for="decricaoProjetoAcademico">Descrição:</label>
-              <input type="text" id="decricaoProjetoAcademico" required>
-            </div>
-            <div class="form-group">
-              <label for="unidadeVinculadaProjetoAcademico">Unidade Vinculada:</label>
-              <input type="text" id="unidadeVinculadaProjetoAcademico" placeholder="DEINF" required>
-            </div>
-            <div class="form-group">
-              <label for="programaFomentoProjetoAcademico">Codigo:</label>
-              <input type="text" id="programaFomentoProjetoAcademico" placeholder="PROGRAD" required>
-            </div>
-            <div class="form-group">
-              <label for="orcamentoProjetoAcademico">Orçamento:</label>
-              <input type="text" id="orcamentoProjetoAcademico" placeholder="60000" required>
-            </div>
-            <div class="form-group">
-              <label for="dataInicioProjetoAcademico">Data Início:</label>
-              <input type="date" id="dataInicioProjetoAcademico" required>
-            </div>
-            <button type="submit" class="btn-success">Cadastrar Projeto Academico</button>
-            <button type="button" onclick="limparFormularioProjetoAcademico()">Limpar</button>
-          </form>
-          <div id="resultadoCadastroProjetoAcademico" class="resultado" style="display: none;"></div>
         </div>
-      </div>
     </div>
-    
+
+    <!-- Vinculação de bolsista a projeto -->
     <div class="page-vincular-bolsista-projeto" id="pageVincularBolsistaProjeto">
         <div class="container">
             <h1>🔗 Vincular Bolsista a Projeto</h1>
@@ -281,6 +286,7 @@
         </div>
     </div>
 
+    <!-- Lançamento semanal -->
     <div class="page-lancamento-semanal" id="pageLancamentoSemanal">
         <div class="container">
             <h1>📅 Registro Semanal de Atividades</h1>
@@ -308,10 +314,90 @@
         </div>
     </div>
 
+    <!-- Aprovação de lançamentos -->
+    <div class="page-aprovacao-lancamentos" id="pageAprovacaoLancamentos">
+        <div class="container">
+            <h1>✅ Aprovação de Lançamentos Semanais</h1>
+        
+            <div class="section">
+                <h3>Identificação do Orientador</h3>
+                <label for="selectOrientadorAprovacao">Orientador Responsável:</label>
+                <select id="selectOrientadorAprovacao">
+                    <option value="">Selecione seu perfil de orientador...</option>
+                </select>
+                <p class="info-text">Selecione seu perfil para realizar ações de aprovação/edição</p>
+            </div>
 
-  </div>
+            <div class="section">
+                <div class="section-header">
+                    <h3>Lançamentos Pendentes de Aprovação</h3>
+                    <button onclick="loadLancamentosPendentes()" class="btn-refresh">🔄 Atualizar Lista</button>
+                </div>
+                <div id="listaPendentes">
+                    <p>Clique em "Atualizar Lista" para carregar os lançamentos pendentes.</p>
+                </div>
+            </div>
 
-  <!-- Script externo -->
-  <script src="js/app.js"></script>
+            <div class="section">
+                <h3>Detalhes do Lançamento</h3>
+                <div id="detalhesLancamento" style="display: none;">
+                    <form id="formAprovacao">
+                        <input type="hidden" id="lancamentoId">
+                    
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="detalhesBolsista">Bolsista:</label>
+                                <input type="text" id="detalhesBolsista" readonly>
+                            </div>
+                            <div class="form-group">
+                                <label for="detalhesProjeto">Projeto:</label>
+                                <input type="text" id="detalhesProjeto" readonly>
+                            </div>
+                        </div>
+                    
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="detalhesSemana">Semana de Referência:</label>
+                                <input type="text" id="detalhesSemana" readonly>
+                            </div>
+                            <div class="form-group">
+                                <label for="detalhesHoras">Horas Realizadas:</label>
+                                <input type="number" id="detalhesHoras">
+                            </div>
+                        </div>
+                    
+                        <div class="form-group">
+                            <label for="detalhesAtividades">Atividades Realizadas:</label>
+                            <textarea id="detalhesAtividades" rows="4"></textarea>
+                        </div>
+                    
+                        <div class="form-group">
+                            <label for="detalhesJustificativa">Justificativa de Faltas:</label>
+                            <textarea id="detalhesJustificativa" rows="3"></textarea>
+                        </div>
+                    
+                        <div class="form-group">
+                            <label for="feedbackOrientador">Feedback/Observações do Orientador:</label>
+                            <textarea id="feedbackOrientador" placeholder="Digite seu feedback, observações ou correções necessárias..." rows="4"></textarea>
+                        </div>
+                    
+                        <div class="botoes-acao">
+                            <button type="button" onclick="aprovarLancamento()" class="btn-success">✅ Aprovar</button>
+                            <button type="button" onclick="rejeitarLancamento()" class="btn-danger">❌ Rejeitar</button>
+                            <button type="button" onclick="salvarEdicoes()" class="btn-warning">✏️ Salvar Edições</button>
+                            <button type="button" onclick="fecharDetalhes()">Fechar</button>
+                        </div>
+                    
+                        <div class="permissoes-info">
+                            <p id="infoPermissao" style="display: none;"></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script externo -->
+    <script src="js/app.js"></script>
 </body>
 </html>

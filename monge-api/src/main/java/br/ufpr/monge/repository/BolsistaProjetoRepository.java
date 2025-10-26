@@ -11,4 +11,5 @@ public interface BolsistaProjetoRepository extends JpaRepository<BolsistaProjeto
     List<BolsistaProjeto> findByBolsistaId(Long bolsistaId);
     List<BolsistaProjeto> findByProjetoId(Long projetoId);
     List<BolsistaProjeto> findByOrientadorId(Long orientadorId);
+    boolean existsByOrientadorIdAndProjetoId(Long orientadorId, Long projetoId);
 }

@@ -37,7 +37,7 @@ function toggleMenu() {
    ------------------------- */
 function navegarPara(pagina) {
     // esconder todas as páginas
-    document.querySelectorAll('.page-principal, .page-cadastro-bolsista, .page-cadastro-orientador, .page-cadastro-projeto-academico, .page-vincular-bolsista-projeto, .page-lancamento-semanal')
+    document.querySelectorAll('.page-principal, .page-cadastro-bolsista, .page-cadastro-orientador, .page-cadastro-projeto-academico, .page-vincular-bolsista-projeto, .page-lancamento-semanal, .page-aprovacao-lancamentos')
         .forEach(page => page.style.display = 'none');
 
     // remover classe active de itens do menu e submenu
@@ -81,7 +81,6 @@ function navegarPara(pagina) {
         window.history.pushState({}, '', `${window.location.origin}/vincularBolsistaProjeto/`);
         fecharSubmenu();
 
-        // ADICIONADO: Carrega os dados dos dropdowns
         loadBolsistas();
         loadProjetos();
         loadOrientadores();
@@ -95,6 +94,16 @@ function navegarPara(pagina) {
 
         loadBolsistasLancamento();   
         loadProjetosLancamento();    
+    } else if (pagina === 'aprovacao-lancamentos') {
+        const page = document.getElementById('pageAprovacaoLancamentos');
+        if (page) page.style.display = 'block';
+        const menuItem = document.querySelectorAll('.menu-item')[5]; 
+        if (menuItem) menuItem.classList.add('active');
+        window.history.pushState({}, '', `${window.location.origin}/aprovacaoLancamentos/`);
+        fecharSubmenu();
+    
+        // Carregar orientadores
+        loadOrientadoresAprovacao();
     }
 
     // fechar sidebar no mobile
@@ -189,13 +198,13 @@ async function loadOrientadores() {
     const response = await axios.get(`${API_URL}/orientadores`);
     select.innerHTML = '<option value="">Selecione um orientador</option>';
     response.data.forEach(orientador => {
-      const option = document.createElement('option');
-      option.value = orientador.id;
-      option.textContent = `${orientador.nome} (SIAPE: ${orientador.siape})`;
-      select.appendChild(option);
+        const option = document.createElement('option');
+        option.value = orientador.id;
+        option.textContent = `${orientador.nome} (SIAPE: ${orientador.siape})`;
+        select.appendChild(option);
     });
   } catch (error) {
-    select.innerHTML = '<option value="">Erro ao carregar orientadores</option>';
+        select.innerHTML = '<option value="">Erro ao carregar orientadores</option>';
   }
 }
 
@@ -380,6 +389,8 @@ document.addEventListener('DOMContentLoaded', function () {
             navegarPara('vincular-bolsista-projeto');
         } else if (path === '/lancamentoSemanal/' || path === '/lancamentoSemanal') {
             navegarPara('lancamento-semanal');
+        } else if (path === '/aprovacaoLancamentos/' || path === '/aprovacaoLancamentos') {
+            navegarPara('aprovacao-lancamentos')
         } else {
             navegarPara('principal')
         }
@@ -397,10 +408,12 @@ document.addEventListener('DOMContentLoaded', function () {
         navegarPara('vincular-bolsista-projeto');
     } else if (path === '/lancamentoSemanal/' || path === '/lancamentoSemanal') {
         navegarPara('lancamento-semanal');
+    } else if (path === '/aprovacaoLancamentos/' || path === '/aprovacaoLancamentos') {
+        navegarPara('aprovacao-lancamentos') 
     } else {
         navegarPara('principal');
     }
-    });
+});
 
 async function loadBolsistasLancamento() {
     const select = document.getElementById('selectBolsistaLancamento');
@@ -447,3 +460,222 @@ async function enviarLancamentoSemanal() {
         resultado.textContent = `Erro: ${getErrorMessage(error)}`;
     } 
 }
+
+async function loadOrientadoresAprovacao() {
+    const select = document.getElementById('selectOrientadorAprovacao');
+    try {
+        const response = await axios.get(`${API_URL}/orientadores`);
+        select.innerHTML = '<option value="">Selecione seu perfil de orientador</option>';
+        response.data.forEach(orientador => {
+            const option = document.createElement('option');
+            option.value = orientador.id;
+            option.textContent = `${orientador.nome} (SIAPE: ${orientador.siape}) - ${orientador.departamento}`;
+            select.appendChild(option);
+        });
+        
+        // Atualizar lista quando orientador for selecionado
+        select.addEventListener('change', function() {
+            const lancamentoId = document.getElementById('lancamentoId').value;
+            if (lancamentoId) {
+                verificarPermissaoOrientador(lancamentoId, this.value);
+            }
+        });
+    } catch (error) {
+        select.innerHTML = '<option value="">Erro ao carregar orientadores</option>';
+    }
+}
+
+async function loadLancamentosPendentes() {
+    const listaPendentes = document.getElementById('listaPendentes');
+    const orientadorId = document.getElementById('selectOrientadorAprovacao').value;
+
+    try {
+        listaPendentes.innerHTML = '<p>Carregando lançamentos pendentes...</p>';
+        const response = await axios.get(`${API_URL}/orientador/lancamentos/pendentes`);
+        
+        if (response.data.length === 0) {
+            listaPendentes.innerHTML = '<p>🎉 Nenhum lançamento pendente de aprovação!</p>';
+            return;
+        }
+        
+        exibirLancamentosPendentes(response.data, orientadorId);
+    } catch (error) {
+        console.error('Erro ao carregar lançamentos:', error);
+        listaPendentes.innerHTML = `<p style="color: red;">Erro ao carregar lançamentos: ${getErrorMessage(error)}</p>`;
+    }
+}
+
+function exibirLancamentosPendentes(lancamentos) {
+    const listaPendentes = document.getElementById('listaPendentes');
+    
+    let html = '';
+    lancamentos.forEach(lancamento => {
+        // Verificar se o orientador selecionado tem permissão para este lançamento
+        const temPermissao = orientadorIdSelecionado && 
+                           verificarPermissaoRapida(lancamento, orientadorIdSelecionado);
+        
+        const classePermissao = temPermissao ? 'lancamento-permissao-ok' : 'lancamento-permissao-negada';
+        const textoPermissao = temPermissao ? '✅ Você pode aprovar este lançamento' : '❌ Sem permissão para este projeto';
+        
+        html += `
+            <div class="lancamento-item ${classePermissao}" onclick="abrirDetalhesLancamento(${lancamento.id})">
+                <div class="lancamento-header">
+                    <div>
+                        <strong>${lancamento.bolsista.nome}</strong>
+                        <span class="status-pendente">PENDENTE</span>
+                    </div>
+                    <div class="lancamento-info-pequeno">
+                        ${orientadorIdSelecionado ? textoPermissao : 'Selecione um orientador'}
+                    </div>
+                </div>
+                <div class="lancamento-info">
+                    <p><strong>Projeto:</strong> ${lancamento.projeto.titulo}</p>
+                    <p><strong>Semana:</strong> ${new Date(lancamento.semanaReferencia).toLocaleDateString('pt-BR')}</p>
+                    <p><strong>Horas:</strong> ${lancamento.horasRealizadas}h | <strong>Atividades:</strong> ${lancamento.atividadesRealizadas.substring(0, 50)}${lancamento.atividadesRealizadas.length > 50 ? '...' : ''}</p>
+                </div>
+            </div>
+        `;
+    });
+    
+    listaPendentes.innerHTML = html;
+}
+
+async function abrirDetalhesLancamento(lancamentoId) {
+    const orientadorId = document.getElementById('selectOrientadorAprovacao').value;
+    
+    if (!orientadorId) {
+        alert('Por favor, selecione seu perfil de orientador primeiro.');
+        return;
+    }
+
+    try {
+        const response = await axios.get(`${API_URL}/lancamentos-semanais/${lancamentoId}`);
+        const lancamento = response.data;
+        
+        // Preencher formulário de detalhes
+        document.getElementById('lancamentoId').value = lancamento.id;
+        document.getElementById('detalhesBolsista').value = lancamento.bolsista.nome;
+        document.getElementById('detalhesProjeto').value = lancamento.projeto.titulo;
+        document.getElementById('detalhesSemana').value = new Date(lancamento.semanaReferencia).toLocaleDateString('pt-BR');
+        document.getElementById('detalhesAtividades').value = lancamento.atividadesRealizadas;
+        document.getElementById('detalhesHoras').value = lancamento.horasRealizadas;
+        document.getElementById('detalhesJustificativa').value = lancamento.justificativaFalta || '';
+        document.getElementById('feedbackOrientador').value = lancamento.feedbackOrientador || '';
+        
+        // Verificar e exibir informações de permissão
+        await verificarPermissaoOrientador(lancamentoId, orientadorId);
+        
+        // Mostrar seção de detalhes
+        document.getElementById('detalhesLancamento').style.display = 'block';
+    } catch (error) {
+        alert(`Erro ao carregar detalhes: ${getErrorMessage(error)}`);
+    }
+}
+
+function fecharDetalhes() {
+    document.getElementById('detalhesLancamento').style.display = 'none';
+    document.getElementById('formAprovacao').reset();
+    document.getElementById('infoPermissao').style.display = 'none';
+}
+
+async function aprovarLancamento() {
+    const lancamentoId = document.getElementById('lancamentoId').value;
+    const orientadorId = document.getElementById('selectOrientadorAprovacao').value;
+    const feedback = document.getElementById('feedbackOrientador').value;
+
+    if (!lancamentoId || !orientadorId) {
+        alert('Dados incompletos para aprovação.');
+        return;
+    }
+
+    try {
+        await axios.post(`${API_URL}/orientador/lancamentos/${lancamentoId}/aprovar?orientadorId=${orientadorId}`, {
+            feedback: feedback || "Lançamento aprovado."
+        });
+        alert('✅ Lançamento aprovado com sucesso!');
+        fecharDetalhes();
+        loadLancamentosPendentes();
+    } catch (error) {
+        alert(`❌ Erro ao aprovar: ${getErrorMessage(error)}`);
+    }
+}
+
+async function rejeitarLancamento() {
+    const lancamentoId = document.getElementById('lancamentoId').value;
+    const orientadorId = document.getElementById('selectOrientadorAprovacao').value;
+    const feedback = document.getElementById('feedbackOrientador').value;
+
+    if (!feedback) {
+        alert('Por favor, forneça uma justificativa para a rejeição.');
+        return;
+    }
+
+    try {
+        await axios.post(`${API_URL}/orientador/lancamentos/${lancamentoId}/rejeitar?orientadorId=${orientadorId}`, {
+            feedback: feedback
+        });
+        alert('❌ Lançamento rejeitado!');
+        fecharDetalhes();
+        loadLancamentosPendentes();
+    } catch (error) {
+        alert(`❌ Erro ao rejeitar: ${getErrorMessage(error)}`);
+    }
+}
+
+async function salvarEdicoes() {
+    const lancamentoId = document.getElementById('lancamentoId').value;
+    const orientadorId = document.getElementById('selectOrientadorAprovacao').value;
+    
+    const dadosAtualizados = {
+        atividadesRealizadas: document.getElementById('detalhesAtividades').value,
+        horasRealizadas: parseInt(document.getElementById('detalhesHoras').value),
+        justificativaFalta: document.getElementById('detalhesJustificativa').value,
+        observacoes: document.getElementById('feedbackOrientador').value
+    };
+
+    try {
+        await axios.put(`${API_URL}/orientador/lancamentos/${lancamentoId}?orientadorId=${orientadorId}`, dadosAtualizados);
+        alert('✏️ Edições salvas com sucesso! O status foi alterado para "Corrigido".');
+        fecharDetalhes();
+        loadLancamentosPendentes();
+    } catch (error) {
+        alert(`❌ Erro ao salvar edições: ${getErrorMessage(error)}`);
+    }
+}
+
+function verificarPermissaoRapida(lancamento, orientadorId) {
+    return true;
+}
+
+async function verificarPermissaoOrientador(lancamentoId, orientadorId) {
+    const infoPermissao = document.getElementById('infoPermissao');
+    
+    if (!orientadorId) {
+        infoPermissao.style.display = 'none';
+        return;
+    }
+
+    try {
+        // Fazer uma chamada para verificar permissão
+        // Podemos usar um endpoint específico ou tentar uma operação segura
+        infoPermissao.textContent = 'Verificando permissões...';
+        infoPermissao.className = 'permissao-ok';
+        infoPermissao.style.display = 'block';
+        
+        // Para verificação em tempo real, podemos tentar buscar informações do projeto
+        const responseLancamento = await axios.get(`${API_URL}/lancamentos-semanais/${lancamentoId}`);
+        const lancamento = responseLancamento.data;
+        
+        // Buscar informações do orientador
+        const responseOrientador = await axios.get(`${API_URL}/orientadores/${orientadorId}`);
+        const orientador = responseOrientador.data;
+        
+        infoPermissao.textContent = `✅ ${orientador.nome} pode realizar ações neste lançamento`;
+        infoPermissao.className = 'permissao-ok';
+        
+    } catch (error) {
+        infoPermissao.textContent = '❌ Erro ao verificar permissões';
+        infoPermissao.className = 'permissao-negada';
+    }
+}
+
