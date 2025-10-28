@@ -49,3 +49,5 @@ INSERT INTO lancamento_semanal (id, bolsista_id, projeto_id, semana_referencia, 
 -- Notifica o Orientador (1) sobre o Lançamento (1)
 INSERT INTO notificacao (id, destinatario_id, lancamento_id, tipo_notificacao, titulo, mensagem, data_envio, lida, url) VALUES
 (1, 1, 1, 'LANCAMENTO_PENDENTE', 'Novo Lançamento para Aprovação', 'A bolsista Ana Julia enviou um novo lançamento de horas (10h) para sua aprovação.', NOW(), false, '/api/v1/lancamentos/1');
+
+ALTER TABLE usuario ALTER COLUMN id RESTART WITH 10;
