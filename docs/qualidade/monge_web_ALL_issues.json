@@ -1,0 +1,3666 @@
+[
+    {
+        "key": "7943124b-c656-4962-a594-84b396cc6214",
+        "rule": "Web:S6844",
+        "severity": "MAJOR",
+        "component": "monge-web:index.html",
+        "project": "monge-web",
+        "line": 25,
+        "hash": "408677027bd44b2347f7a0a2ae76e852",
+        "textRange": {
+            "startLine": 25,
+            "endLine": 25,
+            "startOffset": 8,
+            "endOffset": 73
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Anchor tags should not be used as buttons.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "nath\u00e1lia",
+        "tags": [
+            "accessibility"
+        ],
+        "transitions": [
+            "confirm"
+        ],
+        "actions": [
+            "set_tags",
+            "comment",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-26T00:22:44+0000",
+        "updateDate": "2025-11-20T13:36:37+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "MEDIUM"
+            },
+            {
+                "softwareQuality": "RELIABILITY",
+                "severity": "LOW"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "a2c7c0b6-b18a-41ab-9e63-aaedf61aa530",
+        "rule": "Web:S6844",
+        "severity": "MAJOR",
+        "component": "monge-web:index.html",
+        "project": "monge-web",
+        "line": 55,
+        "hash": "570c33d0731342ee57221becebfdca80",
+        "textRange": {
+            "startLine": 55,
+            "endLine": 55,
+            "startOffset": 8,
+            "endOffset": 89
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Anchor tags should not be used as buttons.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "nath\u00e1lia",
+        "tags": [
+            "accessibility"
+        ],
+        "transitions": [
+            "confirm"
+        ],
+        "actions": [
+            "set_tags",
+            "comment",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-26T00:22:44+0000",
+        "updateDate": "2025-11-20T13:36:37+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "MEDIUM"
+            },
+            {
+                "softwareQuality": "RELIABILITY",
+                "severity": "LOW"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "5cb87a47-4f84-47cd-8d63-944326334c32",
+        "rule": "Web:S6844",
+        "severity": "MAJOR",
+        "component": "monge-web:index.html",
+        "project": "monge-web",
+        "line": 60,
+        "hash": "c4331b77879859d924212fa713ca1a60",
+        "textRange": {
+            "startLine": 60,
+            "endLine": 60,
+            "startOffset": 8,
+            "endOffset": 82
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Anchor tags should not be used as buttons.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "nath\u00e1lia",
+        "tags": [
+            "accessibility"
+        ],
+        "transitions": [
+            "confirm"
+        ],
+        "actions": [
+            "set_tags",
+            "comment",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-26T00:22:44+0000",
+        "updateDate": "2025-11-20T13:36:37+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "MEDIUM"
+            },
+            {
+                "softwareQuality": "RELIABILITY",
+                "severity": "LOW"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "ae03aeba-e252-4d24-865e-d81a382041c9",
+        "rule": "Web:S6844",
+        "severity": "MAJOR",
+        "component": "monge-web:index.html",
+        "project": "monge-web",
+        "line": 65,
+        "hash": "fe44cc8b16c273d533ee4cbdef9fd9ac",
+        "textRange": {
+            "startLine": 65,
+            "endLine": 65,
+            "startOffset": 8,
+            "endOffset": 85
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Anchor tags should not be used as buttons.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "nath\u00e1lia",
+        "tags": [
+            "accessibility"
+        ],
+        "transitions": [
+            "confirm"
+        ],
+        "actions": [
+            "set_tags",
+            "comment",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-26T00:22:44+0000",
+        "updateDate": "2025-11-20T13:36:37+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "MEDIUM"
+            },
+            {
+                "softwareQuality": "RELIABILITY",
+                "severity": "LOW"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "5f0abb52-a2af-4578-8d6f-17511aff041e",
+        "rule": "javascript:S3776",
+        "severity": "CRITICAL",
+        "component": "monge-web:js/app.js",
+        "project": "monge-web",
+        "line": 38,
+        "hash": "cb1109c724f5f1cd1a3a6ba389faf9a8",
+        "textRange": {
+            "startLine": 38,
+            "endLine": 38,
+            "startOffset": 9,
+            "endOffset": 20
+        },
+        "flows": [
+            {
+                "locations": [
+                    {
+                        "component": "monge-web:js/app.js",
+                        "textRange": {
+                            "startLine": 48,
+                            "endLine": 48,
+                            "startOffset": 4,
+                            "endOffset": 6
+                        },
+                        "msg": "+1",
+                        "msgFormattings": []
+                    }
+                ]
+            },
+            {
+                "locations": [
+                    {
+                        "component": "monge-web:js/app.js",
+                        "textRange": {
+                            "startLine": 50,
+                            "endLine": 50,
+                            "startOffset": 8,
+                            "endOffset": 10
+                        },
+                        "msg": "+2 (incl. 1 for nesting)",
+                        "msgFormattings": []
+                    }
+                ]
+            },
+            {
+                "locations": [
+                    {
+                        "component": "monge-web:js/app.js",
+                        "textRange": {
+                            "startLine": 52,
+                            "endLine": 52,
+                            "startOffset": 8,
+                            "endOffset": 10
+                        },
+                        "msg": "+2 (incl. 1 for nesting)",
+                        "msgFormattings": []
+                    }
+                ]
+            },
+            {
+                "locations": [
+                    {
+                        "component": "monge-web:js/app.js",
+                        "textRange": {
+                            "startLine": 55,
+                            "endLine": 55,
+                            "startOffset": 11,
+                            "endOffset": 13
+                        },
+                        "msg": "+1",
+                        "msgFormattings": []
+                    }
+                ]
+            },
+            {
+                "locations": [
+                    {
+                        "component": "monge-web:js/app.js",
+                        "textRange": {
+                            "startLine": 57,
+                            "endLine": 57,
+                            "startOffset": 8,
+                            "endOffset": 10
+                        },
+                        "msg": "+2 (incl. 1 for nesting)",
+                        "msgFormattings": []
+                    }
+                ]
+            },
+            {
+                "locations": [
+                    {
+                        "component": "monge-web:js/app.js",
+                        "textRange": {
+                            "startLine": 59,
+                            "endLine": 59,
+                            "startOffset": 8,
+                            "endOffset": 10
+                        },
+                        "msg": "+2 (incl. 1 for nesting)",
+                        "msgFormattings": []
+                    }
+                ]
+            },
+            {
+                "locations": [
+                    {
+                        "component": "monge-web:js/app.js",
+                        "textRange": {
+                            "startLine": 62,
+                            "endLine": 62,
+                            "startOffset": 11,
+                            "endOffset": 13
+                        },
+                        "msg": "+1",
+                        "msgFormattings": []
+                    }
+                ]
+            },
+            {
+                "locations": [
+                    {
+                        "component": "monge-web:js/app.js",
+                        "textRange": {
+                            "startLine": 64,
+                            "endLine": 64,
+                            "startOffset": 8,
+                            "endOffset": 10
+                        },
+                        "msg": "+2 (incl. 1 for nesting)",
+                        "msgFormattings": []
+                    }
+                ]
+            },
+            {
+                "locations": [
+                    {
+                        "component": "monge-web:js/app.js",
+                        "textRange": {
+                            "startLine": 66,
+                            "endLine": 66,
+                            "startOffset": 8,
+                            "endOffset": 10
+                        },
+                        "msg": "+2 (incl. 1 for nesting)",
+                        "msgFormattings": []
+                    }
+                ]
+            },
+            {
+                "locations": [
+                    {
+                        "component": "monge-web:js/app.js",
+                        "textRange": {
+                            "startLine": 69,
+                            "endLine": 69,
+                            "startOffset": 11,
+                            "endOffset": 13
+                        },
+                        "msg": "+1",
+                        "msgFormattings": []
+                    }
+                ]
+            },
+            {
+                "locations": [
+                    {
+                        "component": "monge-web:js/app.js",
+                        "textRange": {
+                            "startLine": 71,
+                            "endLine": 71,
+                            "startOffset": 8,
+                            "endOffset": 10
+                        },
+                        "msg": "+2 (incl. 1 for nesting)",
+                        "msgFormattings": []
+                    }
+                ]
+            },
+            {
+                "locations": [
+                    {
+                        "component": "monge-web:js/app.js",
+                        "textRange": {
+                            "startLine": 73,
+                            "endLine": 73,
+                            "startOffset": 8,
+                            "endOffset": 10
+                        },
+                        "msg": "+2 (incl. 1 for nesting)",
+                        "msgFormattings": []
+                    }
+                ]
+            },
+            {
+                "locations": [
+                    {
+                        "component": "monge-web:js/app.js",
+                        "textRange": {
+                            "startLine": 76,
+                            "endLine": 76,
+                            "startOffset": 11,
+                            "endOffset": 13
+                        },
+                        "msg": "+1",
+                        "msgFormattings": []
+                    }
+                ]
+            },
+            {
+                "locations": [
+                    {
+                        "component": "monge-web:js/app.js",
+                        "textRange": {
+                            "startLine": 78,
+                            "endLine": 78,
+                            "startOffset": 8,
+                            "endOffset": 10
+                        },
+                        "msg": "+2 (incl. 1 for nesting)",
+                        "msgFormattings": []
+                    }
+                ]
+            },
+            {
+                "locations": [
+                    {
+                        "component": "monge-web:js/app.js",
+                        "textRange": {
+                            "startLine": 80,
+                            "endLine": 80,
+                            "startOffset": 8,
+                            "endOffset": 10
+                        },
+                        "msg": "+2 (incl. 1 for nesting)",
+                        "msgFormattings": []
+                    }
+                ]
+            },
+            {
+                "locations": [
+                    {
+                        "component": "monge-web:js/app.js",
+                        "textRange": {
+                            "startLine": 87,
+                            "endLine": 87,
+                            "startOffset": 11,
+                            "endOffset": 13
+                        },
+                        "msg": "+1",
+                        "msgFormattings": []
+                    }
+                ]
+            },
+            {
+                "locations": [
+                    {
+                        "component": "monge-web:js/app.js",
+                        "textRange": {
+                            "startLine": 89,
+                            "endLine": 89,
+                            "startOffset": 8,
+                            "endOffset": 10
+                        },
+                        "msg": "+2 (incl. 1 for nesting)",
+                        "msgFormattings": []
+                    }
+                ]
+            },
+            {
+                "locations": [
+                    {
+                        "component": "monge-web:js/app.js",
+                        "textRange": {
+                            "startLine": 91,
+                            "endLine": 91,
+                            "startOffset": 8,
+                            "endOffset": 10
+                        },
+                        "msg": "+2 (incl. 1 for nesting)",
+                        "msgFormattings": []
+                    }
+                ]
+            },
+            {
+                "locations": [
+                    {
+                        "component": "monge-web:js/app.js",
+                        "textRange": {
+                            "startLine": 97,
+                            "endLine": 97,
+                            "startOffset": 11,
+                            "endOffset": 13
+                        },
+                        "msg": "+1",
+                        "msgFormattings": []
+                    }
+                ]
+            },
+            {
+                "locations": [
+                    {
+                        "component": "monge-web:js/app.js",
+                        "textRange": {
+                            "startLine": 99,
+                            "endLine": 99,
+                            "startOffset": 8,
+                            "endOffset": 10
+                        },
+                        "msg": "+2 (incl. 1 for nesting)",
+                        "msgFormattings": []
+                    }
+                ]
+            },
+            {
+                "locations": [
+                    {
+                        "component": "monge-web:js/app.js",
+                        "textRange": {
+                            "startLine": 101,
+                            "endLine": 101,
+                            "startOffset": 8,
+                            "endOffset": 10
+                        },
+                        "msg": "+2 (incl. 1 for nesting)",
+                        "msgFormattings": []
+                    }
+                ]
+            },
+            {
+                "locations": [
+                    {
+                        "component": "monge-web:js/app.js",
+                        "textRange": {
+                            "startLine": 110,
+                            "endLine": 110,
+                            "startOffset": 4,
+                            "endOffset": 6
+                        },
+                        "msg": "+1",
+                        "msgFormattings": []
+                    }
+                ]
+            },
+            {
+                "locations": [
+                    {
+                        "component": "monge-web:js/app.js",
+                        "textRange": {
+                            "startLine": 112,
+                            "endLine": 112,
+                            "startOffset": 8,
+                            "endOffset": 10
+                        },
+                        "msg": "+2 (incl. 1 for nesting)",
+                        "msgFormattings": []
+                    }
+                ]
+            }
+        ],
+        "status": "OPEN",
+        "message": "Refactor this function to reduce its Cognitive Complexity from 38 to the 15 allowed.",
+        "effort": "28min",
+        "debt": "28min",
+        "author": "nath\u00e1lia",
+        "tags": [
+            "brain-overload",
+            "architecture"
+        ],
+        "transitions": [
+            "confirm"
+        ],
+        "actions": [
+            "set_tags",
+            "comment",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-26T00:22:44+0000",
+        "updateDate": "2025-11-20T13:36:37+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "FOCUSED",
+        "cleanCodeAttributeCategory": "ADAPTABLE",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "HIGH"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "527a48dd-19c0-4d92-aecd-f2ca9729ba4c",
+        "rule": "javascript:S7764",
+        "severity": "MINOR",
+        "component": "monge-web:js/app.js",
+        "project": "monge-web",
+        "line": 102,
+        "hash": "010473d38f94cffbb6a3890dbf9eb415",
+        "textRange": {
+            "startLine": 102,
+            "endLine": 102,
+            "startOffset": 44,
+            "endOffset": 50
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Prefer `globalThis` over `window`.",
+        "effort": "2min",
+        "debt": "2min",
+        "author": "nath\u00e1lia",
+        "tags": [
+            "portability",
+            "es2020"
+        ],
+        "transitions": [
+            "confirm"
+        ],
+        "actions": [
+            "set_tags",
+            "comment",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-26T00:22:44+0000",
+        "updateDate": "2025-11-20T13:36:37+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": true,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "LOW"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "b3e4af26-7d95-46e0-afdb-6a4b056573a5",
+        "rule": "javascript:S7764",
+        "severity": "MINOR",
+        "component": "monge-web:js/app.js",
+        "project": "monge-web",
+        "line": 102,
+        "hash": "010473d38f94cffbb6a3890dbf9eb415",
+        "textRange": {
+            "startLine": 102,
+            "endLine": 102,
+            "startOffset": 8,
+            "endOffset": 14
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Prefer `globalThis` over `window`.",
+        "effort": "2min",
+        "debt": "2min",
+        "author": "nath\u00e1lia",
+        "tags": [
+            "portability",
+            "es2020"
+        ],
+        "transitions": [
+            "confirm"
+        ],
+        "actions": [
+            "set_tags",
+            "comment",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-26T00:22:44+0000",
+        "updateDate": "2025-11-20T13:36:37+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": true,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "LOW"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "b620e5d6-7621-4a35-9f4c-8f8aea181623",
+        "rule": "javascript:S7728",
+        "severity": "MINOR",
+        "component": "monge-web:js/app.js",
+        "project": "monge-web",
+        "line": 469,
+        "hash": "033e31cf351a17fcc4961dcc2823f0a0",
+        "textRange": {
+            "startLine": 469,
+            "endLine": 469,
+            "startOffset": 22,
+            "endOffset": 29
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Use `for\u2026of` instead of `.forEach(\u2026)`.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "nath\u00e1lia",
+        "tags": [
+            "readability",
+            "performance"
+        ],
+        "transitions": [
+            "confirm"
+        ],
+        "actions": [
+            "set_tags",
+            "comment",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-26T00:22:44+0000",
+        "updateDate": "2025-11-20T13:36:37+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "EFFICIENT",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "LOW"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "98cba9da-bd30-4baf-95e2-9703800fb8fe",
+        "rule": "javascript:S2486",
+        "severity": "MINOR",
+        "component": "monge-web:js/app.js",
+        "project": "monge-web",
+        "line": 483,
+        "hash": "161b8313784081f5965c2da97df48970",
+        "textRange": {
+            "startLine": 483,
+            "endLine": 485,
+            "startOffset": 6,
+            "endOffset": 5
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Handle this exception or don't catch it at all.",
+        "effort": "1h",
+        "debt": "1h",
+        "author": "nath\u00e1lia",
+        "tags": [
+            "cwe",
+            "error-handling",
+            "suspicious"
+        ],
+        "transitions": [
+            "confirm"
+        ],
+        "actions": [
+            "set_tags",
+            "comment",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-26T00:22:44+0000",
+        "updateDate": "2025-11-20T13:36:37+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CLEAR",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "LOW"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "695fd04b-d25a-453b-b585-d86b618cfcd9",
+        "rule": "javascript:S930",
+        "severity": "CRITICAL",
+        "component": "monge-web:js/app.js",
+        "project": "monge-web",
+        "line": 501,
+        "hash": "f84a693b8dd921b280945f975cb323d7",
+        "textRange": {
+            "startLine": 501,
+            "endLine": 501,
+            "startOffset": 8,
+            "endOffset": 34
+        },
+        "flows": [
+            {
+                "locations": [
+                    {
+                        "component": "monge-web:js/app.js",
+                        "textRange": {
+                            "startLine": 508,
+                            "endLine": 508,
+                            "startOffset": 36,
+                            "endOffset": 47
+                        },
+                        "msg": "Formal parameters",
+                        "msgFormattings": []
+                    }
+                ]
+            },
+            {
+                "locations": [
+                    {
+                        "component": "monge-web:js/app.js",
+                        "textRange": {
+                            "startLine": 501,
+                            "endLine": 501,
+                            "startOffset": 50,
+                            "endOffset": 62
+                        },
+                        "msg": "Extra argument",
+                        "msgFormattings": []
+                    }
+                ]
+            }
+        ],
+        "status": "OPEN",
+        "message": "This function expects 1 argument, but 2 were provided.",
+        "effort": "10min",
+        "debt": "10min",
+        "author": "nath\u00e1lia",
+        "tags": [
+            "cwe"
+        ],
+        "transitions": [
+            "confirm"
+        ],
+        "actions": [
+            "set_tags",
+            "comment",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-26T00:22:44+0000",
+        "updateDate": "2025-11-20T13:36:37+0000",
+        "type": "BUG",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "LOGICAL",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+            {
+                "softwareQuality": "RELIABILITY",
+                "severity": "HIGH"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "9c50ab42-3ba1-40b3-8959-ee544b3f599e",
+        "rule": "javascript:S7728",
+        "severity": "MINOR",
+        "component": "monge-web:js/app.js",
+        "project": "monge-web",
+        "line": 512,
+        "hash": "bc60fb194ff45578649ae3eb62230a3a",
+        "textRange": {
+            "startLine": 512,
+            "endLine": 512,
+            "startOffset": 16,
+            "endOffset": 23
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Use `for\u2026of` instead of `.forEach(\u2026)`.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "nath\u00e1lia",
+        "tags": [
+            "readability",
+            "performance"
+        ],
+        "transitions": [
+            "confirm"
+        ],
+        "actions": [
+            "set_tags",
+            "comment",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-26T00:22:44+0000",
+        "updateDate": "2025-11-20T13:36:37+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "EFFICIENT",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "LOW"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "5138bba7-7c76-452f-a6ea-d22f2d7ca7e2",
+        "rule": "javascript:S7773",
+        "severity": "MINOR",
+        "component": "monge-web:js/app.js",
+        "project": "monge-web",
+        "line": 631,
+        "hash": "4d519fb9a3ff57147e5240acd2dd8036",
+        "textRange": {
+            "startLine": 631,
+            "endLine": 631,
+            "startOffset": 25,
+            "endOffset": 33
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Prefer `Number.parseInt` over `parseInt`.",
+        "effort": "2min",
+        "debt": "2min",
+        "author": "nath\u00e1lia",
+        "tags": [
+            "convention",
+            "es2015"
+        ],
+        "transitions": [
+            "confirm"
+        ],
+        "actions": [
+            "set_tags",
+            "comment",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-26T00:22:44+0000",
+        "updateDate": "2025-11-20T13:36:37+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "LOW"
+            },
+            {
+                "softwareQuality": "RELIABILITY",
+                "severity": "MEDIUM"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "7976290c-63d8-4901-a707-651b0bf83e88",
+        "rule": "javascript:S1481",
+        "severity": "MINOR",
+        "component": "monge-web:js/app.js",
+        "project": "monge-web",
+        "line": 667,
+        "hash": "b1e29d02ca5f81cdbb77b432c4e8929b",
+        "textRange": {
+            "startLine": 667,
+            "endLine": 667,
+            "startOffset": 14,
+            "endOffset": 24
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Remove the declaration of the unused 'lancamento' variable.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "nath\u00e1lia",
+        "tags": [
+            "unused"
+        ],
+        "transitions": [
+            "confirm"
+        ],
+        "actions": [
+            "set_tags",
+            "comment",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-26T00:22:44+0000",
+        "updateDate": "2025-11-20T13:36:37+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CLEAR",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "LOW"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "80f14d76-043e-4f50-adfe-9e02c62cce10",
+        "rule": "javascript:S1854",
+        "severity": "MAJOR",
+        "component": "monge-web:js/app.js",
+        "project": "monge-web",
+        "line": 667,
+        "hash": "b1e29d02ca5f81cdbb77b432c4e8929b",
+        "textRange": {
+            "startLine": 667,
+            "endLine": 667,
+            "startOffset": 14,
+            "endOffset": 24
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Remove this useless assignment to variable \"lancamento\".",
+        "effort": "1min",
+        "debt": "1min",
+        "author": "nath\u00e1lia",
+        "tags": [
+            "cwe",
+            "unused"
+        ],
+        "transitions": [
+            "confirm"
+        ],
+        "actions": [
+            "set_tags",
+            "comment",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-26T00:22:44+0000",
+        "updateDate": "2025-11-20T13:36:37+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "LOGICAL",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "MEDIUM"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "873f3aad-7c54-4969-8abc-59c37e981aa4",
+        "rule": "javascript:S2486",
+        "severity": "MINOR",
+        "component": "monge-web:js/app.js",
+        "project": "monge-web",
+        "line": 676,
+        "hash": "161b8313784081f5965c2da97df48970",
+        "textRange": {
+            "startLine": 676,
+            "endLine": 679,
+            "startOffset": 6,
+            "endOffset": 5
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Handle this exception or don't catch it at all.",
+        "effort": "1h",
+        "debt": "1h",
+        "author": "nath\u00e1lia",
+        "tags": [
+            "cwe",
+            "error-handling",
+            "suspicious"
+        ],
+        "transitions": [
+            "confirm"
+        ],
+        "actions": [
+            "set_tags",
+            "comment",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-26T00:22:44+0000",
+        "updateDate": "2025-11-20T13:36:37+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CLEAR",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "LOW"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "019c924b-9797-4939-b66e-4325b0e1f25c",
+        "rule": "javascript:S7764",
+        "severity": "MINOR",
+        "component": "monge-web:js/app.js",
+        "project": "monge-web",
+        "line": 92,
+        "hash": "47d67952e10794720e80a1e66ba5b617",
+        "textRange": {
+            "startLine": 92,
+            "endLine": 92,
+            "startOffset": 44,
+            "endOffset": 50
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Prefer `globalThis` over `window`.",
+        "effort": "2min",
+        "debt": "2min",
+        "author": "nath\u00e1lia",
+        "tags": [
+            "portability",
+            "es2020"
+        ],
+        "transitions": [
+            "confirm"
+        ],
+        "actions": [
+            "set_tags",
+            "comment",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-25T16:49:53+0000",
+        "updateDate": "2025-11-20T13:36:37+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": true,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "LOW"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "c1918734-6769-41bc-8562-cc0e02168bcb",
+        "rule": "javascript:S7764",
+        "severity": "MINOR",
+        "component": "monge-web:js/app.js",
+        "project": "monge-web",
+        "line": 92,
+        "hash": "47d67952e10794720e80a1e66ba5b617",
+        "textRange": {
+            "startLine": 92,
+            "endLine": 92,
+            "startOffset": 8,
+            "endOffset": 14
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Prefer `globalThis` over `window`.",
+        "effort": "2min",
+        "debt": "2min",
+        "author": "nath\u00e1lia",
+        "tags": [
+            "portability",
+            "es2020"
+        ],
+        "transitions": [
+            "confirm"
+        ],
+        "actions": [
+            "set_tags",
+            "comment",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-25T16:49:53+0000",
+        "updateDate": "2025-11-20T13:36:37+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": true,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "LOW"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "468d6c28-b6d7-47cd-b5ef-08bfd379a858",
+        "rule": "javascript:S7728",
+        "severity": "MINOR",
+        "component": "monge-web:js/app.js",
+        "project": "monge-web",
+        "line": 422,
+        "hash": "4eab503e3ed5ec30dba5ee2e01c37243",
+        "textRange": {
+            "startLine": 422,
+            "endLine": 422,
+            "startOffset": 13,
+            "endOffset": 20
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Use `for\u2026of` instead of `.forEach(\u2026)`.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "nath\u00e1lia",
+        "tags": [
+            "readability",
+            "performance"
+        ],
+        "transitions": [
+            "confirm"
+        ],
+        "actions": [
+            "set_tags",
+            "comment",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-25T16:49:53+0000",
+        "updateDate": "2025-11-20T13:36:37+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "EFFICIENT",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "LOW"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "618b8099-4fa8-4a91-ba3d-b20c077dc2be",
+        "rule": "javascript:S7728",
+        "severity": "MINOR",
+        "component": "monge-web:js/app.js",
+        "project": "monge-web",
+        "line": 434,
+        "hash": "4918af58c81793dd4872978a80d20bab",
+        "textRange": {
+            "startLine": 434,
+            "endLine": 434,
+            "startOffset": 13,
+            "endOffset": 20
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Use `for\u2026of` instead of `.forEach(\u2026)`.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "nath\u00e1lia",
+        "tags": [
+            "readability",
+            "performance"
+        ],
+        "transitions": [
+            "confirm"
+        ],
+        "actions": [
+            "set_tags",
+            "comment",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-25T16:49:53+0000",
+        "updateDate": "2025-11-20T13:36:37+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "EFFICIENT",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "LOW"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "62bbd01f-4272-4197-988f-ca76c8b11d4f",
+        "rule": "javascript:S7773",
+        "severity": "MINOR",
+        "component": "monge-web:js/app.js",
+        "project": "monge-web",
+        "line": 452,
+        "hash": "36069bf84ed5982dab773e41d44eb481",
+        "textRange": {
+            "startLine": 452,
+            "endLine": 452,
+            "startOffset": 25,
+            "endOffset": 33
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Prefer `Number.parseInt` over `parseInt`.",
+        "effort": "2min",
+        "debt": "2min",
+        "author": "nath\u00e1lia",
+        "tags": [
+            "convention",
+            "es2015"
+        ],
+        "transitions": [
+            "confirm"
+        ],
+        "actions": [
+            "set_tags",
+            "comment",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-25T16:49:53+0000",
+        "updateDate": "2025-11-20T13:36:37+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "LOW"
+            },
+            {
+                "softwareQuality": "RELIABILITY",
+                "severity": "MEDIUM"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "6d78656b-b200-426a-b391-f1a4c52f7fab",
+        "rule": "Web:S6848",
+        "severity": "MAJOR",
+        "component": "monge-web:index.html",
+        "project": "monge-web",
+        "line": 89,
+        "hash": "f6210e855d540e77a576266071687056",
+        "textRange": {
+            "startLine": 89,
+            "endLine": 89,
+            "startOffset": 0,
+            "endOffset": 86
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Avoid non-native interactive elements. If using native HTML is not possible, add an appropriate role and support for tabbing, mouse, keyboard, and touch inputs to an interactive content element.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "pedrogurski4759@gmail.com",
+        "tags": [
+            "accessibility"
+        ],
+        "transitions": [
+            "confirm"
+        ],
+        "actions": [
+            "set_tags",
+            "comment",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-24T15:19:37+0000",
+        "updateDate": "2025-11-20T13:36:37+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "LOW"
+            },
+            {
+                "softwareQuality": "RELIABILITY",
+                "severity": "MEDIUM"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "af0edd25-2601-4dba-ab39-72a01d5a55ff",
+        "rule": "Web:MouseEventWithoutKeyboardEquivalentCheck",
+        "severity": "MINOR",
+        "component": "monge-web:index.html",
+        "project": "monge-web",
+        "line": 89,
+        "hash": "f6210e855d540e77a576266071687056",
+        "textRange": {
+            "startLine": 89,
+            "endLine": 89,
+            "startOffset": 20,
+            "endOffset": 86
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Add a 'onKeyPress|onKeyDown|onKeyUp' attribute to this <div> tag.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "pedrogurski4759@gmail.com",
+        "tags": [
+            "accessibility"
+        ],
+        "transitions": [
+            "confirm"
+        ],
+        "actions": [
+            "set_tags",
+            "comment",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-24T15:19:37+0000",
+        "updateDate": "2025-11-20T13:36:37+0000",
+        "type": "BUG",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "COMPLETE",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+            {
+                "softwareQuality": "RELIABILITY",
+                "severity": "LOW"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "268dadd7-5736-4bc1-86ea-8c7ef7cd598c",
+        "rule": "Web:MouseEventWithoutKeyboardEquivalentCheck",
+        "severity": "MINOR",
+        "component": "monge-web:index.html",
+        "project": "monge-web",
+        "line": 95,
+        "hash": "c946cbf6e13bdd294bd11eacb4cc214c",
+        "textRange": {
+            "startLine": 95,
+            "endLine": 95,
+            "startOffset": 20,
+            "endOffset": 88
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Add a 'onKeyPress|onKeyDown|onKeyUp' attribute to this <div> tag.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "pedrogurski4759@gmail.com",
+        "tags": [
+            "accessibility"
+        ],
+        "transitions": [
+            "confirm"
+        ],
+        "actions": [
+            "set_tags",
+            "comment",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-24T15:19:37+0000",
+        "updateDate": "2025-11-20T13:36:37+0000",
+        "type": "BUG",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "COMPLETE",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+            {
+                "softwareQuality": "RELIABILITY",
+                "severity": "LOW"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "6dfba94d-8cf7-4583-8d7e-477897ba8e43",
+        "rule": "Web:S6848",
+        "severity": "MAJOR",
+        "component": "monge-web:index.html",
+        "project": "monge-web",
+        "line": 95,
+        "hash": "c946cbf6e13bdd294bd11eacb4cc214c",
+        "textRange": {
+            "startLine": 95,
+            "endLine": 95,
+            "startOffset": 0,
+            "endOffset": 88
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Avoid non-native interactive elements. If using native HTML is not possible, add an appropriate role and support for tabbing, mouse, keyboard, and touch inputs to an interactive content element.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "pedrogurski4759@gmail.com",
+        "tags": [
+            "accessibility"
+        ],
+        "transitions": [
+            "confirm"
+        ],
+        "actions": [
+            "set_tags",
+            "comment",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-24T15:19:37+0000",
+        "updateDate": "2025-11-20T13:36:37+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "LOW"
+            },
+            {
+                "softwareQuality": "RELIABILITY",
+                "severity": "MEDIUM"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "65c27d17-3deb-44b0-a7b0-4e6f2915bfc3",
+        "rule": "Web:S6848",
+        "severity": "MAJOR",
+        "component": "monge-web:index.html",
+        "project": "monge-web",
+        "line": 101,
+        "hash": "9c1c2966b0d951df236c2d55fb896bcb",
+        "textRange": {
+            "startLine": 101,
+            "endLine": 101,
+            "startOffset": 0,
+            "endOffset": 95
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Avoid non-native interactive elements. If using native HTML is not possible, add an appropriate role and support for tabbing, mouse, keyboard, and touch inputs to an interactive content element.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "pedrogurski4759@gmail.com",
+        "tags": [
+            "accessibility"
+        ],
+        "transitions": [
+            "confirm"
+        ],
+        "actions": [
+            "set_tags",
+            "comment",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-24T15:19:37+0000",
+        "updateDate": "2025-11-20T13:36:37+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "LOW"
+            },
+            {
+                "softwareQuality": "RELIABILITY",
+                "severity": "MEDIUM"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "dc09605f-ed17-47e0-aced-5aedd87306f6",
+        "rule": "Web:MouseEventWithoutKeyboardEquivalentCheck",
+        "severity": "MINOR",
+        "component": "monge-web:index.html",
+        "project": "monge-web",
+        "line": 101,
+        "hash": "9c1c2966b0d951df236c2d55fb896bcb",
+        "textRange": {
+            "startLine": 101,
+            "endLine": 101,
+            "startOffset": 20,
+            "endOffset": 95
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Add a 'onKeyPress|onKeyDown|onKeyUp' attribute to this <div> tag.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "pedrogurski4759@gmail.com",
+        "tags": [
+            "accessibility"
+        ],
+        "transitions": [
+            "confirm"
+        ],
+        "actions": [
+            "set_tags",
+            "comment",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-24T15:19:37+0000",
+        "updateDate": "2025-11-20T13:36:37+0000",
+        "type": "BUG",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "COMPLETE",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+            {
+                "softwareQuality": "RELIABILITY",
+                "severity": "LOW"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "d3341170-1ffa-4233-bfed-f798864ccd32",
+        "rule": "Web:MouseEventWithoutKeyboardEquivalentCheck",
+        "severity": "MINOR",
+        "component": "monge-web:index.html",
+        "project": "monge-web",
+        "line": 107,
+        "hash": "cf0dc63535b526205a4b8c9bbd72e5a0",
+        "textRange": {
+            "startLine": 107,
+            "endLine": 107,
+            "startOffset": 20,
+            "endOffset": 94
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Add a 'onKeyPress|onKeyDown|onKeyUp' attribute to this <div> tag.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "pedrogurski4759@gmail.com",
+        "tags": [
+            "accessibility"
+        ],
+        "transitions": [
+            "confirm"
+        ],
+        "actions": [
+            "set_tags",
+            "comment",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-24T15:19:37+0000",
+        "updateDate": "2025-11-20T13:36:37+0000",
+        "type": "BUG",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "COMPLETE",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+            {
+                "softwareQuality": "RELIABILITY",
+                "severity": "LOW"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "e5f4ce2e-f3ad-4ed7-8d44-96361174a824",
+        "rule": "Web:S6848",
+        "severity": "MAJOR",
+        "component": "monge-web:index.html",
+        "project": "monge-web",
+        "line": 107,
+        "hash": "cf0dc63535b526205a4b8c9bbd72e5a0",
+        "textRange": {
+            "startLine": 107,
+            "endLine": 107,
+            "startOffset": 0,
+            "endOffset": 94
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Avoid non-native interactive elements. If using native HTML is not possible, add an appropriate role and support for tabbing, mouse, keyboard, and touch inputs to an interactive content element.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "pedrogurski4759@gmail.com",
+        "tags": [
+            "accessibility"
+        ],
+        "transitions": [
+            "confirm"
+        ],
+        "actions": [
+            "set_tags",
+            "comment",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-24T15:19:37+0000",
+        "updateDate": "2025-11-20T13:36:37+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "LOW"
+            },
+            {
+                "softwareQuality": "RELIABILITY",
+                "severity": "MEDIUM"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "2af5b68f-a594-4e53-ac47-8c7d0284b2b4",
+        "rule": "javascript:S7773",
+        "severity": "MINOR",
+        "component": "monge-web:js/app.js",
+        "project": "monge-web",
+        "line": 229,
+        "hash": "6437b1a9ca6f58be8c7c4083fe1d01a6",
+        "textRange": {
+            "startLine": 229,
+            "endLine": 229,
+            "startOffset": 18,
+            "endOffset": 26
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Prefer `Number.parseInt` over `parseInt`.",
+        "effort": "2min",
+        "debt": "2min",
+        "author": "pedrogurski4759@gmail.com",
+        "tags": [
+            "convention",
+            "es2015"
+        ],
+        "transitions": [
+            "confirm"
+        ],
+        "actions": [
+            "set_tags",
+            "comment",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-24T14:32:43+0000",
+        "updateDate": "2025-11-20T13:36:37+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "LOW"
+            },
+            {
+                "softwareQuality": "RELIABILITY",
+                "severity": "MEDIUM"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "26477ea2-c47b-41e1-ab22-3bdeabaeccc9",
+        "rule": "javascript:S7764",
+        "severity": "MINOR",
+        "component": "monge-web:js/app.js",
+        "project": "monge-web",
+        "line": 81,
+        "hash": "6cb2db9578dc7b0dbe1affc8c0c371e1",
+        "textRange": {
+            "startLine": 81,
+            "endLine": 81,
+            "startOffset": 44,
+            "endOffset": 50
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Prefer `globalThis` over `window`.",
+        "effort": "2min",
+        "debt": "2min",
+        "author": "pedrogurski4759@gmail.com",
+        "tags": [
+            "portability",
+            "es2020"
+        ],
+        "transitions": [
+            "confirm"
+        ],
+        "actions": [
+            "set_tags",
+            "comment",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-23T21:23:12+0000",
+        "updateDate": "2025-11-20T13:36:37+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": true,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "LOW"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "e136d3f6-fc87-4ba9-9567-419d15c8beca",
+        "rule": "javascript:S7764",
+        "severity": "MINOR",
+        "component": "monge-web:js/app.js",
+        "project": "monge-web",
+        "line": 81,
+        "hash": "6cb2db9578dc7b0dbe1affc8c0c371e1",
+        "textRange": {
+            "startLine": 81,
+            "endLine": 81,
+            "startOffset": 8,
+            "endOffset": 14
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Prefer `globalThis` over `window`.",
+        "effort": "2min",
+        "debt": "2min",
+        "author": "pedrogurski4759@gmail.com",
+        "tags": [
+            "portability",
+            "es2020"
+        ],
+        "transitions": [
+            "confirm"
+        ],
+        "actions": [
+            "set_tags",
+            "comment",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-23T21:23:12+0000",
+        "updateDate": "2025-11-20T13:36:37+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": true,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "LOW"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "d0b5f857-4efb-456b-8e9b-64ebd0d59a55",
+        "rule": "javascript:S7728",
+        "severity": "MINOR",
+        "component": "monge-web:js/app.js",
+        "project": "monge-web",
+        "line": 164,
+        "hash": "34ab060ae732578efc111f2f5f0a524d",
+        "textRange": {
+            "startLine": 164,
+            "endLine": 164,
+            "startOffset": 18,
+            "endOffset": 25
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Use `for\u2026of` instead of `.forEach(\u2026)`.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "pedrogurski4759@gmail.com",
+        "tags": [
+            "readability",
+            "performance"
+        ],
+        "transitions": [
+            "confirm"
+        ],
+        "actions": [
+            "set_tags",
+            "comment",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-23T21:23:12+0000",
+        "updateDate": "2025-11-20T13:36:37+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "EFFICIENT",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "LOW"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "3dfd3660-c590-47d1-9fa0-6e86fabb901f",
+        "rule": "javascript:S2486",
+        "severity": "MINOR",
+        "component": "monge-web:js/app.js",
+        "project": "monge-web",
+        "line": 170,
+        "hash": "161b8313784081f5965c2da97df48970",
+        "textRange": {
+            "startLine": 170,
+            "endLine": 172,
+            "startOffset": 4,
+            "endOffset": 3
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Handle this exception or don't catch it at all.",
+        "effort": "1h",
+        "debt": "1h",
+        "author": "pedrogurski4759@gmail.com",
+        "tags": [
+            "cwe",
+            "error-handling",
+            "suspicious"
+        ],
+        "transitions": [
+            "confirm"
+        ],
+        "actions": [
+            "set_tags",
+            "comment",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-23T21:23:12+0000",
+        "updateDate": "2025-11-20T13:36:37+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CLEAR",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "LOW"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "719f40e3-5630-4d66-bd85-269df06c06d3",
+        "rule": "javascript:S7728",
+        "severity": "MINOR",
+        "component": "monge-web:js/app.js",
+        "project": "monge-web",
+        "line": 182,
+        "hash": "1649ff36d6f74868b3bd3608b2748985",
+        "textRange": {
+            "startLine": 182,
+            "endLine": 182,
+            "startOffset": 18,
+            "endOffset": 25
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Use `for\u2026of` instead of `.forEach(\u2026)`.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "pedrogurski4759@gmail.com",
+        "tags": [
+            "readability",
+            "performance"
+        ],
+        "transitions": [
+            "confirm"
+        ],
+        "actions": [
+            "set_tags",
+            "comment",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-23T21:23:12+0000",
+        "updateDate": "2025-11-20T13:36:37+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "EFFICIENT",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "LOW"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "cae6ad94-b8fd-4e1c-91b5-286315355fa3",
+        "rule": "javascript:S2486",
+        "severity": "MINOR",
+        "component": "monge-web:js/app.js",
+        "project": "monge-web",
+        "line": 188,
+        "hash": "161b8313784081f5965c2da97df48970",
+        "textRange": {
+            "startLine": 188,
+            "endLine": 190,
+            "startOffset": 4,
+            "endOffset": 3
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Handle this exception or don't catch it at all.",
+        "effort": "1h",
+        "debt": "1h",
+        "author": "pedrogurski4759@gmail.com",
+        "tags": [
+            "cwe",
+            "error-handling",
+            "suspicious"
+        ],
+        "transitions": [
+            "confirm"
+        ],
+        "actions": [
+            "set_tags",
+            "comment",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-23T21:23:12+0000",
+        "updateDate": "2025-11-20T13:36:37+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CLEAR",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "LOW"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "5651e9fa-1540-466f-bf00-36092a34cf8f",
+        "rule": "javascript:S7728",
+        "severity": "MINOR",
+        "component": "monge-web:js/app.js",
+        "project": "monge-web",
+        "line": 200,
+        "hash": "033e31cf351a17fcc4961dcc2823f0a0",
+        "textRange": {
+            "startLine": 200,
+            "endLine": 200,
+            "startOffset": 18,
+            "endOffset": 25
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Use `for\u2026of` instead of `.forEach(\u2026)`.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "pedrogurski4759@gmail.com",
+        "tags": [
+            "readability",
+            "performance"
+        ],
+        "transitions": [
+            "confirm"
+        ],
+        "actions": [
+            "set_tags",
+            "comment",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-23T21:23:12+0000",
+        "updateDate": "2025-11-20T13:36:37+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "EFFICIENT",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "LOW"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "b33092dd-9b40-4c75-9649-fc934cccf239",
+        "rule": "javascript:S2486",
+        "severity": "MINOR",
+        "component": "monge-web:js/app.js",
+        "project": "monge-web",
+        "line": 206,
+        "hash": "161b8313784081f5965c2da97df48970",
+        "textRange": {
+            "startLine": 206,
+            "endLine": 208,
+            "startOffset": 4,
+            "endOffset": 3
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Handle this exception or don't catch it at all.",
+        "effort": "1h",
+        "debt": "1h",
+        "author": "pedrogurski4759@gmail.com",
+        "tags": [
+            "cwe",
+            "error-handling",
+            "suspicious"
+        ],
+        "transitions": [
+            "confirm"
+        ],
+        "actions": [
+            "set_tags",
+            "comment",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-23T21:23:12+0000",
+        "updateDate": "2025-11-20T13:36:37+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CLEAR",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "LOW"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "dc7a5f72-d9d6-450a-a7f7-3ee54fcc272d",
+        "rule": "javascript:S7773",
+        "severity": "MINOR",
+        "component": "monge-web:js/app.js",
+        "project": "monge-web",
+        "line": 227,
+        "hash": "8b27743c429b53a139124f4fa9dd3a9f",
+        "textRange": {
+            "startLine": 227,
+            "endLine": 227,
+            "startOffset": 16,
+            "endOffset": 24
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Prefer `Number.parseInt` over `parseInt`.",
+        "effort": "2min",
+        "debt": "2min",
+        "author": "pedrogurski4759@gmail.com",
+        "tags": [
+            "convention",
+            "es2015"
+        ],
+        "transitions": [
+            "confirm"
+        ],
+        "actions": [
+            "set_tags",
+            "comment",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-23T21:23:12+0000",
+        "updateDate": "2025-11-20T13:36:37+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "LOW"
+            },
+            {
+                "softwareQuality": "RELIABILITY",
+                "severity": "MEDIUM"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "74a8c730-107c-42f9-9080-4d0d548bb625",
+        "rule": "javascript:S7773",
+        "severity": "MINOR",
+        "component": "monge-web:js/app.js",
+        "project": "monge-web",
+        "line": 228,
+        "hash": "3af42f22cfe101f7977cc0151e192472",
+        "textRange": {
+            "startLine": 228,
+            "endLine": 228,
+            "startOffset": 15,
+            "endOffset": 23
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Prefer `Number.parseInt` over `parseInt`.",
+        "effort": "2min",
+        "debt": "2min",
+        "author": "pedrogurski4759@gmail.com",
+        "tags": [
+            "convention",
+            "es2015"
+        ],
+        "transitions": [
+            "confirm"
+        ],
+        "actions": [
+            "set_tags",
+            "comment",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-23T21:23:12+0000",
+        "updateDate": "2025-11-20T13:36:37+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "LOW"
+            },
+            {
+                "softwareQuality": "RELIABILITY",
+                "severity": "MEDIUM"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "34608017-31ce-43a0-9ecb-e6fea865615a",
+        "rule": "javascript:S1481",
+        "severity": "MINOR",
+        "component": "monge-web:js/app.js",
+        "project": "monge-web",
+        "line": 236,
+        "hash": "d7f04eae5645e2adc262f1c5b70d0e92",
+        "textRange": {
+            "startLine": 236,
+            "endLine": 236,
+            "startOffset": 10,
+            "endOffset": 18
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Remove the declaration of the unused 'response' variable.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "pedrogurski4759@gmail.com",
+        "tags": [
+            "unused"
+        ],
+        "transitions": [
+            "confirm"
+        ],
+        "actions": [
+            "set_tags",
+            "comment",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-23T21:23:12+0000",
+        "updateDate": "2025-11-20T13:36:37+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CLEAR",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "LOW"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "fa61a256-b944-4c0c-8e0c-1cd93f9475a4",
+        "rule": "javascript:S1854",
+        "severity": "MAJOR",
+        "component": "monge-web:js/app.js",
+        "project": "monge-web",
+        "line": 236,
+        "hash": "d7f04eae5645e2adc262f1c5b70d0e92",
+        "textRange": {
+            "startLine": 236,
+            "endLine": 236,
+            "startOffset": 10,
+            "endOffset": 18
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Remove this useless assignment to variable \"response\".",
+        "effort": "1min",
+        "debt": "1min",
+        "author": "pedrogurski4759@gmail.com",
+        "tags": [
+            "cwe",
+            "unused"
+        ],
+        "transitions": [
+            "confirm"
+        ],
+        "actions": [
+            "set_tags",
+            "comment",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-23T21:23:12+0000",
+        "updateDate": "2025-11-20T13:36:37+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "LOGICAL",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "MEDIUM"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "fe2bd67a-db20-4c8e-bc49-96af25089698",
+        "rule": "Web:S6844",
+        "severity": "MAJOR",
+        "component": "monge-web:index.html",
+        "project": "monge-web",
+        "line": 48,
+        "hash": "7fc6f5ba2649d5a20a3a1c621a8d5822",
+        "textRange": {
+            "startLine": 48,
+            "endLine": 48,
+            "startOffset": 16,
+            "endOffset": 101
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Anchor tags should not be used as buttons.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "pedrogurski4759@gmail.com",
+        "tags": [
+            "accessibility"
+        ],
+        "transitions": [
+            "confirm"
+        ],
+        "actions": [
+            "set_tags",
+            "comment",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-23T14:49:56+0000",
+        "updateDate": "2025-11-20T13:36:37+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "MEDIUM"
+            },
+            {
+                "softwareQuality": "RELIABILITY",
+                "severity": "LOW"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "33d2dffb-332f-4c25-ae13-7313c0cfefe6",
+        "rule": "javascript:S7764",
+        "severity": "MINOR",
+        "component": "monge-web:js/app.js",
+        "project": "monge-web",
+        "line": 74,
+        "hash": "a73bb568e835a332cd8866c3565da39a",
+        "textRange": {
+            "startLine": 74,
+            "endLine": 74,
+            "startOffset": 8,
+            "endOffset": 14
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Prefer `globalThis` over `window`.",
+        "effort": "2min",
+        "debt": "2min",
+        "author": "pedrogurski4759@gmail.com",
+        "tags": [
+            "portability",
+            "es2020"
+        ],
+        "transitions": [
+            "confirm"
+        ],
+        "actions": [
+            "set_tags",
+            "comment",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-23T14:49:56+0000",
+        "updateDate": "2025-11-20T13:36:37+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": true,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "LOW"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "c8472435-5290-4aa2-be3d-6ebf5547b6bf",
+        "rule": "javascript:S7764",
+        "severity": "MINOR",
+        "component": "monge-web:js/app.js",
+        "project": "monge-web",
+        "line": 74,
+        "hash": "a73bb568e835a332cd8866c3565da39a",
+        "textRange": {
+            "startLine": 74,
+            "endLine": 74,
+            "startOffset": 44,
+            "endOffset": 50
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Prefer `globalThis` over `window`.",
+        "effort": "2min",
+        "debt": "2min",
+        "author": "pedrogurski4759@gmail.com",
+        "tags": [
+            "portability",
+            "es2020"
+        ],
+        "transitions": [
+            "confirm"
+        ],
+        "actions": [
+            "set_tags",
+            "comment",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-23T14:49:56+0000",
+        "updateDate": "2025-11-20T13:36:37+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": true,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "LOW"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "db7a5e6b-6b1a-485f-ad6d-47ab15ea13a7",
+        "rule": "Web:S6844",
+        "severity": "MAJOR",
+        "component": "monge-web:index.html",
+        "project": "monge-web",
+        "line": 31,
+        "hash": "124840e272df61faffb064cdc5c911f3",
+        "textRange": {
+            "startLine": 31,
+            "endLine": 31,
+            "startOffset": 12,
+            "endOffset": 73
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Anchor tags should not be used as buttons.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "pedrogurski4759@gmail.com",
+        "tags": [
+            "accessibility"
+        ],
+        "transitions": [
+            "confirm"
+        ],
+        "actions": [
+            "set_tags",
+            "comment",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-23T14:04:53+0000",
+        "updateDate": "2025-11-20T13:36:37+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "MEDIUM"
+            },
+            {
+                "softwareQuality": "RELIABILITY",
+                "severity": "LOW"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "3a90aaea-e133-458a-8196-be26ebbc2c02",
+        "rule": "Web:S6844",
+        "severity": "MAJOR",
+        "component": "monge-web:index.html",
+        "project": "monge-web",
+        "line": 40,
+        "hash": "ba3ff81d552cd15c5ae97054225c02c6",
+        "textRange": {
+            "startLine": 40,
+            "endLine": 40,
+            "startOffset": 16,
+            "endOffset": 92
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Anchor tags should not be used as buttons.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "pedrogurski4759@gmail.com",
+        "tags": [
+            "accessibility"
+        ],
+        "transitions": [
+            "confirm"
+        ],
+        "actions": [
+            "set_tags",
+            "comment",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-23T14:04:53+0000",
+        "updateDate": "2025-11-20T13:36:37+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "MEDIUM"
+            },
+            {
+                "softwareQuality": "RELIABILITY",
+                "severity": "LOW"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "ba45c962-bcb4-4f96-b1ae-e80b95353b50",
+        "rule": "Web:S6844",
+        "severity": "MAJOR",
+        "component": "monge-web:index.html",
+        "project": "monge-web",
+        "line": 44,
+        "hash": "2196a8be23665bd320c3c53f0bf79512",
+        "textRange": {
+            "startLine": 44,
+            "endLine": 44,
+            "startOffset": 16,
+            "endOffset": 94
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Anchor tags should not be used as buttons.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "pedrogurski4759@gmail.com",
+        "tags": [
+            "accessibility"
+        ],
+        "transitions": [
+            "confirm"
+        ],
+        "actions": [
+            "set_tags",
+            "comment",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-23T14:04:53+0000",
+        "updateDate": "2025-11-20T13:36:37+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "MEDIUM"
+            },
+            {
+                "softwareQuality": "RELIABILITY",
+                "severity": "LOW"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "658911b0-f4ab-4f5f-8ffd-6fcce6d93556",
+        "rule": "javascript:S7728",
+        "severity": "MINOR",
+        "component": "monge-web:js/app.js",
+        "project": "monge-web",
+        "line": 41,
+        "hash": "5c9be853d0524f330a761ee2c554ac3f",
+        "textRange": {
+            "startLine": 41,
+            "endLine": 41,
+            "startOffset": 9,
+            "endOffset": 16
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Use `for\u2026of` instead of `.forEach(\u2026)`.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "pedrogurski4759@gmail.com",
+        "tags": [
+            "readability",
+            "performance"
+        ],
+        "transitions": [
+            "confirm"
+        ],
+        "actions": [
+            "set_tags",
+            "comment",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-23T14:04:53+0000",
+        "updateDate": "2025-11-20T13:36:37+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "EFFICIENT",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "LOW"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "459f0018-2371-4c39-b297-eca6d96aa86f",
+        "rule": "javascript:S7728",
+        "severity": "MINOR",
+        "component": "monge-web:js/app.js",
+        "project": "monge-web",
+        "line": 45,
+        "hash": "cfe83d0403c307efa5830ceddd70c205",
+        "textRange": {
+            "startLine": 45,
+            "endLine": 45,
+            "startOffset": 9,
+            "endOffset": 16
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Use `for\u2026of` instead of `.forEach(\u2026)`.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "pedrogurski4759@gmail.com",
+        "tags": [
+            "readability",
+            "performance"
+        ],
+        "transitions": [
+            "confirm"
+        ],
+        "actions": [
+            "set_tags",
+            "comment",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-23T14:04:53+0000",
+        "updateDate": "2025-11-20T13:36:37+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "EFFICIENT",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "LOW"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "2df6c1d2-e268-4bc3-876d-b8cac95de7ff",
+        "rule": "javascript:S7764",
+        "severity": "MINOR",
+        "component": "monge-web:js/app.js",
+        "project": "monge-web",
+        "line": 53,
+        "hash": "f762418de155d5ccdac88da86e557ec4",
+        "textRange": {
+            "startLine": 53,
+            "endLine": 53,
+            "startOffset": 8,
+            "endOffset": 14
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Prefer `globalThis` over `window`.",
+        "effort": "2min",
+        "debt": "2min",
+        "author": "pedrogurski4759@gmail.com",
+        "tags": [
+            "portability",
+            "es2020"
+        ],
+        "transitions": [
+            "confirm"
+        ],
+        "actions": [
+            "set_tags",
+            "comment",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-23T14:04:53+0000",
+        "updateDate": "2025-11-20T13:36:37+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": true,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "LOW"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "fccd60cd-fdc5-40c5-9949-35214bb97ef6",
+        "rule": "javascript:S7764",
+        "severity": "MINOR",
+        "component": "monge-web:js/app.js",
+        "project": "monge-web",
+        "line": 53,
+        "hash": "f762418de155d5ccdac88da86e557ec4",
+        "textRange": {
+            "startLine": 53,
+            "endLine": 53,
+            "startOffset": 44,
+            "endOffset": 50
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Prefer `globalThis` over `window`.",
+        "effort": "2min",
+        "debt": "2min",
+        "author": "pedrogurski4759@gmail.com",
+        "tags": [
+            "portability",
+            "es2020"
+        ],
+        "transitions": [
+            "confirm"
+        ],
+        "actions": [
+            "set_tags",
+            "comment",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-23T14:04:53+0000",
+        "updateDate": "2025-11-20T13:36:37+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": true,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "LOW"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "830bdaf1-8419-4e3c-a6fe-0d6e3ff38d7d",
+        "rule": "javascript:S7764",
+        "severity": "MINOR",
+        "component": "monge-web:js/app.js",
+        "project": "monge-web",
+        "line": 60,
+        "hash": "e4adaf97628c552a9004f2e0a89f1489",
+        "textRange": {
+            "startLine": 60,
+            "endLine": 60,
+            "startOffset": 8,
+            "endOffset": 14
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Prefer `globalThis` over `window`.",
+        "effort": "2min",
+        "debt": "2min",
+        "author": "pedrogurski4759@gmail.com",
+        "tags": [
+            "portability",
+            "es2020"
+        ],
+        "transitions": [
+            "confirm"
+        ],
+        "actions": [
+            "set_tags",
+            "comment",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-23T14:04:53+0000",
+        "updateDate": "2025-11-20T13:36:37+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": true,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "LOW"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "f1d68230-2419-4ca7-9c2a-19a7c9e4193e",
+        "rule": "javascript:S7764",
+        "severity": "MINOR",
+        "component": "monge-web:js/app.js",
+        "project": "monge-web",
+        "line": 60,
+        "hash": "e4adaf97628c552a9004f2e0a89f1489",
+        "textRange": {
+            "startLine": 60,
+            "endLine": 60,
+            "startOffset": 44,
+            "endOffset": 50
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Prefer `globalThis` over `window`.",
+        "effort": "2min",
+        "debt": "2min",
+        "author": "pedrogurski4759@gmail.com",
+        "tags": [
+            "portability",
+            "es2020"
+        ],
+        "transitions": [
+            "confirm"
+        ],
+        "actions": [
+            "set_tags",
+            "comment",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-23T14:04:53+0000",
+        "updateDate": "2025-11-20T13:36:37+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": true,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "LOW"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "cf07c760-9381-4fea-8e46-20c596375669",
+        "rule": "javascript:S7764",
+        "severity": "MINOR",
+        "component": "monge-web:js/app.js",
+        "project": "monge-web",
+        "line": 67,
+        "hash": "ddef2d2a56a990de0fd8d2ead64167b0",
+        "textRange": {
+            "startLine": 67,
+            "endLine": 67,
+            "startOffset": 8,
+            "endOffset": 14
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Prefer `globalThis` over `window`.",
+        "effort": "2min",
+        "debt": "2min",
+        "author": "pedrogurski4759@gmail.com",
+        "tags": [
+            "portability",
+            "es2020"
+        ],
+        "transitions": [
+            "confirm"
+        ],
+        "actions": [
+            "set_tags",
+            "comment",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-23T14:04:53+0000",
+        "updateDate": "2025-11-20T13:36:37+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": true,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "LOW"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "d111bb86-29f2-4c4a-9418-e64bcc62166c",
+        "rule": "javascript:S7764",
+        "severity": "MINOR",
+        "component": "monge-web:js/app.js",
+        "project": "monge-web",
+        "line": 67,
+        "hash": "ddef2d2a56a990de0fd8d2ead64167b0",
+        "textRange": {
+            "startLine": 67,
+            "endLine": 67,
+            "startOffset": 44,
+            "endOffset": 50
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Prefer `globalThis` over `window`.",
+        "effort": "2min",
+        "debt": "2min",
+        "author": "pedrogurski4759@gmail.com",
+        "tags": [
+            "portability",
+            "es2020"
+        ],
+        "transitions": [
+            "confirm"
+        ],
+        "actions": [
+            "set_tags",
+            "comment",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-23T14:04:53+0000",
+        "updateDate": "2025-11-20T13:36:37+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": true,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "LOW"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "2b5a093f-f402-45c3-81ae-c4422c29cf0f",
+        "rule": "javascript:S6582",
+        "severity": "MAJOR",
+        "component": "monge-web:js/app.js",
+        "project": "monge-web",
+        "line": 355,
+        "hash": "5d3ceefff80ba4e3e628f33d4ee2e5a0",
+        "textRange": {
+            "startLine": 355,
+            "endLine": 355,
+            "startOffset": 6,
+            "endOffset": 43
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Prefer using an optional chain expression instead, as it's more concise and easier to read.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "pedrogurski4759@gmail.com",
+        "tags": [],
+        "transitions": [
+            "confirm"
+        ],
+        "actions": [
+            "set_tags",
+            "comment",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-23T14:04:53+0000",
+        "updateDate": "2025-11-20T13:36:37+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": true,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CLEAR",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "MEDIUM"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "beba0b48-5aec-42d2-a8a3-af293908df97",
+        "rule": "javascript:S2486",
+        "severity": "MINOR",
+        "component": "monge-web:js/app.js",
+        "project": "monge-web",
+        "line": 360,
+        "hash": "550051ee6b000602ffe414172dfff76d",
+        "textRange": {
+            "startLine": 360,
+            "endLine": 362,
+            "startOffset": 6,
+            "endOffset": 5
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Handle this exception or don't catch it at all.",
+        "effort": "1h",
+        "debt": "1h",
+        "author": "pedrogurski4759@gmail.com",
+        "tags": [
+            "cwe",
+            "error-handling",
+            "suspicious"
+        ],
+        "transitions": [
+            "confirm"
+        ],
+        "actions": [
+            "set_tags",
+            "comment",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-23T14:04:53+0000",
+        "updateDate": "2025-11-20T13:36:37+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CLEAR",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "LOW"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "4562410b-557d-4f03-8b56-611d230360fe",
+        "rule": "javascript:S7764",
+        "severity": "MINOR",
+        "component": "monge-web:js/app.js",
+        "project": "monge-web",
+        "line": 380,
+        "hash": "db87ec55f567ad5fa017ad43a39f6425",
+        "textRange": {
+            "startLine": 380,
+            "endLine": 380,
+            "startOffset": 4,
+            "endOffset": 10
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Prefer `globalThis` over `window`.",
+        "effort": "2min",
+        "debt": "2min",
+        "author": "pedrogurski4759@gmail.com",
+        "tags": [
+            "portability",
+            "es2020"
+        ],
+        "transitions": [
+            "confirm"
+        ],
+        "actions": [
+            "set_tags",
+            "comment",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-23T14:04:53+0000",
+        "updateDate": "2025-11-20T13:36:37+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": true,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "LOW"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "ac67aac9-52bf-489e-9afd-8b7749f34c24",
+        "rule": "javascript:S7764",
+        "severity": "MINOR",
+        "component": "monge-web:js/app.js",
+        "project": "monge-web",
+        "line": 381,
+        "hash": "aea3947cea81a4de245026a8b2bb36a5",
+        "textRange": {
+            "startLine": 381,
+            "endLine": 381,
+            "startOffset": 21,
+            "endOffset": 27
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Prefer `globalThis` over `window`.",
+        "effort": "2min",
+        "debt": "2min",
+        "author": "pedrogurski4759@gmail.com",
+        "tags": [
+            "portability",
+            "es2020"
+        ],
+        "transitions": [
+            "confirm"
+        ],
+        "actions": [
+            "set_tags",
+            "comment",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-23T14:04:53+0000",
+        "updateDate": "2025-11-20T13:36:37+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": true,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "LOW"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "b43d4f32-523f-4caa-9a2e-0280d06d7cf3",
+        "rule": "javascript:S7764",
+        "severity": "MINOR",
+        "component": "monge-web:js/app.js",
+        "project": "monge-web",
+        "line": 400,
+        "hash": "aea3947cea81a4de245026a8b2bb36a5",
+        "textRange": {
+            "startLine": 400,
+            "endLine": 400,
+            "startOffset": 17,
+            "endOffset": 23
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Prefer `globalThis` over `window`.",
+        "effort": "2min",
+        "debt": "2min",
+        "author": "pedrogurski4759@gmail.com",
+        "tags": [
+            "portability",
+            "es2020"
+        ],
+        "transitions": [
+            "confirm"
+        ],
+        "actions": [
+            "set_tags",
+            "comment",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-23T14:04:53+0000",
+        "updateDate": "2025-11-20T13:36:37+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": true,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "LOW"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "d86a224d-678f-46c8-bd7e-554c8a8895b9",
+        "rule": "css:S7924",
+        "severity": "MAJOR",
+        "component": "monge-web:css/style.css",
+        "project": "monge-web",
+        "line": 93,
+        "hash": "6a5e8cb97ac89286458bcafc604aeda5",
+        "textRange": {
+            "startLine": 93,
+            "endLine": 93,
+            "startOffset": 0,
+            "endOffset": 15
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Text does not meet the minimal contrast requirement with its background.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "jaison.rezine@ufpr.br",
+        "tags": [
+            "css",
+            "accessibility",
+            "wcag",
+            "contrast"
+        ],
+        "transitions": [
+            "confirm"
+        ],
+        "actions": [
+            "set_tags",
+            "comment",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-07T21:31:29+0000",
+        "updateDate": "2025-11-20T13:36:37+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "MEDIUM"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    }
+]

@@ -1,8 +1,0 @@
-@startuml
-package "Backend Application" {
-  [Controller] --> [Service]
-  [Service] --> [Repository]
-  [Service] --> [Model]
-  [Repository] --> [Model]
-}
-@enduml

@@ -1,0 +1,1572 @@
+[
+    {
+        "key": "c49a612b-8cd0-4298-aa05-0924045f34e1",
+        "rule": "java:S1128",
+        "severity": "MINOR",
+        "component": "monge-api:src/main/java/br/ufpr/monge/controller/OrientadorLancamentoController.java",
+        "project": "monge-api",
+        "line": 4,
+        "hash": "27bb8eb25d0026f31c6cdc6903f3737e",
+        "textRange": {
+            "startLine": 4,
+            "endLine": 4,
+            "startOffset": 7,
+            "endOffset": 34
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Remove this unused import 'br.ufpr.monge.model.enums'.",
+        "effort": "1min",
+        "debt": "1min",
+        "author": "nath\u00e1lia",
+        "tags": [
+            "unused"
+        ],
+        "transitions": [
+            "accept",
+            "falsepositive",
+            "confirm",
+            "resolve",
+            "wontfix"
+        ],
+        "actions": [
+            "set_type",
+            "set_tags",
+            "comment",
+            "set_severity",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-26T00:22:44+0000",
+        "updateDate": "2025-11-20T13:35:18+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": true,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CLEAR",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "LOW"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "c0d19d1f-e206-441c-9e73-d019bf65e6a8",
+        "rule": "java:S1128",
+        "severity": "MINOR",
+        "component": "monge-api:src/main/java/br/ufpr/monge/controller/OrientadorLancamentoController.java",
+        "project": "monge-api",
+        "line": 5,
+        "hash": "ff1baa4fba17fde4cc8cea59026bf27e",
+        "textRange": {
+            "startLine": 5,
+            "endLine": 5,
+            "startOffset": 7,
+            "endOffset": 33
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Remove this unused import 'br.ufpr.monge.repository'.",
+        "effort": "1min",
+        "debt": "1min",
+        "author": "nath\u00e1lia",
+        "tags": [
+            "unused"
+        ],
+        "transitions": [
+            "accept",
+            "falsepositive",
+            "confirm",
+            "resolve",
+            "wontfix"
+        ],
+        "actions": [
+            "set_type",
+            "set_tags",
+            "comment",
+            "set_severity",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-26T00:22:44+0000",
+        "updateDate": "2025-11-20T13:35:18+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": true,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CLEAR",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "LOW"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "a4d6ac94-b3e6-4638-b5b6-43c12e070ec6",
+        "rule": "java:S1128",
+        "severity": "MINOR",
+        "component": "monge-api:src/main/java/br/ufpr/monge/controller/OrientadorLancamentoController.java",
+        "project": "monge-api",
+        "line": 10,
+        "hash": "223dd31a5e0b133c09b8598ad73e3161",
+        "textRange": {
+            "startLine": 10,
+            "endLine": 10,
+            "startOffset": 7,
+            "endOffset": 28
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Remove this unused import 'jakarta.persistence'.",
+        "effort": "1min",
+        "debt": "1min",
+        "author": "nath\u00e1lia",
+        "tags": [
+            "unused"
+        ],
+        "transitions": [
+            "accept",
+            "falsepositive",
+            "confirm",
+            "resolve",
+            "wontfix"
+        ],
+        "actions": [
+            "set_type",
+            "set_tags",
+            "comment",
+            "set_severity",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-26T00:22:44+0000",
+        "updateDate": "2025-11-20T13:35:18+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": true,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CLEAR",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "LOW"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "4930ae06-a649-4754-a37d-32d85094ae51",
+        "rule": "java:S1128",
+        "severity": "MINOR",
+        "component": "monge-api:src/main/java/br/ufpr/monge/controller/OrientadorLancamentoController.java",
+        "project": "monge-api",
+        "line": 11,
+        "hash": "ad5ba7e3954834e09030d50f08fd70d0",
+        "textRange": {
+            "startLine": 11,
+            "endLine": 11,
+            "startOffset": 7,
+            "endOffset": 30
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Remove this unused import 'java.time.LocalDateTime'.",
+        "effort": "1min",
+        "debt": "1min",
+        "author": "nath\u00e1lia",
+        "tags": [
+            "unused"
+        ],
+        "transitions": [
+            "accept",
+            "falsepositive",
+            "confirm",
+            "resolve",
+            "wontfix"
+        ],
+        "actions": [
+            "set_type",
+            "set_tags",
+            "comment",
+            "set_severity",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-26T00:22:44+0000",
+        "updateDate": "2025-11-20T13:35:18+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": true,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CLEAR",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "LOW"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "2e2b2200-2d92-42c7-b2e1-f88008429351",
+        "rule": "java:S1192",
+        "severity": "CRITICAL",
+        "component": "monge-api:src/main/java/br/ufpr/monge/service/LancamentoAprovacaoService.java",
+        "project": "monge-api",
+        "line": 30,
+        "hash": "35989d5cd2c5d42652683eccf7aa848d",
+        "textRange": {
+            "startLine": 30,
+            "endLine": 30,
+            "startOffset": 63,
+            "endOffset": 90
+        },
+        "flows": [
+            {
+                "locations": [
+                    {
+                        "component": "monge-api:src/main/java/br/ufpr/monge/service/LancamentoAprovacaoService.java",
+                        "textRange": {
+                            "startLine": 30,
+                            "endLine": 30,
+                            "startOffset": 63,
+                            "endOffset": 90
+                        },
+                        "msg": "Duplication",
+                        "msgFormattings": []
+                    }
+                ]
+            },
+            {
+                "locations": [
+                    {
+                        "component": "monge-api:src/main/java/br/ufpr/monge/service/LancamentoAprovacaoService.java",
+                        "textRange": {
+                            "startLine": 50,
+                            "endLine": 50,
+                            "startOffset": 63,
+                            "endOffset": 90
+                        },
+                        "msg": "Duplication",
+                        "msgFormattings": []
+                    }
+                ]
+            },
+            {
+                "locations": [
+                    {
+                        "component": "monge-api:src/main/java/br/ufpr/monge/service/LancamentoAprovacaoService.java",
+                        "textRange": {
+                            "startLine": 70,
+                            "endLine": 70,
+                            "startOffset": 63,
+                            "endOffset": 90
+                        },
+                        "msg": "Duplication",
+                        "msgFormattings": []
+                    }
+                ]
+            }
+        ],
+        "status": "OPEN",
+        "message": "Define a constant instead of duplicating this literal \"Lan\u00e7amento n\u00e3o encontrado\" 3 times.",
+        "effort": "8min",
+        "debt": "8min",
+        "author": "nath\u00e1lia",
+        "tags": [
+            "design"
+        ],
+        "transitions": [
+            "accept",
+            "falsepositive",
+            "confirm",
+            "resolve",
+            "wontfix"
+        ],
+        "actions": [
+            "set_type",
+            "set_tags",
+            "comment",
+            "set_severity",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-26T00:22:44+0000",
+        "updateDate": "2025-11-20T13:35:18+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "DISTINCT",
+        "cleanCodeAttributeCategory": "ADAPTABLE",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "HIGH"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "d598a9a1-7733-4096-81e7-e18b117e511f",
+        "rule": "java:S6813",
+        "severity": "MAJOR",
+        "component": "monge-api:src/main/java/br/ufpr/monge/controller/VinculoController.java",
+        "project": "monge-api",
+        "line": 28,
+        "hash": "0132ec8cee01c5dd244e1a60fe6448a1",
+        "textRange": {
+            "startLine": 28,
+            "endLine": 28,
+            "startOffset": 4,
+            "endOffset": 14
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Remove this field injection and use constructor injection instead.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "pedrogurski4759@gmail.com",
+        "tags": [],
+        "transitions": [
+            "accept",
+            "falsepositive",
+            "confirm",
+            "resolve",
+            "wontfix"
+        ],
+        "actions": [
+            "set_type",
+            "set_tags",
+            "comment",
+            "set_severity",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-24T14:32:43+0000",
+        "updateDate": "2025-11-20T13:35:18+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "MEDIUM"
+            },
+            {
+                "softwareQuality": "RELIABILITY",
+                "severity": "MEDIUM"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "c61cc038-f518-4151-a5de-031f5c634e95",
+        "rule": "java:S6813",
+        "severity": "MAJOR",
+        "component": "monge-api:src/main/java/br/ufpr/monge/controller/VinculoController.java",
+        "project": "monge-api",
+        "line": 31,
+        "hash": "0132ec8cee01c5dd244e1a60fe6448a1",
+        "textRange": {
+            "startLine": 31,
+            "endLine": 31,
+            "startOffset": 4,
+            "endOffset": 14
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Remove this field injection and use constructor injection instead.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "pedrogurski4759@gmail.com",
+        "tags": [],
+        "transitions": [
+            "accept",
+            "falsepositive",
+            "confirm",
+            "resolve",
+            "wontfix"
+        ],
+        "actions": [
+            "set_type",
+            "set_tags",
+            "comment",
+            "set_severity",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-24T14:32:43+0000",
+        "updateDate": "2025-11-20T13:35:18+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "MEDIUM"
+            },
+            {
+                "softwareQuality": "RELIABILITY",
+                "severity": "MEDIUM"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "25e24c21-faa8-461c-be70-0543309d03db",
+        "rule": "java:S6813",
+        "severity": "MAJOR",
+        "component": "monge-api:src/main/java/br/ufpr/monge/controller/VinculoController.java",
+        "project": "monge-api",
+        "line": 34,
+        "hash": "0132ec8cee01c5dd244e1a60fe6448a1",
+        "textRange": {
+            "startLine": 34,
+            "endLine": 34,
+            "startOffset": 4,
+            "endOffset": 14
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Remove this field injection and use constructor injection instead.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "pedrogurski4759@gmail.com",
+        "tags": [],
+        "transitions": [
+            "accept",
+            "falsepositive",
+            "confirm",
+            "resolve",
+            "wontfix"
+        ],
+        "actions": [
+            "set_type",
+            "set_tags",
+            "comment",
+            "set_severity",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-24T14:32:43+0000",
+        "updateDate": "2025-11-20T13:35:18+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "MEDIUM"
+            },
+            {
+                "softwareQuality": "RELIABILITY",
+                "severity": "MEDIUM"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "48df23a8-1caa-40b2-bca9-e1c9f9f52bf1",
+        "rule": "java:S6813",
+        "severity": "MAJOR",
+        "component": "monge-api:src/main/java/br/ufpr/monge/controller/VinculoController.java",
+        "project": "monge-api",
+        "line": 37,
+        "hash": "0132ec8cee01c5dd244e1a60fe6448a1",
+        "textRange": {
+            "startLine": 37,
+            "endLine": 37,
+            "startOffset": 4,
+            "endOffset": 14
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Remove this field injection and use constructor injection instead.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "pedrogurski4759@gmail.com",
+        "tags": [],
+        "transitions": [
+            "accept",
+            "falsepositive",
+            "confirm",
+            "resolve",
+            "wontfix"
+        ],
+        "actions": [
+            "set_type",
+            "set_tags",
+            "comment",
+            "set_severity",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-24T14:32:43+0000",
+        "updateDate": "2025-11-20T13:35:18+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "MEDIUM"
+            },
+            {
+                "softwareQuality": "RELIABILITY",
+                "severity": "MEDIUM"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "50900cf6-8f8a-4d6f-91f9-af5efb1d2793",
+        "rule": "java:S1141",
+        "severity": "MAJOR",
+        "component": "monge-api:src/main/java/br/ufpr/monge/controller/VinculoController.java",
+        "project": "monge-api",
+        "line": 91,
+        "hash": "80d5b17efc16ace990c07580fc3e85eb",
+        "textRange": {
+            "startLine": 91,
+            "endLine": 91,
+            "startOffset": 16,
+            "endOffset": 19
+        },
+        "flows": [
+            {
+                "locations": [
+                    {
+                        "component": "monge-api:src/main/java/br/ufpr/monge/controller/VinculoController.java",
+                        "textRange": {
+                            "startLine": 74,
+                            "endLine": 74,
+                            "startOffset": 8,
+                            "endOffset": 11
+                        },
+                        "msg": "Nesting + 1",
+                        "msgFormattings": []
+                    }
+                ]
+            }
+        ],
+        "status": "OPEN",
+        "message": "Extract this nested try block into a separate method.",
+        "effort": "20min",
+        "debt": "20min",
+        "author": "pedrogurski4759@gmail.com",
+        "tags": [
+            "error-handling",
+            "confusing"
+        ],
+        "transitions": [
+            "accept",
+            "falsepositive",
+            "confirm",
+            "resolve",
+            "wontfix"
+        ],
+        "actions": [
+            "set_type",
+            "set_tags",
+            "comment",
+            "set_severity",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-24T14:32:43+0000",
+        "updateDate": "2025-11-20T13:35:18+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CLEAR",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "MEDIUM"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "93eb7041-65dc-47bd-ba50-b2e3e70f047d",
+        "rule": "java:S112",
+        "severity": "MAJOR",
+        "component": "monge-api:src/main/java/br/ufpr/monge/controller/VinculoController.java",
+        "project": "monge-api",
+        "line": 95,
+        "hash": "833beef79df6d0be5608cd455d5ca4f1",
+        "textRange": {
+            "startLine": 95,
+            "endLine": 95,
+            "startOffset": 30,
+            "endOffset": 46
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Replace generic exceptions with specific library exceptions or a custom exception.",
+        "effort": "20min",
+        "debt": "20min",
+        "author": "pedrogurski4759@gmail.com",
+        "tags": [
+            "cwe",
+            "error-handling",
+            "cert"
+        ],
+        "transitions": [
+            "accept",
+            "falsepositive",
+            "confirm",
+            "resolve",
+            "wontfix"
+        ],
+        "actions": [
+            "set_type",
+            "set_tags",
+            "comment",
+            "set_severity",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-24T14:32:43+0000",
+        "updateDate": "2025-11-20T13:35:18+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "COMPLETE",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "MEDIUM"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "942df6c2-1ba6-44c0-b5d2-fb971c0b9f1c",
+        "rule": "java:S1192",
+        "severity": "CRITICAL",
+        "component": "monge-api:src/main/java/br/ufpr/monge/controller/VinculoController.java",
+        "project": "monge-api",
+        "line": 101,
+        "hash": "cceb96a88ce46fb79f173068630eee21",
+        "textRange": {
+            "startLine": 101,
+            "endLine": 101,
+            "startOffset": 94,
+            "endOffset": 112
+        },
+        "flows": [
+            {
+                "locations": [
+                    {
+                        "component": "monge-api:src/main/java/br/ufpr/monge/controller/VinculoController.java",
+                        "textRange": {
+                            "startLine": 101,
+                            "endLine": 101,
+                            "startOffset": 94,
+                            "endOffset": 112
+                        },
+                        "msg": "Duplication",
+                        "msgFormattings": []
+                    }
+                ]
+            },
+            {
+                "locations": [
+                    {
+                        "component": "monge-api:src/main/java/br/ufpr/monge/controller/VinculoController.java",
+                        "textRange": {
+                            "startLine": 104,
+                            "endLine": 104,
+                            "startOffset": 92,
+                            "endOffset": 110
+                        },
+                        "msg": "Duplication",
+                        "msgFormattings": []
+                    }
+                ]
+            },
+            {
+                "locations": [
+                    {
+                        "component": "monge-api:src/main/java/br/ufpr/monge/controller/VinculoController.java",
+                        "textRange": {
+                            "startLine": 107,
+                            "endLine": 107,
+                            "startOffset": 98,
+                            "endOffset": 116
+                        },
+                        "msg": "Duplication",
+                        "msgFormattings": []
+                    }
+                ]
+            }
+        ],
+        "status": "OPEN",
+        "message": "Define a constant instead of duplicating this literal \" n\u00e3o encontrado.\" 3 times.",
+        "effort": "8min",
+        "debt": "8min",
+        "author": "pedrogurski4759@gmail.com",
+        "tags": [
+            "design"
+        ],
+        "transitions": [
+            "accept",
+            "falsepositive",
+            "confirm",
+            "resolve",
+            "wontfix"
+        ],
+        "actions": [
+            "set_type",
+            "set_tags",
+            "comment",
+            "set_severity",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-24T14:32:43+0000",
+        "updateDate": "2025-11-20T13:35:18+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "DISTINCT",
+        "cleanCodeAttributeCategory": "ADAPTABLE",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "HIGH"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "92dd6943-0186-4bbb-8470-9a57623a23df",
+        "rule": "java:S106",
+        "severity": "MAJOR",
+        "component": "monge-api:src/main/java/br/ufpr/monge/controller/VinculoController.java",
+        "project": "monge-api",
+        "line": 124,
+        "hash": "589ad3786cf9142b16c81f3e3ef0a54b",
+        "textRange": {
+            "startLine": 124,
+            "endLine": 124,
+            "startOffset": 12,
+            "endOffset": 22
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Replace this use of System.err by a logger.",
+        "effort": "10min",
+        "debt": "10min",
+        "author": "pedrogurski4759@gmail.com",
+        "tags": [
+            "bad-practice",
+            "cert"
+        ],
+        "transitions": [
+            "accept",
+            "falsepositive",
+            "confirm",
+            "resolve",
+            "wontfix"
+        ],
+        "actions": [
+            "set_type",
+            "set_tags",
+            "comment",
+            "set_severity",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-24T14:32:43+0000",
+        "updateDate": "2025-11-20T13:35:18+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "MODULAR",
+        "cleanCodeAttributeCategory": "ADAPTABLE",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "MEDIUM"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "5bb6fed9-16c4-4b5f-ae39-5c765585df2a",
+        "rule": "java:S6813",
+        "severity": "MAJOR",
+        "component": "monge-api:src/main/java/br/ufpr/monge/controller/CadastroController.java",
+        "project": "monge-api",
+        "line": 27,
+        "hash": "0132ec8cee01c5dd244e1a60fe6448a1",
+        "textRange": {
+            "startLine": 27,
+            "endLine": 27,
+            "startOffset": 4,
+            "endOffset": 14
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Remove this field injection and use constructor injection instead.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "pedrogurski4759@gmail.com",
+        "tags": [],
+        "transitions": [
+            "accept",
+            "falsepositive",
+            "confirm",
+            "resolve",
+            "wontfix"
+        ],
+        "actions": [
+            "set_type",
+            "set_tags",
+            "comment",
+            "set_severity",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-23T20:18:14+0000",
+        "updateDate": "2025-11-20T13:35:18+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "MEDIUM"
+            },
+            {
+                "softwareQuality": "RELIABILITY",
+                "severity": "MEDIUM"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "1063a8fc-6294-44a6-8d7f-b151a81c2a58",
+        "rule": "java:S6813",
+        "severity": "MAJOR",
+        "component": "monge-api:src/main/java/br/ufpr/monge/controller/CadastroController.java",
+        "project": "monge-api",
+        "line": 30,
+        "hash": "0132ec8cee01c5dd244e1a60fe6448a1",
+        "textRange": {
+            "startLine": 30,
+            "endLine": 30,
+            "startOffset": 4,
+            "endOffset": 14
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Remove this field injection and use constructor injection instead.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "pedrogurski4759@gmail.com",
+        "tags": [],
+        "transitions": [
+            "accept",
+            "falsepositive",
+            "confirm",
+            "resolve",
+            "wontfix"
+        ],
+        "actions": [
+            "set_type",
+            "set_tags",
+            "comment",
+            "set_severity",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-23T20:18:14+0000",
+        "updateDate": "2025-11-20T13:35:18+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "MEDIUM"
+            },
+            {
+                "softwareQuality": "RELIABILITY",
+                "severity": "MEDIUM"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "706b5b77-8e4b-4530-8530-bf18345a5e52",
+        "rule": "java:S6813",
+        "severity": "MAJOR",
+        "component": "monge-api:src/main/java/br/ufpr/monge/controller/CadastroController.java",
+        "project": "monge-api",
+        "line": 33,
+        "hash": "0132ec8cee01c5dd244e1a60fe6448a1",
+        "textRange": {
+            "startLine": 33,
+            "endLine": 33,
+            "startOffset": 4,
+            "endOffset": 14
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Remove this field injection and use constructor injection instead.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "pedrogurski4759@gmail.com",
+        "tags": [],
+        "transitions": [
+            "accept",
+            "falsepositive",
+            "confirm",
+            "resolve",
+            "wontfix"
+        ],
+        "actions": [
+            "set_type",
+            "set_tags",
+            "comment",
+            "set_severity",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-23T20:18:14+0000",
+        "updateDate": "2025-11-20T13:35:18+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "MEDIUM"
+            },
+            {
+                "softwareQuality": "RELIABILITY",
+                "severity": "MEDIUM"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "0b3fb22c-75db-4aa5-8e8f-db10b5c0d3b5",
+        "rule": "java:S106",
+        "severity": "MAJOR",
+        "component": "monge-api:src/main/java/br/ufpr/monge/controller/CadastroController.java",
+        "project": "monge-api",
+        "line": 82,
+        "hash": "a2c51def08a67c1cc9dee73e53995cf5",
+        "textRange": {
+            "startLine": 82,
+            "endLine": 82,
+            "startOffset": 12,
+            "endOffset": 22
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Replace this use of System.err by a logger.",
+        "effort": "10min",
+        "debt": "10min",
+        "author": "pedrogurski4759@gmail.com",
+        "tags": [
+            "bad-practice",
+            "cert"
+        ],
+        "transitions": [
+            "accept",
+            "falsepositive",
+            "confirm",
+            "resolve",
+            "wontfix"
+        ],
+        "actions": [
+            "set_type",
+            "set_tags",
+            "comment",
+            "set_severity",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-23T20:18:14+0000",
+        "updateDate": "2025-11-20T13:35:18+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "MODULAR",
+        "cleanCodeAttributeCategory": "ADAPTABLE",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "MEDIUM"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "be1184e7-db16-4211-8ff4-4505fa7d03c4",
+        "rule": "java:S3972",
+        "severity": "CRITICAL",
+        "component": "monge-api:src/main/java/br/ufpr/monge/controller/CadastroController.java",
+        "project": "monge-api",
+        "line": 100,
+        "hash": "953572f36ac5dda165e9d63c646174f5",
+        "textRange": {
+            "startLine": 100,
+            "endLine": 100,
+            "startOffset": 14,
+            "endOffset": 16
+        },
+        "flows": [
+            {
+                "locations": [
+                    {
+                        "component": "monge-api:src/main/java/br/ufpr/monge/controller/CadastroController.java",
+                        "textRange": {
+                            "startLine": 100,
+                            "endLine": 100,
+                            "startOffset": 12,
+                            "endOffset": 13
+                        },
+                        "msgFormattings": []
+                    }
+                ]
+            }
+        ],
+        "status": "OPEN",
+        "message": "Move this \"if\" to a new line or add the missing \"else\".",
+        "effort": "10min",
+        "debt": "10min",
+        "author": "pedrogurski4759@gmail.com",
+        "tags": [
+            "suspicious"
+        ],
+        "transitions": [
+            "accept",
+            "falsepositive",
+            "confirm",
+            "resolve",
+            "wontfix"
+        ],
+        "actions": [
+            "set_type",
+            "set_tags",
+            "comment",
+            "set_severity",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-23T20:18:14+0000",
+        "updateDate": "2025-11-20T13:35:18+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "FORMATTED",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "HIGH"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "4884938f-49d6-4cf0-a125-99606d293aac",
+        "rule": "java:S106",
+        "severity": "MAJOR",
+        "component": "monge-api:src/main/java/br/ufpr/monge/controller/CadastroController.java",
+        "project": "monge-api",
+        "line": 118,
+        "hash": "e032080eed6763792ca2c76a311483f8",
+        "textRange": {
+            "startLine": 118,
+            "endLine": 118,
+            "startOffset": 12,
+            "endOffset": 22
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Replace this use of System.err by a logger.",
+        "effort": "10min",
+        "debt": "10min",
+        "author": "pedrogurski4759@gmail.com",
+        "tags": [
+            "bad-practice",
+            "cert"
+        ],
+        "transitions": [
+            "accept",
+            "falsepositive",
+            "confirm",
+            "resolve",
+            "wontfix"
+        ],
+        "actions": [
+            "set_type",
+            "set_tags",
+            "comment",
+            "set_severity",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-23T20:18:14+0000",
+        "updateDate": "2025-11-20T13:35:18+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "MODULAR",
+        "cleanCodeAttributeCategory": "ADAPTABLE",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "MEDIUM"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "9212e472-b32f-49f4-93fb-a55bd9808673",
+        "rule": "java:S4449",
+        "severity": "MAJOR",
+        "component": "monge-api:src/main/java/br/ufpr/monge/controller/CadastroController.java",
+        "project": "monge-api",
+        "line": 119,
+        "hash": "d7433f5b2f7033d002ad2892a276df65",
+        "textRange": {
+            "startLine": 119,
+            "endLine": 119,
+            "startOffset": 23,
+            "endOffset": 39
+        },
+        "flows": [
+            {
+                "locations": [
+                    {
+                        "component": "monge-api:src/main/java/br/ufpr/monge/controller/CadastroController.java",
+                        "textRange": {
+                            "startLine": 119,
+                            "endLine": 119,
+                            "startOffset": 40,
+                            "endOffset": 44
+                        },
+                        "msg": "Argument can be null.",
+                        "msgFormattings": []
+                    }
+                ]
+            }
+        ],
+        "status": "OPEN",
+        "message": "Annotate the parameter with @javax.annotation.Nullable in constructor declaration, or make sure that null can not be passed as argument.",
+        "effort": "10min",
+        "debt": "10min",
+        "author": "pedrogurski4759@gmail.com",
+        "tags": [
+            "symbolic-execution"
+        ],
+        "transitions": [
+            "accept",
+            "falsepositive",
+            "confirm",
+            "resolve",
+            "wontfix"
+        ],
+        "actions": [
+            "set_type",
+            "set_tags",
+            "comment",
+            "set_severity",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-23T20:18:14+0000",
+        "updateDate": "2025-11-20T13:35:18+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "LOGICAL",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "MEDIUM"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "f8175306-fd0b-4359-bc5a-8bb713f3bb6c",
+        "rule": "java:S106",
+        "severity": "MAJOR",
+        "component": "monge-api:src/main/java/br/ufpr/monge/controller/CadastroController.java",
+        "project": "monge-api",
+        "line": 141,
+        "hash": "fe048d4dde78caf6387323b7458c7b71",
+        "textRange": {
+            "startLine": 141,
+            "endLine": 141,
+            "startOffset": 12,
+            "endOffset": 22
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Replace this use of System.err by a logger.",
+        "effort": "10min",
+        "debt": "10min",
+        "author": "pedrogurski4759@gmail.com",
+        "tags": [
+            "bad-practice",
+            "cert"
+        ],
+        "transitions": [
+            "accept",
+            "falsepositive",
+            "confirm",
+            "resolve",
+            "wontfix"
+        ],
+        "actions": [
+            "set_type",
+            "set_tags",
+            "comment",
+            "set_severity",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-23T20:18:14+0000",
+        "updateDate": "2025-11-20T13:35:18+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "MODULAR",
+        "cleanCodeAttributeCategory": "ADAPTABLE",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "MEDIUM"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "7c0c7d74-f11d-4a12-bbd3-26fa18212679",
+        "rule": "java:S4449",
+        "severity": "MAJOR",
+        "component": "monge-api:src/main/java/br/ufpr/monge/controller/CadastroController.java",
+        "project": "monge-api",
+        "line": 142,
+        "hash": "d7433f5b2f7033d002ad2892a276df65",
+        "textRange": {
+            "startLine": 142,
+            "endLine": 142,
+            "startOffset": 23,
+            "endOffset": 39
+        },
+        "flows": [
+            {
+                "locations": [
+                    {
+                        "component": "monge-api:src/main/java/br/ufpr/monge/controller/CadastroController.java",
+                        "textRange": {
+                            "startLine": 142,
+                            "endLine": 142,
+                            "startOffset": 40,
+                            "endOffset": 44
+                        },
+                        "msg": "Argument can be null.",
+                        "msgFormattings": []
+                    }
+                ]
+            }
+        ],
+        "status": "OPEN",
+        "message": "Annotate the parameter with @javax.annotation.Nullable in constructor declaration, or make sure that null can not be passed as argument.",
+        "effort": "10min",
+        "debt": "10min",
+        "author": "pedrogurski4759@gmail.com",
+        "tags": [
+            "symbolic-execution"
+        ],
+        "transitions": [
+            "accept",
+            "falsepositive",
+            "confirm",
+            "resolve",
+            "wontfix"
+        ],
+        "actions": [
+            "set_type",
+            "set_tags",
+            "comment",
+            "set_severity",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-23T20:18:14+0000",
+        "updateDate": "2025-11-20T13:35:18+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "LOGICAL",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "MEDIUM"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "bb9f5815-6751-4471-9b48-18d6ed39f821",
+        "rule": "java:S5786",
+        "severity": "INFO",
+        "component": "monge-api:src/test/java/br/ufpr/monge/AppTest.java",
+        "project": "monge-api",
+        "line": 10,
+        "hash": "7ddb4bcc70c5932fa0a84d9b576851e2",
+        "textRange": {
+            "startLine": 10,
+            "endLine": 10,
+            "startOffset": 0,
+            "endOffset": 6
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Remove this 'public' modifier.",
+        "effort": "2min",
+        "debt": "2min",
+        "author": "jaison.rezine@ufpr.br",
+        "tags": [
+            "junit",
+            "tests"
+        ],
+        "transitions": [
+            "accept",
+            "falsepositive",
+            "confirm",
+            "resolve",
+            "wontfix"
+        ],
+        "actions": [
+            "set_type",
+            "set_tags",
+            "comment",
+            "set_severity",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-07T21:31:29+0000",
+        "updateDate": "2025-11-20T13:35:18+0000",
+        "type": "CODE_SMELL",
+        "scope": "TEST",
+        "quickFixAvailable": true,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CLEAR",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "INFO"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    },
+    {
+        "key": "5642724e-bf74-47dd-8d97-b3d233bc122e",
+        "rule": "java:S5786",
+        "severity": "INFO",
+        "component": "monge-api:src/test/java/br/ufpr/monge/AppTest.java",
+        "project": "monge-api",
+        "line": 16,
+        "hash": "38502f0c06633ddcd3756dcd02f68bf2",
+        "textRange": {
+            "startLine": 16,
+            "endLine": 16,
+            "startOffset": 4,
+            "endOffset": 10
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Remove this 'public' modifier.",
+        "effort": "2min",
+        "debt": "2min",
+        "author": "jaison.rezine@ufpr.br",
+        "tags": [
+            "junit",
+            "tests"
+        ],
+        "transitions": [
+            "accept",
+            "falsepositive",
+            "confirm",
+            "resolve",
+            "wontfix"
+        ],
+        "actions": [
+            "set_type",
+            "set_tags",
+            "comment",
+            "set_severity",
+            "assign"
+        ],
+        "comments": [],
+        "creationDate": "2025-10-07T21:31:29+0000",
+        "updateDate": "2025-11-20T13:35:18+0000",
+        "type": "CODE_SMELL",
+        "scope": "TEST",
+        "quickFixAvailable": true,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CLEAR",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "INFO"
+            }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": []
+    }
+]

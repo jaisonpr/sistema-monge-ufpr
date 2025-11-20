@@ -1,0 +1,62 @@
+key,rule,severity,type,file,line,effort,message,author,creation_date,status
+7943124b-c656-4962-a594-84b396cc6214,Web:S6844,MAJOR,CODE_SMELL,index.html,25,5min,Anchor tags should not be used as buttons.,nathália,2025-10-26T00:22:44+0000,OPEN
+af0edd25-2601-4dba-ab39-72a01d5a55ff,Web:MouseEventWithoutKeyboardEquivalentCheck,MINOR,BUG,index.html,89,5min,Add a 'onKeyPress|onKeyDown|onKeyUp' attribute to this <div> tag.,pedrogurski4759@gmail.com,2025-10-24T15:19:37+0000,OPEN
+6dfba94d-8cf7-4583-8d7e-477897ba8e43,Web:S6848,MAJOR,CODE_SMELL,index.html,95,5min,"Avoid non-native interactive elements. If using native HTML is not possible, add an appropriate role and support for tabbing, mouse, keyboard, and touch inputs to an interactive content element.",pedrogurski4759@gmail.com,2025-10-24T15:19:37+0000,OPEN
+65c27d17-3deb-44b0-a7b0-4e6f2915bfc3,Web:S6848,MAJOR,CODE_SMELL,index.html,101,5min,"Avoid non-native interactive elements. If using native HTML is not possible, add an appropriate role and support for tabbing, mouse, keyboard, and touch inputs to an interactive content element.",pedrogurski4759@gmail.com,2025-10-24T15:19:37+0000,OPEN
+dc09605f-ed17-47e0-aced-5aedd87306f6,Web:MouseEventWithoutKeyboardEquivalentCheck,MINOR,BUG,index.html,101,5min,Add a 'onKeyPress|onKeyDown|onKeyUp' attribute to this <div> tag.,pedrogurski4759@gmail.com,2025-10-24T15:19:37+0000,OPEN
+d3341170-1ffa-4233-bfed-f798864ccd32,Web:MouseEventWithoutKeyboardEquivalentCheck,MINOR,BUG,index.html,107,5min,Add a 'onKeyPress|onKeyDown|onKeyUp' attribute to this <div> tag.,pedrogurski4759@gmail.com,2025-10-24T15:19:37+0000,OPEN
+e5f4ce2e-f3ad-4ed7-8d44-96361174a824,Web:S6848,MAJOR,CODE_SMELL,index.html,107,5min,"Avoid non-native interactive elements. If using native HTML is not possible, add an appropriate role and support for tabbing, mouse, keyboard, and touch inputs to an interactive content element.",pedrogurski4759@gmail.com,2025-10-24T15:19:37+0000,OPEN
+a2c7c0b6-b18a-41ab-9e63-aaedf61aa530,Web:S6844,MAJOR,CODE_SMELL,index.html,55,5min,Anchor tags should not be used as buttons.,nathália,2025-10-26T00:22:44+0000,OPEN
+d0b5f857-4efb-456b-8e9b-64ebd0d59a55,javascript:S7728,MINOR,CODE_SMELL,js/app.js,164,5min,Use `for…of` instead of `.forEach(…)`.,pedrogurski4759@gmail.com,2025-10-23T21:23:12+0000,OPEN
+719f40e3-5630-4d66-bd85-269df06c06d3,javascript:S7728,MINOR,CODE_SMELL,js/app.js,182,5min,Use `for…of` instead of `.forEach(…)`.,pedrogurski4759@gmail.com,2025-10-23T21:23:12+0000,OPEN
+5651e9fa-1540-466f-bf00-36092a34cf8f,javascript:S7728,MINOR,CODE_SMELL,js/app.js,200,5min,Use `for…of` instead of `.forEach(…)`.,pedrogurski4759@gmail.com,2025-10-23T21:23:12+0000,OPEN
+34608017-31ce-43a0-9ecb-e6fea865615a,javascript:S1481,MINOR,CODE_SMELL,js/app.js,236,5min,Remove the declaration of the unused 'response' variable.,pedrogurski4759@gmail.com,2025-10-23T21:23:12+0000,OPEN
+fe2bd67a-db20-4c8e-bc49-96af25089698,Web:S6844,MAJOR,CODE_SMELL,index.html,48,5min,Anchor tags should not be used as buttons.,pedrogurski4759@gmail.com,2025-10-23T14:49:56+0000,OPEN
+db7a5e6b-6b1a-485f-ad6d-47ab15ea13a7,Web:S6844,MAJOR,CODE_SMELL,index.html,31,5min,Anchor tags should not be used as buttons.,pedrogurski4759@gmail.com,2025-10-23T14:04:53+0000,OPEN
+3a90aaea-e133-458a-8196-be26ebbc2c02,Web:S6844,MAJOR,CODE_SMELL,index.html,40,5min,Anchor tags should not be used as buttons.,pedrogurski4759@gmail.com,2025-10-23T14:04:53+0000,OPEN
+ba45c962-bcb4-4f96-b1ae-e80b95353b50,Web:S6844,MAJOR,CODE_SMELL,index.html,44,5min,Anchor tags should not be used as buttons.,pedrogurski4759@gmail.com,2025-10-23T14:04:53+0000,OPEN
+658911b0-f4ab-4f5f-8ffd-6fcce6d93556,javascript:S7728,MINOR,CODE_SMELL,js/app.js,41,5min,Use `for…of` instead of `.forEach(…)`.,pedrogurski4759@gmail.com,2025-10-23T14:04:53+0000,OPEN
+459f0018-2371-4c39-b297-eca6d96aa86f,javascript:S7728,MINOR,CODE_SMELL,js/app.js,45,5min,Use `for…of` instead of `.forEach(…)`.,pedrogurski4759@gmail.com,2025-10-23T14:04:53+0000,OPEN
+2b5a093f-f402-45c3-81ae-c4422c29cf0f,javascript:S6582,MAJOR,CODE_SMELL,js/app.js,355,5min,"Prefer using an optional chain expression instead, as it's more concise and easier to read.",pedrogurski4759@gmail.com,2025-10-23T14:04:53+0000,OPEN
+268dadd7-5736-4bc1-86ea-8c7ef7cd598c,Web:MouseEventWithoutKeyboardEquivalentCheck,MINOR,BUG,index.html,95,5min,Add a 'onKeyPress|onKeyDown|onKeyUp' attribute to this <div> tag.,pedrogurski4759@gmail.com,2025-10-24T15:19:37+0000,OPEN
+d86a224d-678f-46c8-bd7e-554c8a8895b9,css:S7924,MAJOR,CODE_SMELL,css/style.css,93,5min,Text does not meet the minimal contrast requirement with its background.,jaison.rezine@ufpr.br,2025-10-07T21:31:29+0000,OPEN
+6d78656b-b200-426a-b391-f1a4c52f7fab,Web:S6848,MAJOR,CODE_SMELL,index.html,89,5min,"Avoid non-native interactive elements. If using native HTML is not possible, add an appropriate role and support for tabbing, mouse, keyboard, and touch inputs to an interactive content element.",pedrogurski4759@gmail.com,2025-10-24T15:19:37+0000,OPEN
+5cb87a47-4f84-47cd-8d63-944326334c32,Web:S6844,MAJOR,CODE_SMELL,index.html,60,5min,Anchor tags should not be used as buttons.,nathália,2025-10-26T00:22:44+0000,OPEN
+b620e5d6-7621-4a35-9f4c-8f8aea181623,javascript:S7728,MINOR,CODE_SMELL,js/app.js,469,5min,Use `for…of` instead of `.forEach(…)`.,nathália,2025-10-26T00:22:44+0000,OPEN
+ae03aeba-e252-4d24-865e-d81a382041c9,Web:S6844,MAJOR,CODE_SMELL,index.html,65,5min,Anchor tags should not be used as buttons.,nathália,2025-10-26T00:22:44+0000,OPEN
+9c50ab42-3ba1-40b3-8959-ee544b3f599e,javascript:S7728,MINOR,CODE_SMELL,js/app.js,512,5min,Use `for…of` instead of `.forEach(…)`.,nathália,2025-10-26T00:22:44+0000,OPEN
+7976290c-63d8-4901-a707-651b0bf83e88,javascript:S1481,MINOR,CODE_SMELL,js/app.js,667,5min,Remove the declaration of the unused 'lancamento' variable.,nathália,2025-10-26T00:22:44+0000,OPEN
+468d6c28-b6d7-47cd-b5ef-08bfd379a858,javascript:S7728,MINOR,CODE_SMELL,js/app.js,422,5min,Use `for…of` instead of `.forEach(…)`.,nathália,2025-10-25T16:49:53+0000,OPEN
+618b8099-4fa8-4a91-ba3d-b20c077dc2be,javascript:S7728,MINOR,CODE_SMELL,js/app.js,434,5min,Use `for…of` instead of `.forEach(…)`.,nathália,2025-10-25T16:49:53+0000,OPEN
+4562410b-557d-4f03-8b56-611d230360fe,javascript:S7764,MINOR,CODE_SMELL,js/app.js,380,2min,Prefer `globalThis` over `window`.,pedrogurski4759@gmail.com,2025-10-23T14:04:53+0000,OPEN
+ac67aac9-52bf-489e-9afd-8b7749f34c24,javascript:S7764,MINOR,CODE_SMELL,js/app.js,381,2min,Prefer `globalThis` over `window`.,pedrogurski4759@gmail.com,2025-10-23T14:04:53+0000,OPEN
+d111bb86-29f2-4c4a-9418-e64bcc62166c,javascript:S7764,MINOR,CODE_SMELL,js/app.js,67,2min,Prefer `globalThis` over `window`.,pedrogurski4759@gmail.com,2025-10-23T14:04:53+0000,OPEN
+cf07c760-9381-4fea-8e46-20c596375669,javascript:S7764,MINOR,CODE_SMELL,js/app.js,67,2min,Prefer `globalThis` over `window`.,pedrogurski4759@gmail.com,2025-10-23T14:04:53+0000,OPEN
+33d2dffb-332f-4c25-ae13-7313c0cfefe6,javascript:S7764,MINOR,CODE_SMELL,js/app.js,74,2min,Prefer `globalThis` over `window`.,pedrogurski4759@gmail.com,2025-10-23T14:49:56+0000,OPEN
+f1d68230-2419-4ca7-9c2a-19a7c9e4193e,javascript:S7764,MINOR,CODE_SMELL,js/app.js,60,2min,Prefer `globalThis` over `window`.,pedrogurski4759@gmail.com,2025-10-23T14:04:53+0000,OPEN
+830bdaf1-8419-4e3c-a6fe-0d6e3ff38d7d,javascript:S7764,MINOR,CODE_SMELL,js/app.js,60,2min,Prefer `globalThis` over `window`.,pedrogurski4759@gmail.com,2025-10-23T14:04:53+0000,OPEN
+fccd60cd-fdc5-40c5-9949-35214bb97ef6,javascript:S7764,MINOR,CODE_SMELL,js/app.js,53,2min,Prefer `globalThis` over `window`.,pedrogurski4759@gmail.com,2025-10-23T14:04:53+0000,OPEN
+b43d4f32-523f-4caa-9a2e-0280d06d7cf3,javascript:S7764,MINOR,CODE_SMELL,js/app.js,400,2min,Prefer `globalThis` over `window`.,pedrogurski4759@gmail.com,2025-10-23T14:04:53+0000,OPEN
+2df6c1d2-e268-4bc3-876d-b8cac95de7ff,javascript:S7764,MINOR,CODE_SMELL,js/app.js,53,2min,Prefer `globalThis` over `window`.,pedrogurski4759@gmail.com,2025-10-23T14:04:53+0000,OPEN
+527a48dd-19c0-4d92-aecd-f2ca9729ba4c,javascript:S7764,MINOR,CODE_SMELL,js/app.js,102,2min,Prefer `globalThis` over `window`.,nathália,2025-10-26T00:22:44+0000,OPEN
+b3e4af26-7d95-46e0-afdb-6a4b056573a5,javascript:S7764,MINOR,CODE_SMELL,js/app.js,102,2min,Prefer `globalThis` over `window`.,nathália,2025-10-26T00:22:44+0000,OPEN
+c8472435-5290-4aa2-be3d-6ebf5547b6bf,javascript:S7764,MINOR,CODE_SMELL,js/app.js,74,2min,Prefer `globalThis` over `window`.,pedrogurski4759@gmail.com,2025-10-23T14:49:56+0000,OPEN
+e136d3f6-fc87-4ba9-9567-419d15c8beca,javascript:S7764,MINOR,CODE_SMELL,js/app.js,81,2min,Prefer `globalThis` over `window`.,pedrogurski4759@gmail.com,2025-10-23T21:23:12+0000,OPEN
+62bbd01f-4272-4197-988f-ca76c8b11d4f,javascript:S7773,MINOR,CODE_SMELL,js/app.js,452,2min,Prefer `Number.parseInt` over `parseInt`.,nathália,2025-10-25T16:49:53+0000,OPEN
+c1918734-6769-41bc-8562-cc0e02168bcb,javascript:S7764,MINOR,CODE_SMELL,js/app.js,92,2min,Prefer `globalThis` over `window`.,nathália,2025-10-25T16:49:53+0000,OPEN
+74a8c730-107c-42f9-9080-4d0d548bb625,javascript:S7773,MINOR,CODE_SMELL,js/app.js,228,2min,Prefer `Number.parseInt` over `parseInt`.,pedrogurski4759@gmail.com,2025-10-23T21:23:12+0000,OPEN
+dc7a5f72-d9d6-450a-a7f7-3ee54fcc272d,javascript:S7773,MINOR,CODE_SMELL,js/app.js,227,2min,Prefer `Number.parseInt` over `parseInt`.,pedrogurski4759@gmail.com,2025-10-23T21:23:12+0000,OPEN
+019c924b-9797-4939-b66e-4325b0e1f25c,javascript:S7764,MINOR,CODE_SMELL,js/app.js,92,2min,Prefer `globalThis` over `window`.,nathália,2025-10-25T16:49:53+0000,OPEN
+5138bba7-7c76-452f-a6ea-d22f2d7ca7e2,javascript:S7773,MINOR,CODE_SMELL,js/app.js,631,2min,Prefer `Number.parseInt` over `parseInt`.,nathália,2025-10-26T00:22:44+0000,OPEN
+26477ea2-c47b-41e1-ab22-3bdeabaeccc9,javascript:S7764,MINOR,CODE_SMELL,js/app.js,81,2min,Prefer `globalThis` over `window`.,pedrogurski4759@gmail.com,2025-10-23T21:23:12+0000,OPEN
+2af5b68f-a594-4e53-ac47-8c7d0284b2b4,javascript:S7773,MINOR,CODE_SMELL,js/app.js,229,2min,Prefer `Number.parseInt` over `parseInt`.,pedrogurski4759@gmail.com,2025-10-24T14:32:43+0000,OPEN
+5f0abb52-a2af-4578-8d6f-17511aff041e,javascript:S3776,CRITICAL,CODE_SMELL,js/app.js,38,28min,Refactor this function to reduce its Cognitive Complexity from 38 to the 15 allowed.,nathália,2025-10-26T00:22:44+0000,OPEN
+fa61a256-b944-4c0c-8e0c-1cd93f9475a4,javascript:S1854,MAJOR,CODE_SMELL,js/app.js,236,1min,"Remove this useless assignment to variable ""response"".",pedrogurski4759@gmail.com,2025-10-23T21:23:12+0000,OPEN
+80f14d76-043e-4f50-adfe-9e02c62cce10,javascript:S1854,MAJOR,CODE_SMELL,js/app.js,667,1min,"Remove this useless assignment to variable ""lancamento"".",nathália,2025-10-26T00:22:44+0000,OPEN
+beba0b48-5aec-42d2-a8a3-af293908df97,javascript:S2486,MINOR,CODE_SMELL,js/app.js,360,1h,Handle this exception or don't catch it at all.,pedrogurski4759@gmail.com,2025-10-23T14:04:53+0000,OPEN
+873f3aad-7c54-4969-8abc-59c37e981aa4,javascript:S2486,MINOR,CODE_SMELL,js/app.js,676,1h,Handle this exception or don't catch it at all.,nathália,2025-10-26T00:22:44+0000,OPEN
+3dfd3660-c590-47d1-9fa0-6e86fabb901f,javascript:S2486,MINOR,CODE_SMELL,js/app.js,170,1h,Handle this exception or don't catch it at all.,pedrogurski4759@gmail.com,2025-10-23T21:23:12+0000,OPEN
+cae6ad94-b8fd-4e1c-91b5-286315355fa3,javascript:S2486,MINOR,CODE_SMELL,js/app.js,188,1h,Handle this exception or don't catch it at all.,pedrogurski4759@gmail.com,2025-10-23T21:23:12+0000,OPEN
+b33092dd-9b40-4c75-9649-fc934cccf239,javascript:S2486,MINOR,CODE_SMELL,js/app.js,206,1h,Handle this exception or don't catch it at all.,pedrogurski4759@gmail.com,2025-10-23T21:23:12+0000,OPEN
+98cba9da-bd30-4baf-95e2-9703800fb8fe,javascript:S2486,MINOR,CODE_SMELL,js/app.js,483,1h,Handle this exception or don't catch it at all.,nathália,2025-10-26T00:22:44+0000,OPEN
+695fd04b-d25a-453b-b585-d86b618cfcd9,javascript:S930,CRITICAL,BUG,js/app.js,501,10min,"This function expects 1 argument, but 2 were provided.",nathália,2025-10-26T00:22:44+0000,OPEN
